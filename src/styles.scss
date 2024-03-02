@@ -101,5 +101,31 @@ $navbar-dark-color:$primary-color;
     background-color:$primary-color
 }
 
+/* Default styles */
+.mat-toolbar-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .mat-toolbar-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-menu-content button.mat-menu-item.mat-button {
+  font-size: 4px !important; /* Adjust the font size as needed */
+}
+
+/* Reduce padding for mat-menu-items */
+.mat-menu-content button.mat-menu-item {
+  padding-top: 0px; /* Adjust the top padding as needed */
+  padding-bottom: 0px; /* Adjust the bottom padding as needed */
+  padding-left: 0px; /* Adjust the left padding as needed */
+  padding-right: 0px; /* Adjust the right padding as needed */
+}

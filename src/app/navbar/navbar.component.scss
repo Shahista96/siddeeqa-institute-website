@@ -21,5 +21,24 @@
   .spacer {
     flex: 1; /* This makes the spacer element take up all available space */
   }
+
+
+  .mat-mdc-menu-item{
+    font-size: 12px;
+    height: 15px;
+  }
   
+/* Default styles */
+.mat-toolbar-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .mat-toolbar-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
   

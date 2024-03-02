@@ -1,43 +1,21 @@
-
 <mat-toolbar color="primary">
     <span>My Application</span>
     <span class="spacer"></span>
-    <button mat-button [matMenuTriggerFor]="homeMenu">Home</button>
-    <mat-menu #homeMenu="matMenu">
-      <button mat-menu-item>Submenu 1</button>
-      <button mat-menu-item>Submenu 2</button>
-    </mat-menu>
-  
+    <button mat-button>Home</button>
     <button mat-button>Our Exemplars</button>
-    <button mat-button>Madrasah</button>
+    <button mat-button [matMenuTriggerFor]="madrasah">Madrasah</button>
+    <mat-menu #madrasah="matMenu">
+        <button mat-menu-item>Our Courses</button>
+        <button mat-menu-item>Traditional Islamic Education(Aalima)</button>
+        <button mat-menu-item>Essential Islamic Education Course</button>
+        <button mat-menu-item>TO-DO (Add the rest)</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="womensWellnessCenter">Women's Wellness Center</button>
+    <mat-menu #womensWellnessCenter="matMenu">
+        <button mat-menu-item>Submenu 1</button>
+        <button mat-menu-item>Submenu 2</button>
+    </mat-menu>
+    <button mat-button>FAQs</button>
+    <button mat-button>Contact Us</button>
     <!-- Add more buttons for other menu items -->
-  </mat-toolbar>
-  
-
-<!-- <nav class="navbar navbar-expand-lg navbar-dark primary-color">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="../../assets/Logos/siddeeqa logo.png" alt="Siddeeqa Logo" width="50" height="50"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-                <ng-container *ngFor="let menuItem of menuItems; let i = index">
-                    <li class="nav-item dropdown" [class.show]="showDropdown[i]">
-                      <a class="nav-link dropdown-toggle" (click)="toggleDropdown(i)">{{ menuItem.name }}</a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="#">sub menu</a>
-                        </li>
-                      </ul>
-                </ng-container>
-            </ul>
-        </div>
-    </div>
-</nav>
-<div [innerHTML]="htmlContent"></div>
-<div>
-    
-</div>
-
- -->
+</mat-toolbar>
