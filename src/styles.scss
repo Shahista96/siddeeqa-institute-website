@@ -1,1 +1,105 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+
+$custom-hue: (
+  50: #fcf5de,
+  100: #f8eaa6,
+  200: #f3df6f,
+  300: #eed437,
+  400: #e9cd15,
+  500: #d1ad3a,
+  600: #b38f34,
+  700: #94602d,
+  800: #764226,
+  900: #58231f,
+  A100: #fffae9,
+  A200: #ffe578,
+  A400: #ffd546,
+  A700: #ffb81d,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+
+//$primary-color: #b49444;
+$primary-color: #d1ad3a;
+$secondary-color: #eedc89;
+$success-color: #28a745;
+$danger-color: #dc3545;
+$warning-color: #ffc107;
+$info-color: #17a2b8;
+
+
+// Define your custom palette using the custom hue
+$custom-palette: mat.define-palette($custom-hue,600);
+
+$siddeeqa-institute-primary: mat.define-palette(mat.$indigo-palette, 500);
+$siddeeqa-institute-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$siddeeqa-institute-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+
+$custom-theme: mat.define-light-theme((
+  color: (
+    primary: $custom-hue,
+    accent: $siddeeqa-institute-accent,
+    warn: $siddeeqa-institute-warn,
+    // define other colors if needed
+  )
+));
+
+$siddeeqa-institute-theme: mat.define-light-theme((
+  color: (
+    primary: $custom-palette,
+    accent: $siddeeqa-institute-accent,
+    warn: $siddeeqa-institute-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($siddeeqa-institute-theme);
+
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+
+$navbar-dark-color:$primary-color;
+
+.primary-color{
+    background-color:$primary-color
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

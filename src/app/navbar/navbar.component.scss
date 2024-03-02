@@ -1,0 +1,25 @@
+.navbar-nav li:hover {
+    background-color: #b49444; /* Change to your desired highlight color */
+}
+
+.navbar-nav li:hover a {
+    color: #000; /* Change to your desired text color */
+}
+
+.nav-link{
+    color:white !important
+}
+
+.dropdown-menu {
+    display: none;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .spacer {
+    flex: 1; /* This makes the spacer element take up all available space */
+  }
+  
+  
