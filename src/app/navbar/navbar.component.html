@@ -45,7 +45,15 @@
             </mat-nav-list>
         </mat-sidenav>
 
-        <mat-sidenav-content fxFlexFill><div style="background-color: #f8eaa6; width: 100%; height: 100%; padding: 20px;" [innerHTML]="htmlContent"></div></mat-sidenav-content>
+        <mat-sidenav-content fxFlexFill>
+            <app-home *ngIf="selectedContent == 'home'"></app-home>
+            <app-faqs *ngIf="selectedContent == 'faqs'"></app-faqs>
+            <app-exemplars *ngIf="selectedContent == 'examplars'"></app-exemplars>
+            <app-madrasah *ngIf="selectedContent == 'madrasah'"></app-madrasah>
+            <app-contact-us *ngIf="selectedContent == 'contact-us'"></app-contact-us>
+            <!-- <div style="background-color: #f8eaa6; width: 100%; height: 100%; padding: 20px;" [innerHTML]="htmlContent"></div> -->
+        
+        </mat-sidenav-content>
     </mat-sidenav-container>
     
 </div>

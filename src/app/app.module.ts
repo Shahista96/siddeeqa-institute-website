@@ -15,6 +15,12 @@ import { MatIconModule} from '@angular/material/icon';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
+import { FaqsComponent } from './contents/faqs/faqs.component';
+import { HomeComponent } from './contents/home/home.component';
+import { ExemplarsComponent } from './contents/exemplars/exemplars.component';
+import { MadrasahComponent } from './contents/madrasah/madrasah.component';
+import { WellnessCenterComponent } from './contents/wellness-center/wellness-center.component';
+import { ContactUsComponent } from './contents/contact-us/contact-us.component';
 
 
 
@@ -22,7 +28,13 @@ import { MatListModule } from "@angular/material/list";
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    FaqsComponent,
+    HomeComponent,
+    ExemplarsComponent,
+    MadrasahComponent,
+    WellnessCenterComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

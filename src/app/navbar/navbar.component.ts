@@ -14,6 +14,9 @@ interface MenuItem {
 })
 export class NavbarComponent implements OnInit {
 
+  selectedContent:string = 'home';
+  subMenu:string = '';
+
   menuItems = [
     { name: 'Home', subItems: [] },
     { name: 'Our Exemplars', subItems: [] },
@@ -26,9 +29,7 @@ export class NavbarComponent implements OnInit {
 
   htmlContent: string = '';
 
-
   showDropdown: boolean[] = [];
-
 
   toggleDropdown(menuItem:any) {
     menuItem.showSubMenu = !menuItem.showSubMenu;
@@ -39,34 +40,45 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // Load Home Page
-    this.http.get('assets/Html/home.html', { responseType: 'text' })
-    .subscribe((data: string) => {
-      this.htmlContent = data; // Assign fetched HTML content to a variable
-    });
+    
   }
 
-
   onHomeMenuClicked(){
-    this.http.get('assets/Html/home.html', { responseType: 'text' })
-    .subscribe((data: string) => {
-      this.htmlContent = data; // Assign fetched HTML content to a variable
-    });
+    this.selectedContent = 'home';
   }
 
   onOurExemplarsMenuClicked(){
-    console.log('Switching Menu')
-    this.http.get('assets/Html/our_exemplars.html', { responseType: 'text' })
-    .subscribe((data: string) => {
-      this.htmlContent = data; // Assign fetched HTML content to a variable
-    });
+    this.selectedContent = 'exemplars';
   }
 
   ourCoursesMenuClicked(){
-    this.http.get('assets/Html/our_courses_menu.html', { responseType: 'text' })
-    .subscribe((data: string) => {
-      this.htmlContent = data; // Assign fetched HTML content to a variable
-    });
+    this.selectedContent = 'our_courses';
+  }
+
+  onFAQsSiddeeqaInstitute(){
+    this.selectedContent = 'faqs';
+    this.subMenu = 'siddeeqa_institute';
+  }
+
+  onFAQsFinancialMattersClicked(){
+    this.selectedContent = 'faqs';
+    this.subMenu = 'financial_matters';
+  }
+
+  onFAQsTechnicalMattersClicked(){
+    this.selectedContent = 'faqs';
+    this.subMenu = 'technical_matters';
+  }
+
+  onFAQsAdmissionInformationClicked(){
+    this.selectedContent = 'faqs';
+    this.subMenu = 'admission_information';
+  }
+
+  onFAQsMiscellaneousClicked(){
+    this.selectedContent = 'faqs';
+    this.subMenu = 'miscellaneous';
+
   }
 
 }
