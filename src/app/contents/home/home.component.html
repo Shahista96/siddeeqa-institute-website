@@ -1,97 +1,54 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+<!-- <div fxLayout="column">
+    <div fxLayout="row">
+        <h1>Test1</h1>
+        <div>1</div>
+    </div>
+    <div>
+        <h1>Test2</h1>
+        <div>2</div>
+    </div>
+    <div>
+        <h1>Test3</h1>
+        <div>3</div>
+    </div>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-        }
+</div> -->
 
-
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        #div-with-bg {
-            background: url('../Images/bg_simple.jpg') others;
-            height: 200px !important;
-            width: 100% !important;
-        }
-
-        .dosis-font-style {
-            font-family: "Dosis", sans-serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-        }
-
-        .quote {
-
-            font-size: 24px;
-            text-align: center;
-            margin-bottom: 20px;
-            
-        }
-
-        .goal {
-            font-size: 18px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                margin: 20px;
-                padding: 10px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container-2">
-        <br>
-        <div class="quote dosis-font-style;  float:right;">
-            <p class="responsive" style="font-weight:500;text-shadow: 1px 1px #808080;">A mind that understands and submits to the Will of Allah ﷻ
-            <br>
-            ⋄⋄⋄
-            <br>
-            A heart that loves and fears Him ﷻ
-            <br>
-            ⋄⋄⋄
-            <br>
-            A body that acts in accordance with the most perfect ways of
-            His final Messenger ﷺ
-            <br>
-            ⋄⋄⋄
-            <br>
-            These are the goals of Siddeeqa Institute
-            </p>
+<div fxLayout="column" >
+        <div  fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center center" class="container-2">
+            <div fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+                <img src="../../../assets/Logos/LogoL.png"  fxFlex="40%" height="auto" alt="Siddeeqa Institute"/>
+            </div>
+            <div fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+                A mind that understands and submits to the Will of Allah ﷻ
+                <br/>
+                ⋄⋄⋄
+                <br/>
+                A heart that loves and fears Him ﷻ
+                <br/>
+                ⋄⋄⋄
+                <br/>
+                A body that acts in accordance with the most perfect ways of
+                His final Messenger ﷺ
+                <br/>
+                ⋄⋄⋄
+                <br/>
+                These are the goals of Siddeeqa Institute
+            </div>
+        </div>
+        <div fxLayout="row">
+            <div fxFlex="40%" fxLayoutAlign="center center" fxFlex.lt-sm="100%" [ngStyle.gt-sm]="{'font-size.px': 24}">
+                
+                ⋄⋄⋄
+                <br>
+                We are an online institute of Islamic education and coaching for women, inspired by the great Siddeeq, Sayyedina Abu Bakr رضی الله عنه and the great Siddeeqa, Sayyeda Aisha رضی الله عنها.
+                <br>
+                ⋄⋄⋄
+                <br>    
+            </div>
+            <div fxFlex="60%" fxHide.lt-sm>
+                Image
+            </div>
         </div>
     </div>
-    <div id="parent" style="height:1dvh">
-        <div class="col quote dosis-font-style; text-align: center">
-            ⋄⋄⋄
-            <p>
-                We are an online institute of Islamic education and coaching for women, inspired by the great Siddeeq, Sayyedina Abu Bakr رضی الله عنه and the great Siddeeqa, Sayyeda Aisha رضی الله عنها.
-            </p>
-            ⋄⋄⋄
-            <br>
-       
-        </div> 
-        <div class="col"></div> 
-    </div>
 
-</body>
