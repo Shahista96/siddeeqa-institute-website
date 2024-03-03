@@ -43,7 +43,7 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get('assets/Html/faqs_si.html', { responseType: 'text' })
+    this.http.get('assets/Html/home.html', { responseType: 'text' })
     .subscribe((data: string) => {
       this.htmlContent = data; // Assign fetched HTML content to a variable
     });
@@ -52,6 +52,13 @@ export class NavbarComponent implements OnInit {
 
   loadHomePage(){
     this.http.get('assets/Html/home.html', { responseType: 'text' })
+    .subscribe((data: string) => {
+      this.htmlContent = data; // Assign fetched HTML content to a variable
+    });
+  }
+
+  ourCoursesMenuClicked(){
+    this.http.get('assets/Html/our_courses_menu.html', { responseType: 'text' })
     .subscribe((data: string) => {
       this.htmlContent = data; // Assign fetched HTML content to a variable
     });

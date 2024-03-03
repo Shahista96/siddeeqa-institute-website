@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<!-- <mat-toolbar color="primary">
     <span>My Application</span>
     <span class="spacer"></span>
     <button mat-button>Home</button>
@@ -17,5 +17,53 @@
     </mat-menu>
     <button mat-button>FAQs</button>
     <button mat-button>Contact Us</button>
-    <!-- Add more buttons for other menu items -->
-</mat-toolbar>
+    
+</mat-toolbar> -->
+
+<div style="height: 80vh;">
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+                <mat-icon>menu</mat-icon>
+            </button>
+            <img src="../../assets/Logos/siddeeqa logo.png" alt="Siddeeqa Institute" height="50" weight="50">
+            <span class="spacer"></span>
+            <button mat-button>Home</button>
+            <button mat-button>Our Exemplars</button>
+            <button mat-button [matMenuTriggerFor]="madrasah">Madrasah</button>
+            <mat-menu #madrasah="matMenu">
+                <button mat-menu-item>Our Courses</button>
+                <button mat-menu-item>Traditional Islamic Education(Aalima)</button>
+                <button mat-menu-item>Essential Islamic Education Course</button>
+                <button mat-menu-item>TO-DO (Add the rest)</button>
+            </mat-menu>
+            <button mat-button [matMenuTriggerFor]="womensWellnessCenter">Women's Wellness Center</button>
+            <mat-menu #womensWellnessCenter="matMenu">
+                <button mat-menu-item>Submenu 1</button>
+                <button mat-menu-item>Submenu 2</button>
+            </mat-menu>
+            <button mat-button>FAQs</button>
+            <button mat-button>Contact Us</button>
+        </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-sidenav-container fxFlexFill>
+        <mat-sidenav #sidenav>
+            <mat-nav-list>
+                <button mat-button [matMenuTriggerFor]="madrasah">Madrasah</button>
+                <mat-menu #madrasah="matMenu">
+                    <button mat-menu-item>Our Courses</button>
+                    <button mat-menu-item>Traditional Islamic Education(Aalima)</button>
+                    <button mat-menu-item>Essential Islamic Education Course</button>
+                    <button mat-menu-item>TO-DO (Add the rest)</button>
+                </mat-menu>
+                <a href="#" mat-list-item>Menu Item 2</a>
+                <a href="#" mat-list-item>Menu Item 3</a>
+                <a href="#" mat-list-item>Menu Item 4</a>
+                <a href="#" mat-list-item>Menu Item 5</a>
+                <a href="#" mat-list-item>Menu Item 6</a>
+            </mat-nav-list>
+        </mat-sidenav>
+        <!-- <mat-sidenav-content fxFlexFill>Main content</mat-sidenav-content> -->
+    </mat-sidenav-container>
+</div>
