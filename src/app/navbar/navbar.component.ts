@@ -24,10 +24,6 @@ export class NavbarComponent implements OnInit {
     // Add more menu items with sub-items as needed
   ];
 
-
-
-  
-
   htmlContent: string = '';
 
 
@@ -43,6 +39,7 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    // Load Home Page
     this.http.get('assets/Html/home.html', { responseType: 'text' })
     .subscribe((data: string) => {
       this.htmlContent = data; // Assign fetched HTML content to a variable
@@ -50,7 +47,7 @@ export class NavbarComponent implements OnInit {
   }
 
 
-  loadHomePage(){
+  onHomeMenuClicked(){
     this.http.get('assets/Html/home.html', { responseType: 'text' })
     .subscribe((data: string) => {
       this.htmlContent = data; // Assign fetched HTML content to a variable
