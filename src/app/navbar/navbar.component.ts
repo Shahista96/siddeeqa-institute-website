@@ -54,6 +54,14 @@ export class NavbarComponent implements OnInit {
     });
   }
 
+  onOurExemplarsMenuClicked(){
+    console.log('Switching Menu')
+    this.http.get('assets/Html/our_exemplars.html', { responseType: 'text' })
+    .subscribe((data: string) => {
+      this.htmlContent = data; // Assign fetched HTML content to a variable
+    });
+  }
+
   ourCoursesMenuClicked(){
     this.http.get('assets/Html/our_courses_menu.html', { responseType: 'text' })
     .subscribe((data: string) => {

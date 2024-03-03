@@ -6,13 +6,13 @@
             <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
                 <mat-icon>menu</mat-icon>
             </button>
-            <img src="../../assets/Logos/siddeeqa logo.png" alt="Siddeeqa Institute" height="50" weight="50" fxShow="true" fxHide.gt-sm>
+            <img src="../../assets/Logos/siddeeqa logo.png" alt="Siddeeqa Institute" height="50" weight="50">
             <span class="spacer"></span>
-            <button mat-button>Home</button>
-            <button mat-button>Our Exemplars</button>
+            <button mat-button (click)="onHomeMenuClicked()">Home</button>
+            <button mat-button (click)="onOurExemplarsMenuClicked()">Our Exemplars</button>
             <button mat-button [matMenuTriggerFor]="madrasah">Madrasah</button>
             <mat-menu #madrasah="matMenu">
-                <button mat-menu-item>Our Courses</button>
+                <button mat-menu-item (click)="ourCoursesMenuClicked()">Our Courses</button>
                 <button mat-menu-item>Traditional Islamic Education(Aalima)</button>
                 <button mat-menu-item>Essential Islamic Education Course</button>
                 <button mat-menu-item>TO-DO (Add the rest)</button>
