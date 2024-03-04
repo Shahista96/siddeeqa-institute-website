@@ -43,82 +43,9 @@ export class NavbarComponent implements OnInit {
     
   }
 
-  onHomeMenuClicked(){
-    this.selectedContent = 'home';
+  menuChanged(mainMenu:string, subMenu:string){
+    this.selectedContent = mainMenu;
+    this.subMenu = subMenu;
   }
-
-  onOurExemplarsMenuClicked(){
-    this.selectedContent = 'exemplars';
-  }
-
-  ourCoursesMenuClicked(){
-    this.selectedContent = 'our_courses';
-  }
-
-  onWellnessCenterClicked(){
-    this.selectedContent = 'wellness_center';
-  }
-
-  onFAQsSiddeeqaInstitute(){
-    this.selectedContent = 'faqs';
-    this.subMenu = 'siddeeqa_institute';
-  }
-
-  onFAQsFinancialMattersClicked(){
-    this.selectedContent = 'faqs';
-    this.subMenu = 'financial_matters';
-  }
-
-  onFAQsTechnicalMattersClicked(){
-    this.selectedContent = 'faqs';
-    this.subMenu = 'technical_matters';
-  }
-
-  onFAQsAdmissionInformationClicked(){
-    this.selectedContent = 'faqs';
-    this.subMenu = 'admission_information';
-  }
-
-  onFAQsMiscellaneousClicked(){
-    this.selectedContent = 'faqs';
-    this.subMenu = 'miscellaneous';
-  }
-
-  onContactUsClicked(){
-    this.selectedContent = 'contact_us'
-  }
-
-  onAboutTheCenterClicked(){
-    this.selectedContent="wellness_center";
-    this.subMenu = "about_center";
-  }
-
-  onSupportGroupsClicked(){
-    this.selectedContent="wellness_center";
-    this.subMenu = "support_groups";
-  }
-
-  onRevertSupportServicesClicked(){
-    this.selectedContent="wellness_center";
-    this.subMenu = "revert_support_services";
-
-  }
-
-  onWorkshopsAndLecturesClicked(){
-    this.selectedContent="wellness_center";
-    this.subMenu = "workshops_and_services";
-
-  }
-
-  onResourcesForWomanClicked(){
-    this.selectedContent="wellness_center";
-    this.subMenu = "resources_for_woman";
-
-  }
-
-  onResourcesForMuslimMothersClicked(){
-    this.selectedContent="wellness_center";
-    this.subMenu = "resources_for_muslim_mothers";
-
-  }
+  
 }

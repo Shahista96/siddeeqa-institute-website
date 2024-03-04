@@ -8,33 +8,39 @@
             </button>
             <img src="../../assets/Logos/siddeeqa logo.png" alt="Siddeeqa Institute" height="50" weight="50">
             <span class="spacer"></span>
-            <button mat-button (click)="onHomeMenuClicked()">Home</button>
-            <button mat-button (click)="onOurExemplarsMenuClicked()">Our Exemplars</button>
+            <button mat-button (click)="menuChanged('home','')">Home</button>
+            <button mat-button (click)="menuChanged('exemplars','')">Our Exemplars</button>
             <button mat-button [matMenuTriggerFor]="madrasah">Madrasah</button>
             <mat-menu #madrasah="matMenu">
-                <button mat-menu-item (click)="ourCoursesMenuClicked()">Our Courses</button>
-                <button mat-menu-item>Traditional Islamic Education(Aalima)</button>
-                <button mat-menu-item>Essential Islamic Education Course</button>
-                <button mat-menu-item>TO-DO (Add the rest)</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','our_courses')">Our Courses</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','traditional_islamic_education')">Traditional Islamic Education(Aalima)</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','essential_islamic_education')">Essential Islamic Education Course</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','quranic_arabic_course')">Quranic Arabic Course</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','short_courses')">Short Courses, Workshops & Lectures</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','postgraduate_center')">Postgraduate Centere</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','our_teachers')">Our Teachers (English Courses)</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','resources_for_students')">Resources for Students</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','resources_for_teachers')">Resources for Teachers</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','fiqh_resources')">Fiqh Resources</button>
             </mat-menu>
             <button mat-button [matMenuTriggerFor]="womensWellnessCenter">Women's Wellness Center</button>
             <mat-menu #womensWellnessCenter="matMenu">
-                <button mat-menu-item (click)="onAboutTheCenterClicked()" >About the Center</button>
-                <button mat-menu-item (click)="onSupportGroupsClicked()">Support Groups</button>
-                <button mat-menu-item (click)="onRevertSupportServicesClicked()">Revert Support Services</button>
-                <button mat-menu-item (click)="onWorkshopsAndLecturesClicked()">Workshops & Lectures</button>
-                <button mat-menu-item (click)="onResourcesForWomanClicked()">Resources for Women</button>
-                <button mat-menu-item (click)="onResourcesForMuslimMothersClicked()">Resources for Muslim Mothers</button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','about_center')" >About the Center</button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','support_groups')">Support Groups</button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','revert_support_services')">Revert Support Services</button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','workshops_and_services')">Workshops & Lectures</button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','resources_for_woman')">Resources for Women</button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','resources_for_muslim_mothers')">Resources for Muslim Mothers</button>
             </mat-menu>
             <button mat-button [matMenuTriggerFor]="faqs">FAQs</button>
             <mat-menu #faqs="matMenu">
-                <button mat-menu-item (click)="onFAQsSiddeeqaInstitute()">Siddeeqa Institute</button>
-                <button mat-menu-item (click)="onFAQsFinancialMattersClicked()">Financial Matters</button>
-                <button mat-menu-item (click)="onFAQsTechnicalMattersClicked()">Technical Matters</button>
-                <button mat-menu-item (click)="onFAQsAdmissionInformationClicked()">Admission Information</button>
-                <button mat-menu-item (click)="onFAQsMiscellaneousClicked()">Miscellaneous</button>
+                <button mat-menu-item (click)="menuChanged('faqs','siddeeqa_institute')">Siddeeqa Institute</button>
+                <button mat-menu-item (click)="menuChanged('faqs','financial_matters')">Financial Matters</button>
+                <button mat-menu-item (click)="menuChanged('faqs','technical_matters')">Technical Matters</button>
+                <button mat-menu-item (click)="menuChanged('faqs','admission_information')">Admission Information</button>
+                <button mat-menu-item (click)="menuChanged('faqs','miscellaneous')">Miscellaneous</button>
             </mat-menu>
-            <button mat-button (click)="onContactUsClicked()">Contact Us</button>
+            <button mat-button (click)="menuChanged('contact_us','')">Contact Us</button>
         </mat-toolbar-row>
     </mat-toolbar>
     
@@ -58,14 +64,11 @@
 
         <mat-sidenav-content fxFlexFill>
             <app-home *ngIf="selectedContent == 'home'"></app-home>
-            <app-faqs *ngIf="selectedContent == 'faqs'" [subMenu]="subMenu"></app-faqs>
             <app-exemplars *ngIf="selectedContent == 'exemplars'"></app-exemplars>
-            <app-madrasah *ngIf="selectedContent == 'madrasah'"></app-madrasah>
+            <app-madrasah *ngIf="selectedContent == 'madrasah'" [subMenu]="subMenu"></app-madrasah>
             <app-wellness-center *ngIf="selectedContent == 'wellness_center'" [subMenu]="subMenu"></app-wellness-center>
-
-            <app-contact-us *ngIf="selectedContent == 'contact_us'"></app-contact-us>
-            <!-- <div style="background-color: #f8eaa6; width: 100%; height: 100%; padding: 20px;" [innerHTML]="htmlContent"></div> -->
-        
+            <app-faqs *ngIf="selectedContent == 'faqs'" [subMenu]="subMenu"></app-faqs>
+            <app-contact-us *ngIf="selectedContent == 'contact_us'"></app-contact-us>        
         </mat-sidenav-content>
     </mat-sidenav-container>
     
