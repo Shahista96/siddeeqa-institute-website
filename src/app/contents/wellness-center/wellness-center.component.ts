@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-wellness-center',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./wellness-center.component.scss']
 })
 export class WellnessCenterComponent {
+  @Input() subMenu: string = 'siddeeqa_institute';
 
 }

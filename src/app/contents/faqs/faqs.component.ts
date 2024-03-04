@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class FaqsComponent {
 
-  @Input() subMenu: string = '';
+  @Input() subMenu: string = 'siddeeqa_institute';
 
 }

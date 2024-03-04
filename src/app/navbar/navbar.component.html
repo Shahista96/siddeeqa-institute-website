@@ -19,11 +19,22 @@
             </mat-menu>
             <button mat-button [matMenuTriggerFor]="womensWellnessCenter">Women's Wellness Center</button>
             <mat-menu #womensWellnessCenter="matMenu">
-                <button mat-menu-item>Submenu 1</button>
-                <button mat-menu-item>Submenu 2</button>
+                <button mat-menu-item (click)="onAboutTheCenterClicked()" >About the Center</button>
+                <button mat-menu-item (click)="onSupportGroupsClicked()">Support Groups</button>
+                <button mat-menu-item (click)="onRevertSupportServicesClicked()">Revert Support Services</button>
+                <button mat-menu-item (click)="onWorkshopsAndLecturesClicked()">Workshops & Lectures</button>
+                <button mat-menu-item (click)="onResourcesForWomanClicked()">Resources for Women</button>
+                <button mat-menu-item (click)="onResourcesForMuslimMothersClicked()">Resources for Muslim Mothers</button>
             </mat-menu>
-            <button mat-button>FAQs</button>
-            <button mat-button>Contact Us</button>
+            <button mat-button [matMenuTriggerFor]="faqs">FAQs</button>
+            <mat-menu #faqs="matMenu">
+                <button mat-menu-item (click)="onFAQsSiddeeqaInstitute()">Siddeeqa Institute</button>
+                <button mat-menu-item (click)="onFAQsFinancialMattersClicked()">Financial Matters</button>
+                <button mat-menu-item (click)="onFAQsTechnicalMattersClicked()">Technical Matters</button>
+                <button mat-menu-item (click)="onFAQsAdmissionInformationClicked()">Admission Information</button>
+                <button mat-menu-item (click)="onFAQsMiscellaneousClicked()">Miscellaneous</button>
+            </mat-menu>
+            <button mat-button (click)="onContactUsClicked()">Contact Us</button>
         </mat-toolbar-row>
     </mat-toolbar>
     
@@ -47,10 +58,12 @@
 
         <mat-sidenav-content fxFlexFill>
             <app-home *ngIf="selectedContent == 'home'"></app-home>
-            <app-faqs *ngIf="selectedContent == 'faqs'"></app-faqs>
+            <app-faqs *ngIf="selectedContent == 'faqs'" [subMenu]="subMenu"></app-faqs>
             <app-exemplars *ngIf="selectedContent == 'exemplars'"></app-exemplars>
             <app-madrasah *ngIf="selectedContent == 'madrasah'"></app-madrasah>
-            <app-contact-us *ngIf="selectedContent == 'contact-us'"></app-contact-us>
+            <app-wellness-center *ngIf="selectedContent == 'wellness_center'" [subMenu]="subMenu"></app-wellness-center>
+
+            <app-contact-us *ngIf="selectedContent == 'contact_us'"></app-contact-us>
             <!-- <div style="background-color: #f8eaa6; width: 100%; height: 100%; padding: 20px;" [innerHTML]="htmlContent"></div> -->
         
         </mat-sidenav-content>
