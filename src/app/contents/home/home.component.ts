@@ -9,7 +9,7 @@ import { CarouselModule } from 'primeng/carousel';
 export class HomeComponent {
   responsiveOptions: any[] | undefined;
 
-  images: String [] = ["../../../assets/Images/Carousel/1681766172552.webp","../../../assets/Images/Carousel/Islamic finance Teaser 2023.webp","../../../assets/Images/Carousel/photo_2024-03-01_12-12-49.webp"]
+  images: String [] = ["../../../assets/Images/Carousel/1681766172552.webp","../../../assets/Images/Carousel/Islamic finance Teaser 2023.webp","../../../assets/Images/Carousel/photo_2024-03-01_12-12-49.webp","../../../assets/Images/Carousel/1681766172535.webp","../../../assets/Images/Carousel/1681766172544.webp","../../../assets/Images/Carousel/Teacher.webp","../../../assets/Images/Carousel/journey to light.webp","../../../assets/Images/Carousel/photo_2024-03-01_12-12-36.webp"]
 
   ngOnInit() {
 
