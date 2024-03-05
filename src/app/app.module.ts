@@ -23,6 +23,7 @@ import { WellnessCenterComponent } from './contents/wellness-center/wellness-cen
 import { ContactUsComponent } from './contents/contact-us/contact-us.component';
 import { CarouselModule } from 'primeng/carousel';
 import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from "@angular/material/expansion";
 
 
 
@@ -51,7 +52,8 @@ FlexLayoutModule,
 MatSidenavModule,
 MatListModule,
 CarouselModule,
-MatCardModule
+MatCardModule,
+MatExpansionModule
 
   ],
   providers: [],
