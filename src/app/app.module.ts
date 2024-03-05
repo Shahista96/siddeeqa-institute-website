@@ -21,6 +21,7 @@ import { ExemplarsComponent } from './contents/exemplars/exemplars.component';
 import { MadrasahComponent } from './contents/madrasah/madrasah.component';
 import { WellnessCenterComponent } from './contents/wellness-center/wellness-center.component';
 import { ContactUsComponent } from './contents/contact-us/contact-us.component';
+import { CarouselModule } from 'primeng/carousel';
 
 
 
@@ -47,7 +48,9 @@ MatMenuModule,
 MatIconModule,
 FlexLayoutModule,
 MatSidenavModule,
-MatListModule
+MatListModule,
+CarouselModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

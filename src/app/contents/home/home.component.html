@@ -13,13 +13,15 @@
     </div>
 
 </div> -->
+<div class="background_container">
 
-<div fxLayout="column" >
+
+<div fxLayout="column">
         <div  fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center center" class="container-2">
-            <div fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-                <img src="../../../assets/Logos/LogoL.png"  fxFlex="40%" height="auto" alt="Siddeeqa Institute"/>
+            <div fxFlex.gt-sm="50%" fxLayoutAlign="center center" style="padding: 4%;">
+                <img src="../../../assets/Logos/LogoL.png"  fxFlex="30%" height="auto" alt="Siddeeqa Institute"/>
             </div>
-            <div fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+            <div fxFlex.gt-sm="50%" fxLayoutAlign="space-evenly center" style="text-align: center;padding: 4%;" [ngStyle.gt-sm]="{'font-size.px': 24,'padding':'2%'}" >
                 A mind that understands and submits to the Will of Allah ﷻ
                 <br/>
                 ⋄⋄⋄
@@ -37,18 +39,24 @@
             </div>
         </div>
         <div fxLayout="row">
-            <div fxFlex="40%" fxLayoutAlign="center center" fxFlex.lt-sm="100%" [ngStyle.gt-sm]="{'font-size.px': 24}">
-                
-                ⋄⋄⋄
+            <div fxFlex="40%" fxLayoutAlign="center center"  style="text-align: justify;padding: 4%;" fxFlex.lt-sm="100%" [ngStyle.gt-sm]="{'font-size.px': 24,'padding':'2%'}" class="container-3">
+
                 <br>
                 We are an online institute of Islamic education and coaching for women, inspired by the great Siddeeq, Sayyedina Abu Bakr رضی الله عنه and the great Siddeeqa, Sayyeda Aisha رضی الله عنها.
                 <br>
-                ⋄⋄⋄
-                <br>    
+                <br>
             </div>
             <div fxFlex="60%" fxHide.lt-sm>
-                Image
             </div>
         </div>
-    </div>
-
+</div>
+</div>
+<p-carousel [value]="images" [numVisible]="1" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions"  [autoplayInterval]="3000">
+    <ng-template let-product pTemplate="item">
+        <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+            <div class="mb-8">
+                <img src="{{product}}" [alt]="product" class="w-6 shadow-2" style="max-height: 70%; width: auto;" />
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>

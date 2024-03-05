@@ -8,8 +8,8 @@
 
 .container-3 {
     background-size: cover;
-    background-blend-mode: lighten;
-    background-color: rgba(248, 247, 216, 0.7);
+
+    background-color: rgba(248, 247, 216);
 }
 
 .container-4 {
@@ -18,3 +18,20 @@
     background-blend-mode: lighten;
     background-color: rgba(248, 247, 216, 0.7);
 }
+
+.background_container{
+    background-image: url('../../../assets/Images/101960418_jpg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+    background-blend-mode: lighten;
+    background-color: rgba(248, 247, 216, 0.7);
+  }
+
+  :host ::ng-deep p-carousel {
+    //On later realease of PrimeNG, this can be done programmatically with [showIndicators | showNavigators]="false"
+    .p-carousel-indicators {
+      display: none !important;
+    }
+  }
