@@ -1,0 +1,59 @@
+.background_container_courses{
+    background-image: url('../../../assets/Images/background.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+    background-blend-mode: lighten;
+    background-color: rgba(248, 247, 216, 0.7);
+}
+
+.container-3 {
+    background: url('../../../assets/Images/caligraphy_1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(248, 247, 216, 0.2);
+    background-blend-mode: lighten;
+
+}
+
+.container-background {
+    background-size: cover;
+
+    background-color: rgba(248, 247, 216);
+    background: url('../../../assets/Images/bg_simple.jpg');
+    height: 50%;
+    background-size: cover;
+    background-blend-mode: lighten;
+
+}
+
+.container-card{
+    background-color:rgba(182, 181, 243, 0.4);
+    background-blend-mode: lighten;
+}
+
+.container-card:hover{
+    box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);
+    transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 300ms 
+}
+
+.color-group{
+    color:#6a68be;
+}
+
+.color-group-brown{
+    color:hsl(0, 33%, 25%);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(odd) {background-color: #f2f2f2;}
