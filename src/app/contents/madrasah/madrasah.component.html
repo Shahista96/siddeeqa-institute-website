@@ -1,7 +1,87 @@
 
 <!-- Siddeeqa Institute -->
 <div *ngIf="subMenu == 'our_courses'">
-    <p> content for Our Courses</p>
+    <div class="background_container_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                OUR<br>COURSES
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row" >
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-3">
+            
+        </div>
+        <div fxFlex="40%" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 24}" >
+
+            Siddeeqa Institute offers three recurring courses that run throughout the academic year, and several courses that are offered periodically at different times. For detailed information about each of these courses, please visit the individual course pages as well as the FAQs section.
+            <br>
+        </div>
+    </div>
+    <div class="container-background">
+        <br>
+        <br>
+        
+        <!-- Need to add flex layout for 2 Items and check if its working correctly as expected -- row -->
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"  ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%"  fxLayoutAlign="center center">
+                <img src="../../../assets/Images/tile1.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;" ngStyle.lt-sm="text-align:center">
+                <h3 fxFlex="none" class="color-group">Traditional Islamic Education (‘Alima) Program</h3>
+                <h5 fxFlex="none" class="color-group-brown"><b>Duration :</b> 5 years of full time students</h5>
+                <br>
+                <h5 fxFlex="none" class="color-group">Admissions Open : May</h5>
+                <h5 fxFlex="none" class="color-group">Classes Start : July/August</h5>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"  ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%"  fxLayoutAlign="center center">
+                <img src="../../../assets/Images/tile2.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;" ngStyle.lt-sm="text-align:center">
+                <h3 fxFlex="none" class="color-group">Flexible Essential Islamic Education Program</h3>
+                <h5 fxFlex="none" class="color-group-brown"><b>Duration : 2 years for full time students</b></h5>
+                <br>
+                <h5 fxFlex="none" class="color-group">Admissions Open : May and December</h5>
+                <h5 fxFlex="none" class="color-group">Classes Start : July/August and January</h5>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"  ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%"  fxLayoutAlign="center center">
+                <img src="../../../assets/Images/tile3.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;" ngStyle.lt-sm="text-align:center">
+                <h3 fxFlex="none" class="color-group">Qur’anic Arabic Course</h3>
+                <h5 fxFlex="none" class="color-group-brown"><b>Duration : 1.5 years</b></h5>
+                <br>
+                <h5 fxFlex="none" class="color-group">Admissions Open : May</h5>
+                <h5 fxFlex="none" class="color-group">Classes Start : July/August</h5>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"  ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%"  fxLayoutAlign="center center">
+                <img src="../../../assets/Images/tile4.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;" ngStyle.lt-sm="text-align:center">
+                <h3 fxFlex="none" class="color-group">Short Courses, Workshops and Lectures</h3>
+                <h5 fxFlex="none" class="color-group-brown"><b>Duration : Variable</b></h5>
+                <br>
+                <h5 fxFlex="none" class="color-group">Admissions Open : Year round</h5>
+                <h5 fxFlex="none" class="color-group">Classes Start : Year round</h5>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
 </div>
 
 <div *ngIf="subMenu == 'traditional_islamic_education'">

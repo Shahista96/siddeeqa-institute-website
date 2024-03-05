@@ -22,6 +22,7 @@ import { MadrasahComponent } from './contents/madrasah/madrasah.component';
 import { WellnessCenterComponent } from './contents/wellness-center/wellness-center.component';
 import { ContactUsComponent } from './contents/contact-us/contact-us.component';
 import { CarouselModule } from 'primeng/carousel';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -49,7 +50,8 @@ MatIconModule,
 FlexLayoutModule,
 MatSidenavModule,
 MatListModule,
-CarouselModule
+CarouselModule,
+MatCardModule
 
   ],
   providers: [],

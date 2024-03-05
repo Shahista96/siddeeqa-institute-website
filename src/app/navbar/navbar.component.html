@@ -5,15 +5,15 @@
 <div style="height: 100vh;">
     <mat-toolbar color="primary">
         <mat-toolbar-row>
-            <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+            <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm ngStyle.lt-sm="float:left">
                 <mat-icon>menu</mat-icon>
             </button>
             <img src="../../assets/Logos/siddeeqa logo.png" alt="Siddeeqa Institute" height="50" weight="50">
-            <span class="spacer"></span>
-            <button mat-button (click)="menuChanged('home','')">Home</button>
-            <button mat-button (click)="menuChanged('exemplars','')">Our Exemplars</button>
-            <button mat-button [matMenuTriggerFor]="madrasah">Madrasah</button>
-            <mat-menu #madrasah="matMenu">
+            <span class="spacer" fxHide.lt-sm></span>
+            <button mat-button fxHide.lt-sm (click)="menuChanged('home','')">Home</button>
+            <button mat-button fxHide.lt-sm (click)="menuChanged('exemplars','')">Our Exemplars</button>
+            <button mat-button fxHide.lt-sm [matMenuTriggerFor]="madrasah">Madrasah</button>
+            <mat-menu fxHide.lt-sm #madrasah="matMenu">
                 <button mat-menu-item (click)="menuChanged('madrasah','our_courses')">Our Courses</button>
                 <button mat-menu-item (click)="menuChanged('madrasah','traditional_islamic_education')">Traditional Islamic Education(Aalima)</button>
                 <button mat-menu-item (click)="menuChanged('madrasah','essential_islamic_education')">Essential Islamic Education Course</button>
@@ -25,8 +25,8 @@
                 <button mat-menu-item (click)="menuChanged('madrasah','resources_for_teachers')">Resources for Teachers</button>
                 <button mat-menu-item (click)="menuChanged('madrasah','fiqh_resources')">Fiqh Resources</button>
             </mat-menu>
-            <button mat-button [matMenuTriggerFor]="womensWellnessCenter">Women's Wellness Center</button>
-            <mat-menu #womensWellnessCenter="matMenu">
+            <button fxHide.lt-sm mat-button [matMenuTriggerFor]="womensWellnessCenter">Women's Wellness Center</button>
+            <mat-menu fxHide.lt-sm #womensWellnessCenter="matMenu">
                 <button mat-menu-item (click)="menuChanged('wellness_center','about_center')" >About the Center</button>
                 <button mat-menu-item (click)="menuChanged('wellness_center','support_groups')">Support Groups</button>
                 <button mat-menu-item (click)="menuChanged('wellness_center','revert_support_services')">Revert Support Services</button>
@@ -34,21 +34,22 @@
                 <button mat-menu-item (click)="menuChanged('wellness_center','resources_for_woman')">Resources for Women</button>
                 <button mat-menu-item (click)="menuChanged('wellness_center','resources_for_muslim_mothers')">Resources for Muslim Mothers</button>
             </mat-menu>
-            <button mat-button [matMenuTriggerFor]="faqs">FAQs</button>
-            <mat-menu #faqs="matMenu">
+            <button fxHide.lt-sm mat-button [matMenuTriggerFor]="faqs">FAQs</button>
+            <mat-menu fxHide.lt-sm #faqs="matMenu">
                 <button mat-menu-item (click)="menuChanged('faqs','siddeeqa_institute')">Siddeeqa Institute</button>
                 <button mat-menu-item (click)="menuChanged('faqs','financial_matters')">Financial Matters</button>
                 <button mat-menu-item (click)="menuChanged('faqs','technical_matters')">Technical Matters</button>
                 <button mat-menu-item (click)="menuChanged('faqs','admission_information')">Admission Information</button>
                 <button mat-menu-item (click)="menuChanged('faqs','miscellaneous')">Miscellaneous</button>
             </mat-menu>
-            <button mat-button (click)="menuChanged('contact_us','')">Contact Us</button>
+            <button fxHide.lt-sm mat-button (click)="menuChanged('contact_us','')">Contact Us</button>
         </mat-toolbar-row>
     </mat-toolbar>
     
     <mat-sidenav-container fxFlexFill>
         <mat-sidenav #sidenav>
             <mat-nav-list>
+                <button mat-button (click)="menuChanged('exemplars','')">Our Exemplars</button><br>
                 <button mat-button [matMenuTriggerFor]="madrasah">Madrasah</button>
                 <mat-menu #madrasah="matMenu">
                     <button mat-menu-item>Our Courses</button>
@@ -56,7 +57,6 @@
                     <button mat-menu-item>Essential Islamic Education Course</button>
                     <button mat-menu-item>TO-DO (Add the rest)</button>
                 </mat-menu>
-                <a href="#" mat-list-item>Menu Item 2</a>
                 <a href="#" mat-list-item>Menu Item 3</a>
                 <a href="#" mat-list-item>Menu Item 4</a>
                 <a href="#" mat-list-item>Menu Item 5</a>
