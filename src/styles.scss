@@ -141,3 +141,10 @@ body {
   text-align: center;
   padding: 4%;
 }
+
+.bg-simple{
+  background-color: rgba(248, 247, 216);
+  background: url('../src/assets/Images/bg_simple.jpg');
+  
+  background-blend-mode: lighten;
+}

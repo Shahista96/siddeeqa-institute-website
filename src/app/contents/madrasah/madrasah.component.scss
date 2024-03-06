@@ -8,6 +8,16 @@
     background-color: rgba(248, 247, 216, 0.7);
 }
 
+.background_container_courses_essential{
+    background-image: url('../../../assets/Images/background.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+    background-blend-mode: lighten;
+    background-color: rgba(248, 247, 216, 0.7);
+}
+
 .container-3 {
     background: url('../../../assets/Images/caligraphy_1.jpg');
     background-position: center;
@@ -18,9 +28,19 @@
 
 }
 
+.container-4 {
+    background: url('../../../assets/Images/container-4.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+    background-color: rgba(248, 247, 216, 0.2);
+    background-blend-mode: lighten;
+
+}
+
 .container-background {
     background-size: cover;
-
     background-color: rgba(248, 247, 216);
     background: url('../../../assets/Images/bg_simple.jpg');
     height: 50%;
@@ -57,3 +77,4 @@ th, td {
     padding: 8px;
 }
 tr:nth-child(odd) {background-color: #f2f2f2;}
+
