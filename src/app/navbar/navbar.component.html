@@ -50,17 +50,10 @@
         <mat-sidenav #sidenav>
             <mat-nav-list>
                 <button mat-button (click)="menuChanged('exemplars','')">Our Exemplars</button><br>
-                <button mat-button [matMenuTriggerFor]="madrasah">Madrasah</button>
-                <mat-menu #madrasah="matMenu">
-                    <button mat-menu-item>Our Courses</button>
-                    <button mat-menu-item>Traditional Islamic Education(Aalima)</button>
-                    <button mat-menu-item>Essential Islamic Education Course</button>
-                    <button mat-menu-item>TO-DO (Add the rest)</button>
-                </mat-menu>
-                <a href="#" mat-list-item>Menu Item 3</a>
-                <a href="#" mat-list-item>Menu Item 4</a>
-                <a href="#" mat-list-item>Menu Item 5</a>
-                <a href="#" mat-list-item>Menu Item 6</a>
+                <button mat-button [matMenuTriggerFor]="madrasah">Madrasah</button><br>
+                <button mat-button [matMenuTriggerFor]="womensWellnessCenter">Women’s Wellness Center</button><br>
+                <button mat-button [matMenuTriggerFor]="faqs">FAQs</button><br>
+                <button mat-button (click)="menuChanged('contact_us','')">Contact Us</button><br>
             </mat-nav-list>
         </mat-sidenav>
 

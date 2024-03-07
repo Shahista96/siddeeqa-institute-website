@@ -1,0 +1,49 @@
+
+
+.background_container_wellness{
+    background-image: url('../../../assets/Images/title_container_4.jpg');
+}
+.background_container_wellness_support{
+    background-image: url('../../../assets/Images/background-container-5.jpg');
+}
+.background_container_wellness_revert{
+    background-image: url('../../../assets/Images/title_container_6.webp');
+}
+.container-1 {
+    background: url('../../../assets/Images/background_container_1.jpeg');
+
+}
+
+.container-2 {
+    background: url('../../../assets/Images/container-5.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+    background-blend-mode: lighten;
+    background-color: rgba(248, 247, 216, 0.2);
+
+}
+
+.container-3 {
+    background: url('../../../assets/Images/container_6.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+    background-blend-mode: lighten;
+    background-color: rgba(248, 247, 216, 0.7);
+
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(odd) {background-color: #f2f2f2;}

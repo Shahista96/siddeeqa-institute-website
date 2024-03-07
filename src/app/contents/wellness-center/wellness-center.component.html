@@ -1,15 +1,174 @@
-
 <!-- Siddeeqa Institute -->
 <div *ngIf="subMenu == 'about_center'">
-    <p> content for about the center</p>
+    <div class="background_container_wellness default-background-theme">
+        <div class="container">
+            <h1 class="menu-headers">
+                WOMEN'S<br>WELLNESS CENTER
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-1 default-background-theme">
+
+        </div>
+        <div fxFlex="40%" fxLayoutAlign="center center" style="text-align: justify;padding: 3%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 16}">
+            Siddeeqa Institute is excited to launch its Women’s Wellness Center, aimed at the holistic wellness of
+            Muslim women. <br><br>
+            We believe that while the most important aspect of our existence is our spiritual self and its health and
+            development, this is not possible without the soundness of the rest, and holistic healing and nurturing are
+            necessary to fulfil the purpose of our creation and to strengthen our connection with our Creator, and hence
+            actualize our true potential.
+            <br><br>
+        </div>
+    </div>
+    <div ngStyle.gt-sm="width:60%;margin-left:20%;margin-right:20%;padding-top:5%"
+        ngStyle.lt-sm="width:90%;margin-left:5%;margin-right:5%;padding-top:4%;">
+        <mat-accordion multi>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Aspects of Holistic Wellness</mat-panel-title>
+                </mat-expansion-panel-header>
+                <table>
+                    <tr>
+                        <td>Physical Wellness</td>
+                        <td>Includes proper nutrition, adequate exercise, timely identification of diseases, protection
+                            from bodily harm, sleep management, weight management; menstruation, birth control,
+                            pregnancy, childbirth and post-natal care, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Mental Wellness</td>
+                        <td>Includes mindfulness, self-awareness, positive self-image, positive thinking, time
+                            management, planning, productivity, identifying the need for mental health support, coping
+                            with adversity, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Emotional Wellness</td>
+                        <td>Includes accurate identification and appropriate expression of emotions, self-esteem
+                            building, optimism, stress management, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Intellectual Wellness</td>
+                        <td>Includes opinion formation in an era of information overload, sifting between reliable and
+                            unreliable sources, critical thinking, creativity, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Social Wellness</td>
+                        <td>Includes building healthy relationships, identifying and managing toxic relationships,
+                            communication skills, community-building, social activism, conflict resolution, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Environmental Wellness</td>
+                        <td>Includes living in harmony with nature, minimizing harm to the environment, protecting
+                            ourselves from the impact of environmental disasters, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Financial Wellness</td>
+                        <td>Includes career counselling, discussion of work from home options, ensuring shari'ah
+                            compliancy of small businesses, budgeting, saving, investment. </td>
+                    </tr>
+                    <tr>
+                        <td>Spiritual Wellness</td>
+                        <td>Includes finding a higher purpose, strengthening and deepening our relationship with the
+                            Creator ﷻ, learning about and acting in accordance with His Will, being concerned about the
+                            Hereafter, mindfulness in worship, etc.</td>
+                    </tr>
+                </table>
+            </mat-expansion-panel>
+            <br>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Basic Expectations From Students</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul>
+                    <li>4 hours of class time per week</li>
+                    <li>Assignments on weekends requiring 1 to 2 hours</li>
+                </ul>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
 </div>
 
 <div *ngIf="subMenu == 'support_groups'">
-    <p> Support Groups</p>
+    <div class="background_container_wellness_support default-background-theme">
+        <div class="container">
+            <h1 class="menu-headers">
+                SUPPORT<br>GROUPS
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-2 default-background-theme">
+
+        </div>
+        <div fxFlex="40%" style="text-align: justify;padding: 3%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 16}" fxLayout="column">
+            These are small groups of women who are facing similar challenges, each led by a trained facilitator, in
+            which the women share their experiences in a structured way, and in doing so benefit themselves and others.
+            Some of the issues around which support groups may be based include:<br><br>
+            •  Recent conversion to Islam <br>•  Being a minority in a non-Muslim country<br>•  Struggles in acting upon deen<br>•  Challenges in co-educational settings<br>•  Challenges in the workplace<br>•  Settling into married life<br>•  Parenting<br>•  Loss of a loved one<br>
+            <br>
+            ​Since one support group will not include more than 15 women, admission will be given to those who most
+            direly need it, and priority will be given to Siddeeqa Institute students.
+            <br><br>
+            Please contact our Support Group Coordinator if you wish to be notified via Whatsapp when a support group is
+            offered.
+            <br><br>
+            <b>Disclaimer:</b> These support groups will not handle life-threatening issues like addictions, substance
+            abuse, eating disorders, suicidal tendencies, or clinical conditions like depression or anxiety; they will
+            also not be a substitute for medication and therapy.
+            <br><br>
+        </div>
+    </div>
+    <div ngStyle.gt-sm="width:60%;margin-left:20%;margin-right:20%;padding-top:5%"
+        ngStyle.lt-sm="width:90%;margin-left:5%;margin-right:5%;padding-top:4%;">
+        <mat-accordion multi>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>The purpose and benefits of support groups include:</mat-panel-title>
+                </mat-expansion-panel-header>
+                <table>
+                    <tr>
+                        <td>First, talking about concerns and giving voice to associated thoughts and feelings in order to more clearly define the problem and gain greater self-awareness.</td>
+                    </tr>
+                    <tr>
+                        <td>Second, eliminating a sense of isolation and gaining strength and hope.</td>
+                    </tr>
+                    <tr>
+                        <td>Third, learning strategies for dealing with the problems at hand, and picking up mental and emotional coping mechanisms, from each other and from the group facilitator.</td>
+                    </tr>
+                </table>
+            </mat-expansion-panel>
+            <br>
+            
+        </mat-accordion>
+    </div>
 </div>
 
 <div *ngIf="subMenu == 'revert_support_services'">
-    <p> Revert Support Services</p>
+    <div class="background_container_wellness_revert default-background-theme">
+        <div class="container">
+            <h1 class="menu-headers">
+                REVERT SUPPORT<br>SERVICES
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-3 default-background-theme">
+
+        </div>
+        <div fxFlex="40%" style="text-align: justify;padding: 3%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 16}" fxLayout="column">
+            Siddeeqa Institute provides support to reverted Muslimahs by offering  the following services:
+            <ul>
+                <li>Individual and group classes to learn how to read the Blessed Qur'an</li>
+                <li>Short courses in basic Islamic knowledge </li>
+                <li>A fiqh question and answer WhatsApp group of reverted Muslimahs only, in which they can freely and comfortably ask any questions related to Islamic rulings </li>
+                <li>Facilitator-led support groups for new Muslimahs</li>
+            </ul>
+            <br>If you are interested in availing any of these services, please contact our Revert Support Services Coordinator.   <br>
+        </div>
+    </div>
 </div>
 
 <div *ngIf="subMenu == 'workshops_and_services'">
