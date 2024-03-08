@@ -172,7 +172,23 @@
 </div>
 
 <div *ngIf="subMenu == 'workshops_and_services'">
-    <p> Workshops and lectures</p>
+    <div class="background_container_wellness_workshop default-background-theme">
+        <div class="container">
+            <h1 class="menu-headers">
+                WORKSHOPS &<br>LECTURES
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-4 default-background-theme">
+
+        </div>
+        <div fxFlex="40%" style="text-align: justify;padding: 3%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 16}" fxLayout="column">
+            Siddeeqa Institute's Women’s Wellness Center will offer a wide range of workshops and lectures throughout the year on matters related to women’s holistic wellness. These sessions will be conducted by experts in their respective fields, and we will be collaborating with highly qualified and committed women around the world to bring you these programs.​
+            <br><br>To register for a short course, workshop, or lecture, please message the number given on the relevant poster, or contact the Women's Wellness Center Coordinator.<br>
+        </div>
+    </div>
 </div>
 
 <div *ngIf="subMenu == 'resources_for_woman'">

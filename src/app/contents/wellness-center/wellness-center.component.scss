@@ -13,7 +13,9 @@
     background: url('../../../assets/Images/background_container_1.jpeg');
 
 }
-
+.background_container_wellness_workshop{
+    background-image: url('../../../assets/Images/background-container-6.jpeg');
+}
 .container-2 {
     background: url('../../../assets/Images/container-5.jpeg');
     background-position: center;
@@ -33,6 +35,17 @@
     background-attachment: fixed; /* <= This one */
     background-blend-mode: lighten;
     background-color: rgba(248, 247, 216, 0.7);
+
+}
+
+.container-4 {
+    background: url('../../../assets/Images/container-4.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+    background-blend-mode: lighten;
+    background-color: rgba(248, 247, 216, 0.2);
 
 }
 
