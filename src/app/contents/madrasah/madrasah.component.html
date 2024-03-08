@@ -208,7 +208,8 @@
                         <td>
                             Aqeedah (Islamic Creed)</td>
                         <td>Complete Al-Aqeedah al-Tahawiyyah with explanation Matan al-Sanusiyah with explanation
-                            <br>Contemporary Philosophical Challenges</td>
+                            <br>Contemporary Philosophical Challenges
+                        </td>
                     </tr>
                     <tr>
                         <td>Arabic</td>
@@ -442,12 +443,94 @@
 </div>
 
 <div *ngIf="subMenu == 'short_courses'">
-    <p> Short Courses, Workshops and Lectures</p>
+    <div class="background_container_short_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                SHORT COURSES,<br>WORKSHOPS AND LECTURES
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-5">
+
+        </div>
+        <div fxFlex="40%" fxLayout="column" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;"
+            fxFlex.lt-sm="100%" [ngStyle.gt-sm]="{'font-size.px': 16}">
+            To promote knowledge of the deen and to inspire women to take their religious responsibilities seriously and
+            advance spiritually, every semester we offer short courses, workshops, and lectures both for lay persons and
+            for madrasah students and graduates. These are conducted mostly by our own teachers and sometimes by guest
+            speakers who are experts in an area. Short courses are typically conducted in English and Urdu, but will
+            also be offered in other languages such as Bahasa Melayu going forward insha'Allah. Courses that have
+            recently been offered include:
+            <br>
+            <ul>
+                <li>Complete Tafsir of the Blessed Qur’an</li>
+                <li>Biography of the Prophet ﷺ</li>
+                <li>Ghusl & Kafn Workshop</li>
+                <li>Fiqh of Menstruation, Post-Natal Bleeding, and Vaginal Discharge</li>
+                <li>Shafi'i Fiqh Series Part 1: Fiqh of Purification (Taharah)</li>
+                <li>Preparing for Ramadan</li>
+            </ul>
+            To register for a short course, workshop, or lecture, please message the number given on the relevant
+            poster, or contact the Short Courses Coordinator.
+            <br><br>
+        </div>
+    </div>
+    <div class="carousel" ngStyle.lt-sm="width:100%">
+        <p-carousel padding=0 [value]="short_images" [numVisible]="1" [numScroll]="1" [circular]="true"
+            [responsiveOptions]="responsiveOptions" [autoplayInterval]="3000">
+            <ng-template let-product pTemplate="item">
+                <div class="surface-border border-round m-2 text-center py-5 px-3">
+                    <div class="mb-8">
+                        <img src="{{product}}" [alt]="product" class="w-6 shadow-2"
+                            style="max-height: 70%; max-width: 100%;" />
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
 </div>
 
 
 <div *ngIf="subMenu == 'postgraduate_center'">
-    <p> Postgraduate Center</p>
+    <div class="background_container_post_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                POSTGRADUATE<br>CENTER
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-6">
+
+        </div>
+        <div fxFlex="40%" fxLayout="column" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;"
+            fxFlex.lt-sm="100%" [ngStyle.gt-sm]="{'font-size.px': 16}">
+            Siddeeqa Institute regularly offers year-long, semester-long and shorter courses for graduates of its own 'alima program, and similar programs at other institutes, to provide opportunities for continued learning and enrichment. Some of these courses may also be open to current students of 'alima courses elsewhere, who have completed at least two or three years of study in their respective programs (criteria varies according to the course). We also offer teacher training for 'alimas. Some courses that have been offered in the past include:
+            <br>
+            <ul>
+                <li>Tafsir of Surah al-Baqarah from Tafsir al-Jalalayn</li>
+                <li>Shama’il (Attributes) of the Prophet ﷺ from Al-Shama'il al-Muhammadiyyah</li>
+                <li>Ulum al-Qur'an (Sciences of the Qur'an)</li>
+                <li>Training for Teachers of Tafsir</li>
+            </ul>
+            To register for a short course, workshop, or lecture, please message the number given on the relevant poster, or contact the Short Courses Coordinator.
+            <br><br>
+        </div>
+    </div>
+    <div class="carousel" ngStyle.lt-sm="width:100%">
+        <p-carousel padding=0 [value]="post_images" [numVisible]="1" [numScroll]="1" [circular]="true"
+            [responsiveOptions]="responsiveOptions" [autoplayInterval]="3000">
+            <ng-template let-product pTemplate="item">
+                <div class="surface-border border-round m-2 text-center py-5 px-3">
+                    <div class="mb-8">
+                        <img src="{{product}}" [alt]="product" class="w-6 shadow-2"
+                            style="max-height: 70%; max-width: 100%;" />
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
 </div>
 
 <div *ngIf="subMenu == 'our_teachers'">
@@ -471,7 +554,8 @@
                     alt="Caligraphy" />
             </div>
             <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
-                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Summayah Siddique</b></h3>
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Summayah
+                        Siddique</b></h3>
                 <p fxFlex="none">Ustadha Sumayyah Siddique was born and raised in Manchester, UK. She studied at Jami’ah
                     Al- Kauthar, a 6-year dar al-ulum for girls situated in Lancaster, UK. She has been teaching for the
                     last two decades since graduating in 2002, including 18 years of experience teaching tajweed. She
@@ -492,7 +576,8 @@
                     alt="Caligraphy" />
             </div>
             <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
-                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Zainab Patel</b></h3>
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Zainab
+                        Patel</b></h3>
                 <p fxFlex="none">Ustadha Zainab Patel was born and raised in London, UK and studied the traditional
                     Dars-e-Nizami curriculum at Jami’ah al-Rawdah in London, UK. Thereafter, she studied Ifta at
                     Whitethread Institute, UK. She has taught fiqh alongside other subjects in madrasahs in London and
@@ -511,7 +596,8 @@
                     alt="Caligraphy" />
             </div>
             <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
-                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Asiya Waza</b></h3>
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Asiya Waza</b>
+                </h3>
                 <p fxFlex="none">Ustadha Asiya Waza was born and raised in London, UK. She pursued her 'alimiyyah
                     studies at Jami’ah al-Rawdah in London, UK, alongside her university studies in biomaterials. Since
                     completing her 'alima studies she has taught a variety of age groups ranging from children to adults
@@ -530,7 +616,8 @@
                     alt="Caligraphy" />
             </div>
             <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
-                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Saira AbuBakr</b></h3>
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Saira
+                        AbuBakr</b></h3>
                 <p fxFlex="none">Ustadha Saira Abu Bakr (Ummal Fadl) studied the Sacred Sciences, including her fard ayn
                     knowledge, primarily under Shaykh Salik bin Sidina (West Africa) since 2002. Some of the aqeedah
                     texts she has studied include, `Aqeedah Tahāwiyyah, Jawharah and Ummal Barahin (Sanusiyah). In
@@ -557,7 +644,8 @@
                     alt="Caligraphy" />
             </div>
             <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
-                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Kulsoom Shayaan Essa</b></h3>
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Kulsoom
+                        Shayaan Essa</b></h3>
                 <p fxFlex="none">Ustadha Kulsoom Esa grew up in the USA and then moved to Pakistan with her family so
                     she could formally acquire knowledge of the deen. She completed the 'alima course with an emphasis
                     on the Arabic language, and has been teaching with Siddeeqa Institute since its inception. She
@@ -575,7 +663,8 @@
                     alt="Caligraphy" />
             </div>
             <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
-                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Mahjabeen Umar</b></h3>
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Mahjabeen
+                        Umar</b></h3>
                 <p fxFlex="none">Ustadha Mahjabeen Umar graduated with a degree in Computer Science, and worked as a
                     Graphic Designer and Web Interface Developer at a US-based software startup for two years before
                     moving on to freelance website development and graphic design projects. She has served as
@@ -597,7 +686,8 @@
                     alt="Caligraphy" />
             </div>
             <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
-                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Nassuha Ebrahim</b></h3>
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Nassuha
+                        Ebrahim</b></h3>
                 <p fxFlex="none">Ustadha Nassuha Ebrahim completed her 'alima studies at Siddeeqa Institute and was
                     among the top students in her batch. Thereafter, she completed the Sibawayh Intensive Arabic
                     Program, the Advanced Islamic Jurisprudence Program, and the Detailed Fiqh of Menstruation Course
@@ -615,7 +705,8 @@
                     alt="Caligraphy" />
             </div>
             <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
-                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Naslee Fathima</b></h3>
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Naslee
+                        Fathima</b></h3>
                 <p fxFlex="none">Ustadha Naslee Fathima did her Bachelor's in Physics and Master’s in Computer
                     Application. She then switched fields and received training in Cognitive Behavioral Therapy, Neuro
                     Linguistic Programming, Solution Focused Brief Therapy and began working as a life coach,
@@ -633,7 +724,8 @@
                     alt="Caligraphy" />
             </div>
             <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
-                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Ilhaam Sadeck</b></h3>
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Ilhaam
+                        Sadeck</b></h3>
                 <p fxFlex="none">Ustadha Ilhaam Sadeck completed her hifz at Jami'at ul Qurra in Schaapkraal, South
                     Africa. Thereafter she completed the four-year higher diploma ('alima) course at Dar-un-Na'im,
                     Wynberg. She started teaching in 2018 and have since taught students both in madrasah and privately.
@@ -652,7 +744,8 @@
                     alt="Caligraphy" />
             </div>
             <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
-                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Khadijah Ali</b></h3>
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Khadijah
+                        Ali</b></h3>
                 <p fxFlex="none">Ustadha Khadijah Ali did her 'alima course from Nur ul Ilm Institute, UAE. She has been
                     teaching Qur'an and Tajweed for many years including at Siddeeqa Institute, where she also teaches
                     Arabic grammar. She has served as a writer and then a board member for The Truth Magazine, published
@@ -669,7 +762,8 @@
                     alt="Caligraphy" />
             </div>
             <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
-                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Dr. Tawhida Fazili</b></h3>
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Dr. Tawhida
+                        Fazili</b></h3>
                 <p fxFlex="none">Ustadha Tawhida Fazili has two post-graduate degrees, one in maternal and child-care,
                     and the other in microbiology, and has worked as a researcher and professor in the field of
                     microbiology. She has done the ‘alima course from Siddeeqa Institute and has worked with children,
@@ -692,7 +786,8 @@
                     alt="Caligraphy" />
             </div>
             <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
-                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Zainab bint Amran</b></h3>
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Zainab bint
+                        Amran</b></h3>
                 <p fxFlex="none">Ustadha Zainab bint Amran completed her hifz at the age of 14 and later was granted
                     'ijazah to teach the rewayah of hafs from two turuq: via Al-Shatibiyyah and via Tayyibah An-Nashr.
                     She studied the matan of Hirz al-Amani wa Wajh al-Tahani by al-Shatibi and received ijazah in the
@@ -730,7 +825,7 @@
         <div class="container-background">
             <br>
             <br>
-    
+
             <!-- Need to add flex layout for 2 Items and check if its working correctly as expected -- row -->
             <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
                 ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
@@ -743,7 +838,8 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Tarawih FAQs</h3>
                     <h5 fxFlex="none" class="color-group-brown">Basic Rulings Concerning Tarawih Prayer</h5>
-                    <button mat-raised-button color="primary" (click)="openPdf('Tarawih')" style="width: max-content;color:white">View PDF</button>
+                    <button mat-raised-button color="primary" (click)="openPdf('Tarawih')"
+                        style="width: max-content;color:white">View PDF</button>
                     <br>
                 </div>
             </div>
@@ -760,12 +856,13 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Zakat FAQs</h3>
                     <h5 fxFlex="none" class="color-group-brown">Basic Rulings Concerning Zakat</h5>
-                    <button mat-raised-button color="primary" (click)="openPdf('Zakat')" style="width: max-content; color:white">View PDF</button>
+                    <button mat-raised-button color="primary" (click)="openPdf('Zakat')"
+                        style="width: max-content; color:white">View PDF</button>
                 </div>
             </div>
             <br>
             <br>
         </div>
-    
+
     </div>
 </div>

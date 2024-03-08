@@ -47,5 +47,6 @@ export class NavbarComponent implements OnInit {
     this.selectedContent = mainMenu;
     this.subMenu = subMenu;
   }
+
   
 }

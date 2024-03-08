@@ -8,6 +8,26 @@
     background-color: rgba(248, 247, 216, 0.7);
 }
 
+.background_container_short_courses{
+    background-image: url('../../../assets/Images/madrasah/background_1.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+    background-blend-mode: lighten;
+    background-color: rgba(248, 247, 216, 0.7);
+}
+
+.background_container_post_courses{
+    background-image: url('../../../assets/Images/madrasah/background_2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+    background-blend-mode: lighten;
+    background-color: rgba(248, 247, 216, 0.7);
+}
+
 .background_container_courses_essential{
     background-image: url('../../../assets/Images/background.jpeg');
     background-position: center;
@@ -35,6 +55,28 @@
     background-repeat: no-repeat;
     background-attachment: fixed; /* <= This one */
     background-color: rgba(248, 247, 216, 0.2);
+    background-blend-mode: lighten;
+
+}
+
+.container-5 {
+    background: url('../../../assets/Images/madrasah/container_1.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+    background-color: rgba(248, 247, 216, 0.5);
+    background-blend-mode: lighten;
+
+}
+
+.container-6 {
+    background: url('../../../assets/Images/madrasah/container_2.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+    background-color: rgba(248, 247, 216, 0.5);
     background-blend-mode: lighten;
 
 }
@@ -77,4 +119,19 @@ th, td {
     padding: 8px;
 }
 tr:nth-child(odd) {background-color: #f2f2f2;}
+
+
+:host ::ng-deep p-carousel {
+    //On later realease of PrimeNG, this can be done programmatically with [showIndicators | showNavigators]="false"
+    .p-carousel-indicators {
+      display: none !important;
+    }
+  }
+
+
+.carousel{
+    background-image: url('../../../assets/Images/bg_simple.jpg');
+    background-color: rgba(248, 247, 216);
+    background-size: cover;
+}
 

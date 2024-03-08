@@ -1,53 +1,50 @@
 
-<header>
-
-
 <div style="height: 100vh;">
-    <mat-toolbar color="primary">
-        <mat-toolbar-row>
-            <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm ngStyle.lt-sm="float:left">
+    <mat-toolbar color="primary"  >
+        <mat-toolbar-row style="height: 8vh" fxFlex.lt-sm="row" fxLayout.lt-sm="start start">
+            <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm >
                 <mat-icon>menu</mat-icon>
             </button>
-            <img src="../../assets/Logos/siddeeqa logo.png" alt="Siddeeqa Institute" height="50" weight="50">
+            <img src="../../assets/Logos/siddeeqa logo.png" alt="Siddeeqa Institute" height="50" weight="50" (click)="menuChanged('home','')"/>
             <span class="spacer" fxHide.lt-sm></span>
             <button mat-button fxHide.lt-sm (click)="menuChanged('home','')">Home</button>
             <button mat-button fxHide.lt-sm (click)="menuChanged('exemplars','')">Our Exemplars</button>
             <button mat-button fxHide.lt-sm [matMenuTriggerFor]="madrasah">Madrasah</button>
             <mat-menu fxHide.lt-sm #madrasah="matMenu">
-                <button mat-menu-item (click)="menuChanged('madrasah','our_courses')">Our Courses</button>
-                <button mat-menu-item (click)="menuChanged('madrasah','traditional_islamic_education')">Traditional Islamic Education(Aalima)</button>
-                <button mat-menu-item (click)="menuChanged('madrasah','essential_islamic_education')">Essential Islamic Education Course</button>
-                <button mat-menu-item (click)="menuChanged('madrasah','quranic_arabic_course')">Quranic Arabic Course</button>
-                <button mat-menu-item (click)="menuChanged('madrasah','short_courses')">Short Courses, Workshops & Lectures</button>
-                <button mat-menu-item (click)="menuChanged('madrasah','postgraduate_center')">Postgraduate Centere</button>
-                <button mat-menu-item (click)="menuChanged('madrasah','our_teachers')">Our Teachers (English Courses)</button>
-                <button mat-menu-item *ngIf="false" (click)="menuChanged('madrasah','resources_for_students')">Resources for Students</button>
-                <button mat-menu-item *ngIf="false" (click)="menuChanged('madrasah','resources_for_teachers')">Resources for Teachers</button>
-                <button mat-menu-item (click)="menuChanged('madrasah','fiqh_resources')">Fiqh Resources</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','our_courses')" >Our Courses</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','traditional_islamic_education')" >Traditional Islamic Education(Aalima)</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','essential_islamic_education')" >Essential Islamic Education Course</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','quranic_arabic_course')" >Quranic Arabic Course</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','short_courses')" >Short Courses, Workshops & Lectures</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','postgraduate_center')" >Postgraduate Centere</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','our_teachers')" >Our Teachers (English Courses)</button>
+                <button mat-menu-item *ngIf="false" (click)="menuChanged('madrasah','resources_for_students')" >Resources for Students</button>
+                <button mat-menu-item *ngIf="false" (click)="menuChanged('madrasah','resources_for_teachers')" >Resources for Teachers</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','fiqh_resources')" >Fiqh Resources</button>
             </mat-menu>
             <button fxHide.lt-sm mat-button [matMenuTriggerFor]="womensWellnessCenter">Women's Wellness Center</button>
             <mat-menu fxHide.lt-sm #womensWellnessCenter="matMenu">
-                <button mat-menu-item (click)="menuChanged('wellness_center','about_center')" >About the Center</button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','about_center')">About the Center</button>
                 <button mat-menu-item (click)="menuChanged('wellness_center','support_groups')">Support Groups</button>
-                <button mat-menu-item (click)="menuChanged('wellness_center','revert_support_services')">Revert Support Services</button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','revert_support_services')" >Revert Support Services</button>
                 <button mat-menu-item (click)="menuChanged('wellness_center','workshops_and_services')">Workshops & Lectures</button>
-                <button mat-menu-item (click)="menuChanged('wellness_center','resources_for_woman')">Resources for Women</button>
-                <button mat-menu-item (click)="menuChanged('wellness_center','resources_for_muslim_mothers')">Resources for Muslim Mothers</button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','resources_for_woman')" >Resources for Women</button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','resources_for_muslim_mothers')" >Resources for Muslim Mothers</button>
             </mat-menu>
             <button fxHide.lt-sm mat-button [matMenuTriggerFor]="faqs">FAQs</button>
             <mat-menu fxHide.lt-sm #faqs="matMenu">
                 <button mat-menu-item (click)="menuChanged('faqs','siddeeqa_institute')">Siddeeqa Institute</button>
-                <button mat-menu-item (click)="menuChanged('faqs','financial_matters')">Financial Matters</button>
-                <button mat-menu-item (click)="menuChanged('faqs','technical_matters')">Technical Matters</button>
-                <button mat-menu-item (click)="menuChanged('faqs','admission_information')">Admission Information</button>
-                <button mat-menu-item (click)="menuChanged('faqs','miscellaneous')">Miscellaneous</button>
+                <button mat-menu-item (click)="menuChanged('faqs','financial_matters')" >Financial Matters</button>
+                <button mat-menu-item (click)="menuChanged('faqs','technical_matters')" >Technical Matters</button>
+                <button mat-menu-item (click)="menuChanged('faqs','admission_information')" >Admission Information</button>
+                <button mat-menu-item (click)="menuChanged('faqs','miscellaneous')" >Miscellaneous</button>
             </mat-menu>
             <button fxHide.lt-sm mat-button (click)="menuChanged('contact_us','')">Contact Us</button>
         </mat-toolbar-row>
     </mat-toolbar>
     
-    <mat-sidenav-container fxFlexFill>
-        <mat-sidenav #sidenav>
+    <mat-sidenav-container >
+        <mat-sidenav #sidenav fxHide.gt-sm>
             <mat-nav-list>
                 <button mat-button (click)="menuChanged('exemplars','')">Our Exemplars</button><br>
                 <button mat-button [matMenuTriggerFor]="madrasah">Madrasah</button><br>
@@ -57,7 +54,7 @@
             </mat-nav-list>
         </mat-sidenav>
 
-        <mat-sidenav-content fxFlexFill>
+        <mat-sidenav-content  style="height: 87vh">
             <app-home *ngIf="selectedContent == 'home'"></app-home>
             <app-exemplars *ngIf="selectedContent == 'exemplars'"></app-exemplars>
             <app-madrasah *ngIf="selectedContent == 'madrasah'" [subMenu]="subMenu"></app-madrasah>
@@ -67,10 +64,19 @@
         </mat-sidenav-content>
     </mat-sidenav-container>
 
+    <div  style=" height: 5vh">
+        <div style="color:white; background-color: #d1ad3a; height: 100%; width: 100h;" class="footer" fxLayout="row" fxLayoutGap="1%" fxLayout="center center">
+                    ©2024 Siddeeqa Institute &nbsp;&nbsp;
+                    <a href="mailto:info@siddeeqainstitute.org"><img src="../../assets/Logos/icons8-mail-60.png" alt="email" height="25px" width="25px"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100092078507261&mibextid=LQQJ4d" target="_blank"><img src="../../assets/Logos/icons8-facebook.svg" alt="facebook" height="25px" width="25px"></a>
+                    <a href="https://instagram.com/siddeeqa.institute" target="_blank"><img src="../../assets/Logos/icons8-instagram (1).svg"  alt="instagram" height="25px" width="25px"></a>
+                    <a href="https://twitter.com/Siddeeqa_Inst" target="_blank"><img src="../../assets/Logos/icons8-twitter.svg" alt="twitter" height="25px" width="25px"></a>
+        </div>
+       
+    </div>
 
     
 </div>
-</header>
 
 <!-- <footer>
     <div>
