@@ -21,8 +21,8 @@
                 <button mat-menu-item (click)="menuChanged('madrasah','short_courses')">Short Courses, Workshops & Lectures</button>
                 <button mat-menu-item (click)="menuChanged('madrasah','postgraduate_center')">Postgraduate Centere</button>
                 <button mat-menu-item (click)="menuChanged('madrasah','our_teachers')">Our Teachers (English Courses)</button>
-                <button mat-menu-item (click)="menuChanged('madrasah','resources_for_students')">Resources for Students</button>
-                <button mat-menu-item (click)="menuChanged('madrasah','resources_for_teachers')">Resources for Teachers</button>
+                <button mat-menu-item *ngIf="false" (click)="menuChanged('madrasah','resources_for_students')">Resources for Students</button>
+                <button mat-menu-item *ngIf="false" (click)="menuChanged('madrasah','resources_for_teachers')">Resources for Teachers</button>
                 <button mat-menu-item (click)="menuChanged('madrasah','fiqh_resources')">Fiqh Resources</button>
             </mat-menu>
             <button fxHide.lt-sm mat-button [matMenuTriggerFor]="womensWellnessCenter">Women's Wellness Center</button>

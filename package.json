@@ -24,6 +24,7 @@
     "@angular/router": "^17.2.3",
     "bootstrap": "^5.3.3",
     "jquery": "^3.7.1",
+    "ngx-extended-pdf-viewer": "^19.4.0-alpha.2",
     "popper.js": "^1.16.1",
     "primeng": "^17.9.0",
     "rxjs": "~7.8.1",
