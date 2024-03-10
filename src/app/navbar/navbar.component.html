@@ -1,5 +1,5 @@
 
-<div style="height: 100vh;">
+<div style="height: 100vh;" *ngIf="selectedLanguage == 'EN'">
     <mat-toolbar color="primary"  >
         <mat-toolbar-row style="height: 8vh" fxFlex.lt-sm="row" fxLayout.lt-sm="start start">
             <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm >
@@ -7,6 +7,10 @@
             </button>
             <img src="../../assets/Logos/siddeeqa logo.png" alt="Siddeeqa Institute" height="50" weight="50" (click)="menuChanged('home','')"/>
             <span class="spacer" fxHide.lt-sm></span>
+            <button mat-button fxHide.lt-sm [matMenuTriggerFor]="lang"><b>{{selectedLanguage}}</b></button>
+            <mat-menu fxHide.lt-sm #lang="matMenu">
+                <button mat-menu-item (click)="menuChanged('language','')" >{{otherLanguage}}</button>
+            </mat-menu>
             <button mat-button fxHide.lt-sm (click)="menuChanged('home','')">Home</button>
             <button mat-button fxHide.lt-sm (click)="menuChanged('exemplars','')">Our Exemplars</button>
             <button mat-button fxHide.lt-sm [matMenuTriggerFor]="madrasah">Madrasah</button>
@@ -46,6 +50,7 @@
     <mat-sidenav-container >
         <mat-sidenav #sidenav fxHide.gt-sm>
             <mat-nav-list>
+                <button mat-button (click)="menuChanged('home','')">Home</button><br>
                 <button mat-button (click)="menuChanged('exemplars','')">Our Exemplars</button><br>
                 <button mat-button [matMenuTriggerFor]="madrasah">Madrasah</button><br>
                 <button mat-button [matMenuTriggerFor]="womensWellnessCenter">Women’s Wellness Center</button><br>
@@ -55,12 +60,12 @@
         </mat-sidenav>
 
         <mat-sidenav-content  style="height: 87vh">
-            <app-home *ngIf="selectedContent == 'home'"></app-home>
-            <app-exemplars *ngIf="selectedContent == 'exemplars'"></app-exemplars>
-            <app-madrasah *ngIf="selectedContent == 'madrasah'" [subMenu]="subMenu"></app-madrasah>
-            <app-wellness-center *ngIf="selectedContent == 'wellness_center'" [subMenu]="subMenu"></app-wellness-center>
-            <app-faqs *ngIf="selectedContent == 'faqs'" [subMenu]="subMenu"></app-faqs>
-            <app-contact-us *ngIf="selectedContent == 'contact_us'"></app-contact-us>        
+            <app-home *ngIf="selectedContent == 'home'" [language]="selectedLanguage"></app-home>
+            <app-exemplars *ngIf="selectedContent == 'exemplars'" [language]="selectedLanguage"></app-exemplars>
+            <app-madrasah *ngIf="selectedContent == 'madrasah'" [subMenu]="subMenu" [language]="selectedLanguage"></app-madrasah>
+            <app-wellness-center *ngIf="selectedContent == 'wellness_center'" [subMenu]="subMenu" [language]="selectedLanguage"></app-wellness-center>
+            <app-faqs *ngIf="selectedContent == 'faqs'" [subMenu]="subMenu" [language]="selectedLanguage"></app-faqs>
+            <app-contact-us *ngIf="selectedContent == 'contact_us'" [language]="selectedLanguage"></app-contact-us>        
         </mat-sidenav-content>
     </mat-sidenav-container>
 
@@ -74,13 +79,88 @@
         </div>
        
     </div>
-
-    
 </div>
 
-<!-- <footer>
-    <div>
-        Hello world
-    </div>
+<!---------------------- Selected Language Is URDU ------------------------------------>
 
-</footer> -->
+<div style="height: 100vh;" *ngIf="selectedLanguage == 'UR'">
+    <mat-toolbar color="primary"  >
+        <mat-toolbar-row style="height: 8vh" fxFlex.lt-sm="row" fxLayout.lt-sm="start start">
+            <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm >
+                <mat-icon>menu</mat-icon>
+            </button>
+            <img src="../../assets/Logos/siddeeqa logo.png" alt="Siddeeqa Institute" height="50" weight="50" (click)="menuChanged('home','')"/>
+            <span class="spacer" fxHide.lt-sm></span>
+            <button mat-button fxHide.lt-sm [matMenuTriggerFor]="lang"><b>{{selectedLanguage}}</b></button>
+            <mat-menu fxHide.lt-sm #lang="matMenu">
+                <button mat-menu-item (click)="menuChanged('language','')" >{{otherLanguage}}</button>
+            </mat-menu>
+            <button mat-button fxHide.lt-sm (click)="menuChanged('home','')">ہوم پیج</button>
+            <button mat-button fxHide.lt-sm (click)="menuChanged('exemplars','')">مثالی شخصیات</button>
+            <button mat-button fxHide.lt-sm [matMenuTriggerFor]="madrasah">مدرسہ</button>
+            <mat-menu fxHide.lt-sm #madrasah="matMenu">
+                <button mat-menu-item (click)="menuChanged('madrasah','our_courses')" >ہمارے کورسز</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','traditional_islamic_education')" >تفصیلی علومِ دینیہ (عالمہ) کورس</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','essential_islamic_education')" >بنیادی اسلامی تعلیم کورس</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','quranic_arabic_course')" >قرآنی عربی کورس</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','short_courses')" >شارٹ کورسز، ورکشاپس اور لیکچرز</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','postgraduate_center')" >پوسٹ گریجویٹ سینٹ</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','our_teachers')" >ہماری معلمات
+                    (اردو کورسز)</button>
+                <button mat-menu-item (click)="menuChanged('madrasah','fiqh_resources')" >فقہی مواد</button>
+            </mat-menu>
+            <button fxHide.lt-sm mat-button [matMenuTriggerFor]="womensWellnessCenter">ویمنز ویلنس سینٹر</button>
+            <mat-menu fxHide.lt-sm #womensWellnessCenter="matMenu">
+                <button mat-menu-item (click)="menuChanged('wellness_center','about_center')">ویمنز ویلنس سینٹر</button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','support_groups')">سپورٹ گروپس</button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','revert_support_services')" >ویمنز ویلنس سینٹر ورکشاپس اور لیکچرز
+                </button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','workshops_and_services')">نو مسلم خواتین کے لیے خدمات</button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','resources_for_woman')" >خواتین کے لیے مواد</button>
+                <button mat-menu-item (click)="menuChanged('wellness_center','resources_for_muslim_mothers')" >مسلمان خواتین کے لئے تربیتِ اولاد سے متعلقہ نصائح</button>
+            </mat-menu>
+            <button fxHide.lt-sm mat-button [matMenuTriggerFor]="faqs">مومی سوالات</button>
+            <mat-menu fxHide.lt-sm #faqs="matMenu">
+                <button mat-menu-item (click)="menuChanged('faqs','siddeeqa_institute')">صدیقہ انسٹیٹیوٹ کے متعلق</button>
+                <button mat-menu-item (click)="menuChanged('faqs','financial_matters')" >مالی معاملات</button>
+                <button mat-menu-item (click)="menuChanged('faqs','technical_matters')" >تکنیکی معاملات</button>
+                <button mat-menu-item (click)="menuChanged('faqs','admission_information')" >داخلے سےمتعلق معاملات</button>
+                <button mat-menu-item (click)="menuChanged('faqs','miscellaneous')" >دیگر معاملات</button>
+            </mat-menu>
+            <button fxHide.lt-sm mat-button (click)="menuChanged('contact_us','')">رابطہ کریں</button>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    
+    <mat-sidenav-container >
+        <mat-sidenav #sidenav fxHide.gt-sm>
+            <mat-nav-list>
+                <button mat-button (click)="menuChanged('home','')">ہوم پیج</button><br>
+                <button mat-button (click)="menuChanged('exemplars','')">مثالی شخصیات</button><br>
+                <button mat-button [matMenuTriggerFor]="madrasah">مدرسہ</button><br>
+                <button mat-button [matMenuTriggerFor]="womensWellnessCenter">ویمنز ویلنس سینٹر</button><br>
+                <button mat-button [matMenuTriggerFor]="faqs">مومی سوالات</button><br>
+                <button mat-button (click)="menuChanged('contact_us','')">رابطہ کریں</button><br>
+            </mat-nav-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content  style="height: 87vh">
+            <app-home *ngIf="selectedContent == 'home'" [language]="selectedLanguage"></app-home>
+            <app-exemplars *ngIf="selectedContent == 'exemplars'" [language]="selectedLanguage"></app-exemplars>
+            <app-madrasah *ngIf="selectedContent == 'madrasah'" [subMenu]="subMenu" [language]="selectedLanguage"></app-madrasah>
+            <app-wellness-center *ngIf="selectedContent == 'wellness_center'" [subMenu]="subMenu" [language]="selectedLanguage"></app-wellness-center>
+            <app-faqs *ngIf="selectedContent == 'faqs'" [subMenu]="subMenu" [language]="selectedLanguage"></app-faqs>
+            <app-contact-us *ngIf="selectedContent == 'contact_us'" [language]="selectedLanguage"></app-contact-us>        
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+    <div  style=" height: 5vh">
+        <div style="color:white; background-color: #d1ad3a; height: 100%; width: 100h;" class="footer" fxLayout="row" fxLayoutGap="1%" fxLayout="center center">
+                    ©2024 Siddeeqa Institute &nbsp;&nbsp;
+                    <a href="mailto:info@siddeeqainstitute.org"><img src="../../assets/Logos/icons8-mail-60.png" alt="email" height="25px" width="25px"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100092078507261&mibextid=LQQJ4d" target="_blank"><img src="../../assets/Logos/icons8-facebook.svg" alt="facebook" height="25px" width="25px"></a>
+                    <a href="https://instagram.com/siddeeqa.institute" target="_blank"><img src="../../assets/Logos/icons8-instagram (1).svg"  alt="instagram" height="25px" width="25px"></a>
+                    <a href="https://twitter.com/Siddeeqa_Inst" target="_blank"><img src="../../assets/Logos/icons8-twitter.svg" alt="twitter" height="25px" width="25px"></a>
+        </div>
+       
+    </div>
+</div>

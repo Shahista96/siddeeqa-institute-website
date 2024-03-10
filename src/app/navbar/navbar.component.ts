@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 interface MenuItem {
@@ -14,6 +13,8 @@ interface MenuItem {
 })
 export class NavbarComponent implements OnInit {
 
+  selectedLanguage:string = 'EN';
+  otherLanguage:string = 'UR';
   selectedContent:string = 'home';
   subMenu:string = '';
 
@@ -35,7 +36,7 @@ export class NavbarComponent implements OnInit {
     menuItem.showSubMenu = !menuItem.showSubMenu;
   }
 
-  constructor(private http: HttpClient) { 
+  constructor() { 
     this.menuItems.forEach(() => this.showDropdown.push(false));
   }
 
@@ -44,8 +45,24 @@ export class NavbarComponent implements OnInit {
   }
 
   menuChanged(mainMenu:string, subMenu:string){
-    this.selectedContent = mainMenu;
-    this.subMenu = subMenu;
+
+    if(mainMenu == 'language'){
+      this.onLanguageChange();
+    }else{
+      this.selectedContent = mainMenu;
+      this.subMenu = subMenu;
+    }
+   
+  }
+
+  onLanguageChange(){
+    if(this.selectedLanguage == 'EN'){
+      this.selectedLanguage = 'UR';
+      this.otherLanguage = 'EN';
+    }else{
+      this.selectedLanguage = 'EN';
+      this.otherLanguage = 'UR';
+    }
   }
 
   

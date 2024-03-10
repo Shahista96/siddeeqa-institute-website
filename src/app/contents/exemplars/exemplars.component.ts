@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-exemplars',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./exemplars.component.scss']
 })
 export class ExemplarsComponent {
+  @Input() language: string = '';
+
 
 }

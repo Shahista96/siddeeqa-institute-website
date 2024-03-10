@@ -10,6 +10,7 @@ import { MatAccordion } from "@angular/material/expansion";
 export class MadrasahComponent {
 
   @Input() subMenu: string = '';
+  @Input() language: string = '';
   responsiveOptions: any[] = [
     {
         breakpoint: '1199px',

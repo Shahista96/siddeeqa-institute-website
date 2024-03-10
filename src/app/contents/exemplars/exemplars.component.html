@@ -1,5 +1,5 @@
 
-<div class="background_container">
+<div class="background_container" *ngIf="language == 'EN'">
     <div class="container">
         <h1 class="menu-headers">
             OUR<br>EXEMPLARS
@@ -22,6 +22,32 @@
             <br>
             <br>
             •  Shaykh Hasan al-Basri <br>•  Shaykha Rabiah Al-Adawiyyah<br>•  Shaykh Junaid Al-Baghdadi<br>•  Imam Abu Hanifah<br>•  Imam Malik bin Anas <br>•  Imam Al-Shafi'i<br>•  Imam Ahmad ibn Hanbal<br>•  Imam Abu Ja'far al-Tahawi<br>•  Imam Abul-Hasan al-Ash’ari<br>•  Imam Abu Mansur al-Maturidi<br>•  Imam Abu Hamid al-Ghazali<br>•  Shaykh Abdul Qadir al-Jilani<br>•  Maulana Jalaluddin Rumi<br>•  Khwaja Mu'eenuddin Chishti<br>•  Khwaja Nizamuddin Awliya<br>•  Khwaja Bahauddin Naqshband Bukhari<br>•  Khwaja Ubaidullah Ahrar <br>•  Shaykh Ahmad Al-Faruqi Sirhindi <br>•  Shah Ghulam Ali Dehlawi<br>•  Shaykh Othman Dan Fodio & Nana Asmau<br>•  Shah Waliullah Muhaddith Dehlawi<br>•  Maulana Qasim Nanotwi <br>•  Maulana Rasheed Ahmad Gangohi<br>•  Khwaja Fazal Ali Quraishi<br>•  Maulana Ashraf Ali Thanwi<br>•  Shaykh Mustafa Sabri<br>•  Allama Zahid Al-Kawthari<br>•  Maulana Husain Ahmad Madani<br>•  Maulana Zakariyya Kandhelwi<br>
+        </div>
+    </div>
+</div>
+
+<!------------------------ URDU --------------->
+
+<div class="background_container" *ngIf="language == 'UR'">
+    <div class="container">
+        <h1 class="menu-headers">
+            مثالی شخصیات
+        </h1>
+    </div>
+    <div fxLayout="row" class="container-3">
+        <div fxFlex="30%" fxHide.lt-sm fxLayoutAlign="end start" style="padding: 4%;">
+            <img src="../../../assets/Images/tile1.webp" fxFlex="65%" height="auto" alt="Caligraphy" />
+        </div>
+        <div fxFlex="70%" fxLayoutAlign="center center" style="text-align: justify;padding: 4%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 24,'padding':'2%'}" >
+
+            <br>
+           
+صدیقہ انسٹیٹیوٹ میں ہم اپنے درج ذیل اسلاف سے نہایت عقیدت اور محبت کا تعلق رکھتے ہیں۔ یہ ایسی عظیم ہستیاں ہیں جنہوں نے اپنی  زندگیاں بھی شریعت اور سنت کے مطابق گزاریں، اور اپنے زمانے کے تقاضوں کے مطابق اللہ    ﷻکے دین کی  عظیم خدمات بھی سر انجام دیں۔ ہم ان حضرات کی شخصیتوں، اور انکے کارناموں سے رہنمائی حاصل کرتے ہیں، اور انکے نقش قدم پر چلنے کی کوشش کرتے ہیں۔ ذیل میں پیش کی گئی فہرست صحابہ کرام ؓ کے بعد شروع ہوتی ہے، کیونکہ صحابہ کرام (رضوان اللہ علیھم اجمعین)  تو سارے ہی ہمارے لیے ستاروں کی مانند ہیں۔ مزید یہ کہ یہ فہرست نا تو جامع ہے اور نہ ہی مانع، لیکن یہاں پیش کرنے کا مقصد دین کے مختلف شعبوں سے ہماری مناسبت ظاہر کرنا ہے۔ 
+            <br>
+            <br>
+            حضرت عمر بن عبد العزیز ؒ • <br> شیخ حسن البصریؒ • <br>شیخہ رابعہ العدویہؒ •  <br> شیخ جنید البغدادیؒ • <br> امام ابو حنیفہؒ • <br> امام مالک ابن انسؒ • <br> امام الشافعیؒ • <br> امام احمد ابن حنبلؒ • <br>  امام ابو جعفر الطحاویؒ • <br>  امام ابو جعفر الطحاویؒ • <br>  امام ابو الحسن الاشعریؒ • <br> امام ابو منصور الماتریدیؒ • <br> امام ابو حامد  الغزالیؒ • <br> شیخ عبد القادر الجیلانیؒ • <br> مولانا جلال الدین الرومیؒ • <br>
+            خواجہ نظام الدین اولیاءؒ • <br>خواجہ بہاؤالدین نقشبند بخاریؒ • <br> خواجہ عبید اللہ احرارؒ • <br> شیخ احمدالفاروقی السرہندیؒ • <br> شاہ غلام علی دہلویؒ • <br>  شاہ غلام علی دہلویؒ • <br>  شاہ ولی اللہ محدث دہلویؒ • <br> مولانا قاسم نانوتویؒ • <br> مولانا رشید احمد گنگوہیؒ • <br> خواجہ فضل علی قریشیؒ • <br> مولانا اشرف علی تھانویؒ • <br> شیخ مصطفیٰ صبریؒ • <br> علامہ زاہد الکوثریؒ • <br>مولانا حسین احمد مدنیؒ • <br>مولانا زکریا کاندھلویؒ • <br>
         </div>
     </div>
 </div>

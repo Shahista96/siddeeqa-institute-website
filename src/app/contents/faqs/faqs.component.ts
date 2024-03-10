@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./faqs.component.scss']
 })
 export class FaqsComponent {
-
+  @Input() language: string = '';
   @Input() subMenu: string = 'siddeeqa_institute';
 
 }
