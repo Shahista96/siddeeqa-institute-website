@@ -102,162 +102,707 @@
 </div>
 
 <div *ngIf="subMenu == 'traditional_islamic_education'">
+    <div class="background_container_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                TRADITIONAL ISLAMIC<br>EDUCATION ['<i>ALIMA</i>] PROGRAM
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-4">
+
+        </div>
+        <div fxFlex="40%" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 16}">
+            The Five-Year Traditional Islamic Education (‘Alima) Program is based on the Dars-e-Nizami curriculum that
+            was first introduced in traditional institutes of Islamic learning in India in the 18th century. This
+            curriculum gained immense acceptance and has since its inception been taught throughout South Asia and all
+            over the world, educating millions of seekers of knowledge in the traditional Islamic sciences.
+            <br><br>
+            Our five-year Traditional Islamic Education program is a shorter version of the Dars-e-Nizami curriculum,
+            tailored to suit the needs of women today. We offer this course online, in English and Urdu.
+            <br><br>
+            The course can be done full-time in five years. Students may opt to pursue it part-time; part-time students
+            take some subjects instead of the full load in any given year, and then re-enroll in the same level the
+            following year to complete the remaining subjects. This means that they cover one level's worth of subjects
+            in two years and then move on to the next level. A student may start full-time but then switch to part-time,
+            or vice versa, at any point during the course.
+            <br><br>
+            Sessions can be attended live via the Google Meet app or followed completely or partially through
+            recordings.
+            <br><br>
+        </div>
+    </div>
     <div class="example-action-buttons">
         <!-- <button mat-button (click)="accordion.openAll()">Expand All</button>
         <button mat-button (click)="accordion.closeAll()">Collapse All</button> -->
     </div>
-    <mat-accordion #accordion multi>
-        <mat-expansion-panel>
-            <mat-expansion-panel-header>
-                <mat-panel-title>Course Details</mat-panel-title>
-            </mat-expansion-panel-header>
-            <table>
-                <tr>
-                    <td>Semester One: August to December (With a one-week mid-semester break in between)</td>
-                    <td>Semester Two: January to June (With a five-week Ramadan and Eid break in between)</td>
-                </tr>
-                <tr>
-                    <td>Classes are Monday to Thursday From 8 to 11.30 am Makkah Time, with a half hour break between
-                        lesson two and three On Sundays, a one-hour tarbiyah session</td>
-                    <td>Classes are Monday to Thursday From 8 to 11.30 am Makkah Time, with a half hour break between
-                        lesson two and three On Sundays, a one-hour tarbiyah session</td>
-                </tr>
-                <tr>
-                    <td>3 to 5 subjects per semester</td>
-                    <td>3 to 5 subjects per semester</td>
-                </tr>
-                <tr>
-                    <td>Final exams in December, followed by a 3 to 4 week holiday</td>
-                    <td>Final exams in June, followed by a 6 to 7 week holiday</td>
-                </tr>
-            </table>
-        </mat-expansion-panel>
-        <mat-expansion-panel>
-            <mat-expansion-panel-header>
-                <mat-panel-title>Course Curriculum</mat-panel-title>
-            </mat-expansion-panel-header>
-            <table>
-                <tr>
-                    <td>
-                        Qur’an</td>
-                    <td>Tajweed, (Rules of Qur'an Recitation)<br>
-                        Memorization of last ten surahs of the Qur'an<br>
-                        Tafsir (explanation) of the entire Qur’an<br>
-                        Sciences of the Qur'an, from Mufti Taqi Usmani (db)’s book "Ulum al-Qur’an"</td>
-                </tr>
-                <tr>
-                    <td>
-                        Hadith (Prophetic Sayings)</td>
-                    <td>Hadith Terminology<br>
-                        Selections from Zad al-Talibeen<br>
-                        Selections from Riyad al-Saliheen<br>
-                        Selections from Mishkat al-Masabeeh<br>
-                        Selections from Sahih al-Bukhari<br>
-                        Selections from Sahih al-Muslim<br>
-                        Selections from Jami’ al-Tirmidhi<br>
-                        Complete Shama’il al-Tirmidhi<br>
-                        Selections from Sunan Abi Da’ud<br></td>
-                </tr>
-                <tr>
-                    <td>Seerah (Biography of the Prophet ﷺ)</td>
-                    <td>Complete Makki and Madani periods</td>
-                </tr>
-                <tr>
-                    <td>Sunnahs & Masnun Du’as + Al-Asma al-Husna</td>
-                    <td>Selected every-day sunnahs. Memorization and explanation of selected Prophetic du’as and the 99 names of Allah ﷻ.</td>
-                </tr>
-                <tr>
-                    <td>
-                        Aqeedah (Islamic Creed)</td>
-                    <td>Complete Al-Aqeedah al-Tahawiyyah with explanation Matan al-Sanusiyah with explanation    <br>Contemporary Philosophical Challenges</td>
-                </tr>
-                <tr>
-                    <td>Arabic</td>
-                    <td>Qur’anic Arabic (consisting mostly of Ilm al-Sarf / Morphology)<br>
-                        Ilm al-Nahw (Syntax)<br>
-                        Qur’anic Sarf (Sarf-based analysis of verses of the Qur’an )<br>
-                        Ijra (Practice of placing airab (diacritics) and tarkib (grammatical analysis))<br>
-                        ‘Ibarat (Arabic text) Reading<br>
-                        Balaghah (Rhetoric)<br></td>
-                </tr>
-                <tr>
-                    <td>
-                        Fiqh (Islamic Legal Rulings)</td>
-                    <td><u>Hanafi</u><br>
-                        Ascent to Felicity (English translation of Maraqi al-Falah)<br>
-                        Material prepared by Siddeeqa Institute teachers<br>
-                        Mukhtasar al-Qudduri<br>
-                        Al-Hidayah<br>
-                        Shafi’i<br>
-                        Ship of Salvation (English translation of Safinat al-Najah)<br>
-                        The Ultimate Conspectus (English translation of Matan Abi Shuja’a)<br>
-                        Maliki<br>
-                        Al-Akhdari<br>
-                        Al-Risalah<br></td>
-                </tr>
-                <tr>
-                    <td>Usul al-Fiqh (Principles of Islamic Jurisprudence)</td>
-                    <td>Hanafi<br>
-                        Mabadi al-Usul<br>
-                        Shafi’i<br>
-                        Al-Waraqaat<br></td>
-                </tr>
-                <tr>
-                    <td>Responding to Contemporary Issues and Movements</td>
-                    <td>Secularism<br>
-                        Atheism<br>
-                        Feminism<br>
-                        LGBTQ<br>
-                        Evolution<br>
-                        Islamophobia<br>
-                        Sectarianism<br></td>
-                </tr>
-                <tr>
-                    <td>Spirituality</td>
-                    <td>Selections from Al-Risalah al-Qushayriyyah by Imam Al-Qushayri al-Naysaburi<br>
-                        Complete Bidayat al-Hidayah by Imam Al-Ghazzali<br>
-                        Maktubaat (Letters) of Imam al-Rabbani Shaykh Ahmad Sirhindi <br>
-                        Selections from the Spiritual Discourses of Maulana Ashraf Ali Thanwi<br></td>
-                </tr>
-                <tr>
-                    <td>Tarbiyah</td>
-                    <td>Weekly tarbiyah sessions to practically discuss ways to implement spiritual ideals in everyday life, and to encourage students to live a goal-oriented, Allah-centered life. </td>
-                </tr>
-            </table>
-        </mat-expansion-panel>
-        <mat-expansion-panel>
-            <mat-expansion-panel-header>
-                <mat-panel-title>Basic expectations from students</mat-panel-title>
-            </mat-expansion-panel-header>
-            <ul>
-                <li>​13 hours of class time per week</li>
-                <li>Assignments on weekends requiring 2 to 3 hours</li>
-                <li>Occasional quizzes over the semester</li>
-                <li>Final exams at the end of every semester</li>
-            </ul>
-        </mat-expansion-panel>
-    </mat-accordion>
+    <div ngStyle.gt-sm="width:60%;margin-left:20%;margin-right:20%;padding-top:5%"
+        ngStyle.lt-sm="width:90%;margin-left:5%;margin-right:5%;padding-top:4%;">
+        <mat-accordion multi>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title><b>Course Details</b></mat-panel-title>
+                </mat-expansion-panel-header>
+                <table>
+                    <tr>
+                        <td>Semester One: August to December (With a one-week mid-semester break in between)</td>
+                        <td>Semester Two: January to June (With a five-week Ramadan and Eid break in between)</td>
+                    </tr>
+                    <tr>
+                        <td>Classes are Monday to Thursday From 8 to 11.30 am Makkah Time, with a half hour break
+                            between
+                            lesson two and three On Sundays, a one-hour tarbiyah session</td>
+                        <td>Classes are Monday to Thursday From 8 to 11.30 am Makkah Time, with a half hour break
+                            between
+                            lesson two and three On Sundays, a one-hour tarbiyah session</td>
+                    </tr>
+                    <tr>
+                        <td>3 to 5 subjects per semester</td>
+                        <td>3 to 5 subjects per semester</td>
+                    </tr>
+                    <tr>
+                        <td>Final exams in December, followed by a 3 to 4 week holiday</td>
+                        <td>Final exams in June, followed by a 6 to 7 week holiday</td>
+                    </tr>
+                </table>
+            </mat-expansion-panel>
+            <br>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title><b>Course Curriculum</b></mat-panel-title>
+                </mat-expansion-panel-header>
+                <table>
+                    <tr>
+                        <td>
+                            Qur’an</td>
+                        <td>Tajweed, (Rules of Qur'an Recitation)<br>
+                            Memorization of last ten surahs of the Qur'an<br>
+                            Tafsir (explanation) of the entire Qur’an<br>
+                            Sciences of the Qur'an, from Mufti Taqi Usmani (db)’s book "Ulum al-Qur’an"</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hadith (Prophetic Sayings)</td>
+                        <td>Hadith Terminology<br>
+                            Selections from Zad al-Talibeen<br>
+                            Selections from Riyad al-Saliheen<br>
+                            Selections from Mishkat al-Masabeeh<br>
+                            Selections from Sahih al-Bukhari<br>
+                            Selections from Sahih al-Muslim<br>
+                            Selections from Jami’ al-Tirmidhi<br>
+                            Complete Shama’il al-Tirmidhi<br>
+                            Selections from Sunan Abi Da’ud<br></td>
+                    </tr>
+                    <tr>
+                        <td>Seerah (Biography of the Prophet ﷺ)</td>
+                        <td>Complete Makki and Madani periods</td>
+                    </tr>
+                    <tr>
+                        <td>Sunnahs & Masnun Du’as + Al-Asma al-Husna</td>
+                        <td>Selected every-day sunnahs. Memorization and explanation of selected Prophetic du’as and the
+                            99 names of Allah ﷻ.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Aqeedah (Islamic Creed)</td>
+                        <td>Complete Al-Aqeedah al-Tahawiyyah with explanation Matan al-Sanusiyah with explanation
+                            <br>Contemporary Philosophical Challenges
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Arabic</td>
+                        <td>Qur’anic Arabic (consisting mostly of Ilm al-Sarf / Morphology)<br>
+                            Ilm al-Nahw (Syntax)<br>
+                            Qur’anic Sarf (Sarf-based analysis of verses of the Qur’an )<br>
+                            Ijra (Practice of placing airab (diacritics) and tarkib (grammatical analysis))<br>
+                            ‘Ibarat (Arabic text) Reading<br>
+                            Balaghah (Rhetoric)<br></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Fiqh (Islamic Legal Rulings)</td>
+                        <td><u>Hanafi</u><br>
+                            Ascent to Felicity (English translation of Maraqi al-Falah)<br>
+                            Material prepared by Siddeeqa Institute teachers<br>
+                            Mukhtasar al-Qudduri<br>
+                            Al-Hidayah<br>
+                            Shafi’i<br>
+                            Ship of Salvation (English translation of Safinat al-Najah)<br>
+                            The Ultimate Conspectus (English translation of Matan Abi Shuja’a)<br>
+                            Maliki<br>
+                            Al-Akhdari<br>
+                            Al-Risalah<br></td>
+                    </tr>
+                    <tr>
+                        <td>Usul al-Fiqh (Principles of Islamic Jurisprudence)</td>
+                        <td>Hanafi<br>
+                            Mabadi al-Usul<br>
+                            Shafi’i<br>
+                            Al-Waraqaat<br></td>
+                    </tr>
+                    <tr>
+                        <td>Responding to Contemporary Issues and Movements</td>
+                        <td>Secularism<br>
+                            Atheism<br>
+                            Feminism<br>
+                            LGBTQ<br>
+                            Evolution<br>
+                            Islamophobia<br>
+                            Sectarianism<br></td>
+                    </tr>
+                    <tr>
+                        <td>Spirituality</td>
+                        <td>Selections from Al-Risalah al-Qushayriyyah by Imam Al-Qushayri al-Naysaburi<br>
+                            Complete Bidayat al-Hidayah by Imam Al-Ghazzali<br>
+                            Maktubaat (Letters) of Imam al-Rabbani Shaykh Ahmad Sirhindi <br>
+                            Selections from the Spiritual Discourses of Maulana Ashraf Ali Thanwi<br></td>
+                    </tr>
+                    <tr>
+                        <td>Tarbiyah</td>
+                        <td>Weekly tarbiyah sessions to practically discuss ways to implement spiritual ideals in
+                            everyday life, and to encourage students to live a goal-oriented, Allah-centered life. </td>
+                    </tr>
+                </table>
+            </mat-expansion-panel>
+            <br>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title><b>Basic expectations from students</b></mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul>
+                    <li>​13 hours of class time per week</li>
+                    <li>Assignments on weekends requiring 2 to 3 hours</li>
+                    <li>Occasional quizzes over the semester</li>
+                    <li>Final exams at the end of every semester</li>
+                </ul>
+            </mat-expansion-panel>
+            <br><br><br>
+
+        </mat-accordion>
+    </div>
 </div>
 
 <div *ngIf="subMenu == 'essential_islamic_education'">
-    <p> Essential Islamic Education</p>
+    <div class="background_container_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                ESSENTIAL ISLAMIC<br>EDUCATION PROGRAM
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-4">
+
+        </div>
+        <div fxFlex="40%" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 16}">
+            This is a shorter, more flexible program for women who are not able to commit to the ‘alima course but still
+            wish to learn the basics of the deen. Every semester a set of subjects is offered, and students can choose
+            from these as few or as many subjects as they wish, with time commitment ranging from one up to nine hours
+            per week. Once all the required coursework is completed, a certificate of completion is awarded, regardless
+            of the number of semesters this takes. Those who take the full set of subjects every semester will be able
+            to complete the course in two years. One may join as a regular student and attempt assignments, quizzes and
+            exams to earn a certificate at the end, or as a listener in which case they do not have to attempt the
+            assignments, quizzes and exams, and will not be awarded a certificate.
+            <br><br>
+        </div>
+    </div>
+    <div ngStyle.gt-sm="width:60%;margin-left:20%;margin-right:20%;padding-top:5%"
+        ngStyle.lt-sm="width:90%;margin-left:5%;margin-right:5%;padding-top:4%;">
+        <mat-accordion multi>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Course Details</mat-panel-title>
+                </mat-expansion-panel-header>
+                <table>
+                    <tr>
+                        <td>Qur’an</td>
+                        <td>Tajweed (Rules of Qur’an Recitation)<br>Memorization of last ten surahs of the
+                            Qur’an<br>Tafsir (explanation) of the last juz and other selected surahs of the Qur’an</td>
+                    </tr>
+                    <tr>
+                        <td>Hadith (Prophetic Sayings)</td>
+                        <td>Selections from Zad al-Talibeen</td>
+                    </tr>
+                    <tr>
+                        <td>Seerah<br>(Biography of the Prophet ﷺ)</td>
+                        <td>Complete Makki and Madani periods</td>
+                    </tr>
+                    <tr>
+                        <td>Sunnahs & Masnun Du’as + Al-Asma al-Husna</td>
+                        <td>Selected every-day sunnahs. Memorization and explanation of selected Prophetic du’as and the
+                            99 names of Allah ﷻ.</td>
+                    </tr>
+                    <tr>
+                        <td>Aqeedah<br>(Islamic Creed)</td>
+                        <td>Translation of Al-Aqeedah al-Tahawiyyah with explanation</td>
+                    </tr>
+                    <tr>
+                        <td>Fiqh</td>
+                        <td><u>Hanafi</u><br>Ascent to Felicity (English translation of Maraqi al-Falah)<br>Materials
+                            prepared by Siddeeqa Institute teachers<br><u>Shafi’i</u>Ship of Salvation (English
+                            translation of Safinat al-Najah)<br><u>Maliki</u>Al-Akhdari or Al-Risalah</td>
+                    </tr>
+                    <tr>
+                        <td>Responding to Contemporary Issues and Movements</td>
+                        <td>Secularism<br>
+                            Atheism<br>
+                            Feminism<br>
+                            LGBTQ<br>
+                            Evolution<br>
+                            Islamophobia<br>
+                            Sectarianism<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Spirituality</td>
+                        <td>Selections from Al-Risalah Al-Qushayriyyah by Imam Al-Qushayri al-Naysaburi<br>Complete
+                            Bidayat Al-Hidayah by Imam Al-Ghazzali<br>Maktubaat (Letters) of Imam al-Rabbani Shaykh
+                            Ahmad Sirhindi <br>Selections from the Spiritual Discourses of Maulana Ashraf Ali Thanwi
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tarbiyah</td>
+                        <td>Weekly tarbiyah sessions to practically discuss ways to implement spiritual ideals in
+                            everyday life, and to encourage students to live a goal-oriented, Allah-centered life. </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
 </div>
 
 <div *ngIf="subMenu == 'quranic_arabic_course'">
-    <p>Quranic Arabic course</p>
+    <div class="background_container_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                QUR'ANIC<br>ARABIC COURSE
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-4">
+
+        </div>
+        <div fxFlex="40%" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 16}">
+            This course is conducted using our own publication “Lessons in Qur’anic Arabic” which is the fruit of years
+            of teaching experience and attempts to present complex concepts in the simplest way to complete beginners.
+            The objective of this course is to teach students those rules that are essential for translating the Qur’an,
+            with reference to Qur'anic verses. It is not an exhaustive text of Arabic grammar and those who wish to
+            delve deeper into the subject will have to study other texts; it also does not enable students to converse
+            in Arabic.
+            <br><br>
+        </div>
+    </div>
+    <div ngStyle.gt-sm="width:60%;margin-left:20%;margin-right:20%;padding-top:5%"
+        ngStyle.lt-sm="width:90%;margin-left:5%;margin-right:5%;padding-top:4%;">
+        <mat-accordion multi>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Course Details</mat-panel-title>
+                </mat-expansion-panel-header>
+                <table>
+                    <tr>
+                        <td>Duration of Course</td>
+                        <td>3 semesters spanning one and a half years, starting in July/August every year</td>
+                    </tr>
+                    <tr>
+                        <td>Schedule</td>
+                        <td>Classes will be held Monday to Thursday, for one hour per day. Students will also have
+                            access to the tarbiyah sessions and other short courses</td>
+                    </tr>
+                    <tr>
+                        <td>Assignments</td>
+                        <td>Assignments will be given every weekend and discussed in class every Monday</td>
+                    </tr>
+                    <tr>
+                        <td>Exams</td>
+                        <td>Exams will be held at the end of every semester </td>
+                    </tr>
+                </table>
+            </mat-expansion-panel>
+            <br>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Basic Expectations From Students</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul>
+                    <li>4 hours of class time per week</li>
+                    <li>Assignments on weekends requiring 1 to 2 hours</li>
+                </ul>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
 </div>
 
 <div *ngIf="subMenu == 'short_courses'">
-    <p> Short Courses, Workshops and Lectures</p>
+    <div class="background_container_short_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                SHORT COURSES,<br>WORKSHOPS AND LECTURES
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-5">
+
+        </div>
+        <div fxFlex="40%" fxLayout="column" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;"
+            fxFlex.lt-sm="100%" [ngStyle.gt-sm]="{'font-size.px': 16}">
+            To promote knowledge of the deen and to inspire women to take their religious responsibilities seriously and
+            advance spiritually, every semester we offer short courses, workshops, and lectures both for lay persons and
+            for madrasah students and graduates. These are conducted mostly by our own teachers and sometimes by guest
+            speakers who are experts in an area. Short courses are typically conducted in English and Urdu, but will
+            also be offered in other languages such as Bahasa Melayu going forward insha'Allah. Courses that have
+            recently been offered include:
+            <br>
+            <ul>
+                <li>Complete Tafsir of the Blessed Qur’an</li>
+                <li>Biography of the Prophet ﷺ</li>
+                <li>Ghusl & Kafn Workshop</li>
+                <li>Fiqh of Menstruation, Post-Natal Bleeding, and Vaginal Discharge</li>
+                <li>Shafi'i Fiqh Series Part 1: Fiqh of Purification (Taharah)</li>
+                <li>Preparing for Ramadan</li>
+            </ul>
+            To register for a short course, workshop, or lecture, please message the number given on the relevant
+            poster, or contact the Short Courses Coordinator.
+            <br><br>
+        </div>
+    </div>
+    <div class="carousel" ngStyle.lt-sm="width:100%">
+        <p-carousel padding=0 [value]="short_images" [numVisible]="1" [numScroll]="1" [circular]="true"
+            [responsiveOptions]="responsiveOptions" [autoplayInterval]="3000">
+            <ng-template let-product pTemplate="item">
+                <div class="surface-border border-round m-2 text-center py-5 px-3">
+                    <div class="mb-8">
+                        <img src="{{product}}" [alt]="product" class="w-6 shadow-2"
+                            style="max-height: 70%; max-width: 100%;" />
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
 </div>
 
 
 <div *ngIf="subMenu == 'postgraduate_center'">
-    <p> Postgraduate Center</p>
+    <div class="background_container_post_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                POSTGRADUATE<br>CENTER
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-6">
+
+        </div>
+        <div fxFlex="40%" fxLayout="column" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;"
+            fxFlex.lt-sm="100%" [ngStyle.gt-sm]="{'font-size.px': 16}">
+            Siddeeqa Institute regularly offers year-long, semester-long and shorter courses for graduates of its own 'alima program, and similar programs at other institutes, to provide opportunities for continued learning and enrichment. Some of these courses may also be open to current students of 'alima courses elsewhere, who have completed at least two or three years of study in their respective programs (criteria varies according to the course). We also offer teacher training for 'alimas. Some courses that have been offered in the past include:
+            <br>
+            <ul>
+                <li>Tafsir of Surah al-Baqarah from Tafsir al-Jalalayn</li>
+                <li>Shama’il (Attributes) of the Prophet ﷺ from Al-Shama'il al-Muhammadiyyah</li>
+                <li>Ulum al-Qur'an (Sciences of the Qur'an)</li>
+                <li>Training for Teachers of Tafsir</li>
+            </ul>
+            To register for a short course, workshop, or lecture, please message the number given on the relevant poster, or contact the Short Courses Coordinator.
+            <br><br>
+        </div>
+    </div>
+    <div class="carousel" ngStyle.lt-sm="width:100%">
+        <p-carousel padding=0 [value]="post_images" [numVisible]="1" [numScroll]="1" [circular]="true"
+            [responsiveOptions]="responsiveOptions" [autoplayInterval]="3000">
+            <ng-template let-product pTemplate="item">
+                <div class="surface-border border-round m-2 text-center py-5 px-3">
+                    <div class="mb-8">
+                        <img src="{{product}}" [alt]="product" class="w-6 shadow-2"
+                            style="max-height: 70%; max-width: 100%;" />
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
 </div>
 
 <div *ngIf="subMenu == 'our_teachers'">
-    <p> Our Teachers</p>
+    <div class="background_container_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                OUR TEACHERS<br>[ENGLISH COURSES]
+            </h1>
+        </div>
+    </div>
+    <div class="container-background">
+        <br>
+        <br>
+
+        <!-- Need to add flex layout for 2 Items and check if its working correctly as expected -- row -->
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile1.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Summayah
+                        Siddique</b></h3>
+                <p fxFlex="none">Ustadha Sumayyah Siddique was born and raised in Manchester, UK. She studied at Jami’ah
+                    Al- Kauthar, a 6-year dar al-ulum for girls situated in Lancaster, UK. She has been teaching for the
+                    last two decades since graduating in 2002, including 18 years of experience teaching tajweed. She
+                    founded a local women’s institute in her hometown and has taught primarily the higher books of
+                    hadith since 2005 in various madrasah settings. At Jami’ah al-Kauthar, along with teaching she also
+                    manages pastoral care. She has also taught maktab classes, and in an Islamic high school. At
+                    Siddeeqa Institute she teaches hadith to our final year (daurat al-hadith) students, and has also
+                    taught tajweed.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile2.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Zainab
+                        Patel</b></h3>
+                <p fxFlex="none">Ustadha Zainab Patel was born and raised in London, UK and studied the traditional
+                    Dars-e-Nizami curriculum at Jami’ah al-Rawdah in London, UK. Thereafter, she studied Ifta at
+                    Whitethread Institute, UK. She has taught fiqh alongside other subjects in madrasahs in London and
+                    online for the last 7 years, and is currently also serving as Head Teacher at Jami'ah al-Rawdah. At
+                    Siddeeqa Institute she teaches Hanafi fiqh, and hadith to our senior students, including daurat
+                    al-hadith batch.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile3.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Asiya Waza</b>
+                </h3>
+                <p fxFlex="none">Ustadha Asiya Waza was born and raised in London, UK. She pursued her 'alimiyyah
+                    studies at Jami’ah al-Rawdah in London, UK, alongside her university studies in biomaterials. Since
+                    completing her 'alima studies she has taught a variety of age groups ranging from children to adults
+                    in both 'alimiyyah and general Islamic knowledge programs. Currently, she is studying in the Ifta
+                    Specialization Program at Whitethread Institute, and teaching maktab in the evenings. At Siddeeqa
+                    Institute, she has taught Usul al-Fiqh and Hadith Terminology.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile4.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Saira
+                        AbuBakr</b></h3>
+                <p fxFlex="none">Ustadha Saira Abu Bakr (Ummal Fadl) studied the Sacred Sciences, including her fard ayn
+                    knowledge, primarily under Shaykh Salik bin Sidina (West Africa) since 2002. Some of the aqeedah
+                    texts she has studied include, `Aqeedah Tahāwiyyah, Jawharah and Ummal Barahin (Sanusiyah). In
+                    Maliki Fiqh she has studied Akhdari, Ibn `Ashir, Risalah, 'Izziyah and the majority of Mukhtasar
+                    Khalil. She has also been taught texts on the Shama'il of the Prophet Muhammad ﷺ , Seerah, Hadith
+                    Terminology, Purification of the Heart, Rights of Parents, in Arabic and English at Zaytuna
+                    Institute, Hayward, California since 1997. In 2003 she traveled to Cairo, Egypt to study Arabic. In
+                    2008 she completed the Seminary Program in Hayward, California under Imam Zaid Shakir۔ In 2010 she
+                    returned from Syria where she had spent two years furthering her studies in `Aqeedah, Fiqh, Arabic
+                    and Tajweed and where she attended classes taught by Shaykh Samer Nass, Ustadha Shaista Maqbool and
+                    others. She currently continues to teach fard ayn knowledge to children and adults in private and
+                    public settings, online and in-person. Ustadha Saira AbuBakr has received a B.S. in Biology
+                    (California State University at Stanislaus) and an M.S. in Genetic Counseling (Sarah Lawrence
+                    College, New York).</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile5.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Kulsoom
+                        Shayaan Essa</b></h3>
+                <p fxFlex="none">Ustadha Kulsoom Esa grew up in the USA and then moved to Pakistan with her family so
+                    she could formally acquire knowledge of the deen. She completed the 'alima course with an emphasis
+                    on the Arabic language, and has been teaching with Siddeeqa Institute since its inception. She
+                    specializes in Arabic grammar and also teaches Hanafi fiqh; she also teaches different subjects at
+                    al-Balagh Academy, UK</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile6.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Mahjabeen
+                        Umar</b></h3>
+                <p fxFlex="none">Ustadha Mahjabeen Umar graduated with a degree in Computer Science, and worked as a
+                    Graphic Designer and Web Interface Developer at a US-based software startup for two years before
+                    moving on to freelance website development and graphic design projects. She has served as
+                    Professional Feature Writer for “Expert Parenting and Pregnancy”, a print magazine for mothers. She
+                    runs a small business devoted to bringing colorful and engaging tarbiyah products for Muslim
+                    children. Ustadha Mahjabeen completed the 'alima course at Siddeeqa Institute and pursued a
+                    takhassus (specialization) in tafsir from al-Balagh Academy, UK. At Siddeeqa Institute, Ustadha
+                    Mahjabeen has been teaching tafsir, hadith and seerah, and also works with our Women's Wellness
+                    Center.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile7.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Nassuha
+                        Ebrahim</b></h3>
+                <p fxFlex="none">Ustadha Nassuha Ebrahim completed her 'alima studies at Siddeeqa Institute and was
+                    among the top students in her batch. Thereafter, she completed the Sibawayh Intensive Arabic
+                    Program, the Advanced Islamic Jurisprudence Program, and the Detailed Fiqh of Menstruation Course
+                    from Whitethread Institute, UK. At Siddeeqa Institute she teaches Hanafi fiqh; she also teaches
+                    numerous subjects at al-Balagh Academy, UK.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile8.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Naslee
+                        Fathima</b></h3>
+                <p fxFlex="none">Ustadha Naslee Fathima did her Bachelor's in Physics and Master’s in Computer
+                    Application. She then switched fields and received training in Cognitive Behavioral Therapy, Neuro
+                    Linguistic Programming, Solution Focused Brief Therapy and began working as a life coach,
+                    particularly with teens and parents. Ustadha Naslee is a graduate of Siddeeqa Institute’s 'alima
+                    program. She teaches Shafi’i fiqh and also works with our Women’s Wellness Center.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile1.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Ilhaam
+                        Sadeck</b></h3>
+                <p fxFlex="none">Ustadha Ilhaam Sadeck completed her hifz at Jami'at ul Qurra in Schaapkraal, South
+                    Africa. Thereafter she completed the four-year higher diploma ('alima) course at Dar-un-Na'im,
+                    Wynberg. She started teaching in 2018 and have since taught students both in madrasah and privately.
+                    Alongside she has continued to advance her own learning in fiqh and hadith as per the curriculum and
+                    teaching methodology of Dar al-Mustafa in Tarim. At Siddeeqa Institute she has taught tajweed,
+                    tafsir and Shafi'i fiqh.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile10.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Khadijah
+                        Ali</b></h3>
+                <p fxFlex="none">Ustadha Khadijah Ali did her 'alima course from Nur ul Ilm Institute, UAE. She has been
+                    teaching Qur'an and Tajweed for many years including at Siddeeqa Institute, where she also teaches
+                    Arabic grammar. She has served as a writer and then a board member for The Truth Magazine, published
+                    under the supervision of Mufti Taqi Usmani (db). </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile11.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Dr. Tawhida
+                        Fazili</b></h3>
+                <p fxFlex="none">Ustadha Tawhida Fazili has two post-graduate degrees, one in maternal and child-care,
+                    and the other in microbiology, and has worked as a researcher and professor in the field of
+                    microbiology. She has done the ‘alima course from Siddeeqa Institute and has worked with children,
+                    teenagers, and women from all walks of life, mainly university students and working professionals,
+                    teaching them the deen, counselling them, and inspiring them to follow the shari'ah and sunnah. She
+                    has also worked as Head of Student Welfare in an Islamic school, where she was responsible for
+                    formulating and implementing tarbiyah plans for students, faculty, administrative staff, and
+                    parents, and advising the academic department on inculcating Islamic values into their curriculum
+                    and teaching methodology. At Siddeeqa Institute she has taught the subject of Sunnahs & Masnun Du’as
+                    to new students, and also works with our Women's Wellness Center.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile12.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Zainab bint
+                        Amran</b></h3>
+                <p fxFlex="none">Ustadha Zainab bint Amran completed her hifz at the age of 14 and later was granted
+                    'ijazah to teach the rewayah of hafs from two turuq: via Al-Shatibiyyah and via Tayyibah An-Nashr.
+                    She studied the matan of Hirz al-Amani wa Wajh al-Tahani by al-Shatibi and received ijazah in the
+                    seven qira'aat. She then studied the matan of al-Durratul Mudiyah and received ijazah in the
+                    remaining three qira'aat to complete the al-'Asharah Al-Sughra. Ustadha began her 'alima studies
+                    informally with a teacher, and studied Arabic, fiqh, tafsir and hadith, including memorization of
+                    the 40 hadith of Imam Nawawi (rah). She then joined Siddeeqa Institute and completed her 'alima
+                    studies here. She is trained as a pre-school nurse from the UK and has worked with young children in
+                    nursery and maktab settings, and has also trained maktab teachers. At Siddeeqa Institute she teaches
+                    Shafi'i fiqh and is also involved with our hifz program.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
 </div>
 
 <div *ngIf="subMenu == 'resources_for_students'">
@@ -269,5 +814,55 @@
 </div>
 
 <div *ngIf="subMenu == 'fiqh_resources'">
-    <p> Fiqh Resources</p>
+    <div>
+        <div class="background_container_courses">
+            <div class="container">
+                <h1 class="menu-headers">
+                    FIQH<br>RESOURCES
+                </h1>
+            </div>
+        </div>
+        <div class="container-background">
+            <br>
+            <br>
+
+            <!-- Need to add flex layout for 2 Items and check if its working correctly as expected -- row -->
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/tile1.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto"
+                        alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Tarawih FAQs</h3>
+                    <h5 fxFlex="none" class="color-group-brown">Basic Rulings Concerning Tarawih Prayer</h5>
+                    <button mat-raised-button color="primary" (click)="openPdf('Tarawih')"
+                        style="width: max-content;color:white">View PDF</button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/tile2.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto"
+                        alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Zakat FAQs</h3>
+                    <h5 fxFlex="none" class="color-group-brown">Basic Rulings Concerning Zakat</h5>
+                    <button mat-raised-button color="primary" (click)="openPdf('Zakat')"
+                        style="width: max-content; color:white">View PDF</button>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+    </div>
 </div>
