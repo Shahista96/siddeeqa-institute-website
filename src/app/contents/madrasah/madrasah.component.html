@@ -1,5 +1,5 @@
 <!-- Siddeeqa Institute -->
-<div *ngIf="subMenu == 'our_courses'">
+<div *ngIf="subMenu == 'our_courses' && language == 'EN'">
     <div class="background_container_courses">
         <div class="container">
             <h1 class="menu-headers">
@@ -101,7 +101,112 @@
 
 </div>
 
-<div *ngIf="subMenu == 'traditional_islamic_education'">
+<div *ngIf="subMenu == 'our_courses' && language == 'UR'">
+    <div class="background_container_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                ہمارے کورسز
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-3">
+
+        </div>
+        <div fxFlex="40%" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 24}">
+
+            صدیقہ انسٹیٹیوٹ کی جانب سے ہر سال تین باقائدہ کورسز کی پیشکش ہوتی ہے، جن کی کلاسیں پورا تعلیمی سال جاری رہتی
+            ہیں۔ اسکے علاوہ وقتاً فوقتاً مختلف شارٹ کورسز، ورکشاپس اور لیکچرز کا بھی انعقاد کیا جاتا ہے۔ تمام کورسز کے
+            متعلق مزید تفصیلات کے لیے ہر کورس کے علیحدہ صفحے کو چیک کریں، اور عمومی سوالات کا صفحہ بھی دیکھیں۔
+            <br>
+        </div>
+    </div>
+    <div class="container-background">
+        <br>
+        <br>
+
+        <!-- Need to add flex layout for 2 Items and check if its working correctly as expected -- row -->
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+            fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign="center center">
+                <img src="../../../assets/Images/tile1.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                ngStyle.lt-sm="text-align:center">
+                <h3 fxFlex="none" class="color-group">تفصیلی علوم ِدینیہ (عالمہ) کورس
+                </h3>
+                <h5 fxFlex="none" class="color-group-brown"><b>دورانیہ:فل ٹائم طالبات کے لیے پانچ سال
+                    </b>
+                </h5>
+                <br>
+                <h5 fxFlex="none" class="color-group">داخلے شروع: مئی</h5>
+                <h5 fxFlex="none" class="color-group">کورس کی ابتدا: جولائی یا اگست</h5>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+            fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign="center center">
+                <img src="../../../assets/Images/tile2.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                ngStyle.lt-sm="text-align:center">
+                <h3 fxFlex="none" class="color-group">بنیادی اسلامی تعلیم کورس</h3>
+                <h5 fxFlex="none" class="color-group-brown"><b>دورانیہ:فل ٹائم طالبات کے لیے دو سال</b></h5>
+                <br>
+                <h5 fxFlex="none" class="color-group">داخلے شروع: مئی اور دسمبر</h5>
+                <h5 fxFlex="none" class="color-group">کورس کی ابتدا: جولائی یا اگست، اور جنوری</h5>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+            fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign="center center">
+                <img src="../../../assets/Images/tile3.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                ngStyle.lt-sm="text-align:center">
+                <h3 fxFlex="none" class="color-group">قرآنی عربی کورس</h3>
+                <h5 fxFlex="none" class="color-group-brown"><b>دورانیہ: ڈیڑھ سال</b></h5>
+                <br>
+                <h5 fxFlex="none" class="color-group">داخلے شروع: مئی</h5>
+                <h5 fxFlex="none" class="color-group">کورس کی ابتدا: جولائی یا اگست</h5>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+            fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign="center center">
+                <img src="../../../assets/Images/tile4.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                ngStyle.lt-sm="text-align:center">
+                <h3 fxFlex="none" class="color-group">شارٹ کورسز، ورکشاپس اور لیکچرز</h3>
+                <h5 fxFlex="none" class="color-group-brown"><b>شارٹ کورسز، ورکشاپس اور لیکچرز</b></h5>
+                <br>
+                <h5 fxFlex="none" class="color-group">داخلے شروع: متفرق اوقات</h5>
+                <h5 fxFlex="none" class="color-group">کورس کی ابتدا: متفرق اوقات</h5>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+</div>
+
+<div *ngIf="subMenu == 'traditional_islamic_education' && language == 'EN'">
     <div class="background_container_courses">
         <div class="container">
             <h1 class="menu-headers">
@@ -281,10 +386,240 @@
             <br><br><br>
 
         </mat-accordion>
+        <br><br>
     </div>
 </div>
 
-<div *ngIf="subMenu == 'essential_islamic_education'">
+<div *ngIf="subMenu == 'traditional_islamic_education' && language == 'UR'">
+    <div class="background_container_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                فصیلی علومِ دینیہ (عالمہ) کورس
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-4">
+
+        </div>
+        <div fxFlex="40%" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 16}">
+
+            پانچ سالہ تفصیلی علوم دینیہ (عالمہ) کورس درس نظامی کے نصاب پر مبنی ہے، جو کہ پہلی مرتبہ اٹھارویں صدی عیسویں
+            میں ہندوستان کے مدارس میں متعارف کروایا گیا تھا۔ اس نصاب کو بے حد مقبولیت حاصل ہوئی اور اپنے آغاز سے لے کر
+            اب تک پورے جنوبی ایشیا اور دنیا بھر میں مدارس میں پڑھایا جارہا ہے، اور لاکھوں طالب علم اس کے ذریعے تفصیل اور
+            گہرائی میں دین کا مستند علم حاصل کر رہے ہیں۔
+            <br><br>
+            ہمارا پانچ سالہ تفصیلی علوم دینیہ (عالمہ) کورس دورِ حاضر میں خواتین کی ضروریات کو مدنظر رکھتے ہوئے،درس نظامی
+            کو مختصر کر کے تیار کیا گیا ہے۔ ہم یہ کورس اردو اور انگریزی میں آن لائن پڑھاتے ہیں۔
+            <br><br>
+            یہ کورس پانچ سالوں میں فل ٹائم، یا پھر زیادہ وقت میں پارٹ ٹائم کیا جاسکتا ہے۔ پارٹ ٹائم کرنے کا مطلب ہے کہ
+            طالبات ہر سمسٹر تمام مضامین ایک ساتھ لینے کی بجائے پہلے سال میں بعض مضامین لیتی ہیں اور اگلے سال دوبارہ اسی
+            لیول میں داخلہ لے کر اب باقی ماندہ مضامین پڑھتی ہیں۔ یعنی ایک سال کے نصاب کو آدھا آدھا کر کے دو سالوں میں
+            مکمل کرتی ہیں۔ اگر کوئی طالبہ فل ٹائم پڑھنا شروع کرے لیکن بعد میں پارٹ ٹائم کی طرف منتقل ہو نا چاہے، یا اس
+            کے بر عکس، تو اس کی اجازت ہے۔
+            <br><br>
+            کلاسیں گوگل میٹ ایپ کے ذریعے براہ راست نشر ہوتی ہیں، لیکن جو طالبات وقت پر کلا سیں نہ لے پائیں، وہ ی بعد میں
+            اپنی سہولت کے مطابق کلاسوں کی ریکارڈنگز سن سکتی ہیں۔ کلاسوں کی ریکارڈنگ کلاسوں کے اختتام کے چند گھنٹے بعد
+            دستیاب ہو جاتی ہیں۔
+            <br><br>
+        </div>
+    </div>
+    <div class="example-action-buttons">
+        <!-- <button mat-button (click)="accordion.openAll()">Expand All</button>
+        <button mat-button (click)="accordion.closeAll()">Collapse All</button> -->
+    </div>
+    <div ngStyle.gt-sm="width:60%;margin-left:20%;margin-right:20%;padding-top:5%"
+        ngStyle.lt-sm="width:90%;margin-left:5%;margin-right:5%;padding-top:4%;">
+        <mat-accordion multi>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title><b>کورس کی تفصیلات</b></mat-panel-title>
+                </mat-expansion-panel-header>
+                <table>
+                    <tr>
+                        <td>
+                            دوسرا سمسٹر: جنوری سے جون
+                            <br>
+                            (درمیان میں رمضان المبارک اور عید الفطر کے لیے پانچ ہفتوں کی چھٹی )
+                        </td>
+                        <td>پہلا سمسٹر: اگست سے دسمبر
+                            <br>
+                            (درمیان میں ایک ہفتے کی چھٹی)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            کلاسیں پیر تا جمعرات، روزانہ کلاسوں کا کل دورانیہ 3 گھنٹے، دوسرے اور تیسرے سبق کے درمیان
+                            آدھے گھنٹے کا وقفہ
+
+                            اتوار کو ایک گھنٹے کی تربیتی نشست</td>
+                        <td>کلاسیں پیر تا جمعرات، روزانہ کلاسوں کا کل دورانیہ 3 گھنٹے، دوسرے اور تیسرے سبق کے درمیان
+                            آدھے گھنٹے کا وقفہ
+
+                            اتوار کو ایک گھنٹے کی تربیتی نشست</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ہر سمسٹر تین سے پانچ مضامین</td>
+                        <td>ہر سمسٹرتین سے پانچ مضامین</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            جون میں فائنل امتحانات، اس کے بعد چھ سے سات ہفتوں کی چھٹی</td>
+                        <td>دسمبر میں فائنل امتحانات، اس کے بعد تین سے چار ہفتوں کی چھٹی</td>
+                    </tr>
+                </table>
+            </mat-expansion-panel>
+            <br>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title><b>کورس کا نصاب</b></mat-panel-title>
+                </mat-expansion-panel-header>
+                <table>
+                    <tr>
+                        <td>
+                            قرآن کریم</td>
+                        <td>تجوید، اور آخری دس سورتوں کا حفظ<br>
+                            قرآن کریم کی مکمل تفسیر<br>
+                            علوم القرآن<br>
+                            (حضرت مفتی تقی عثمانی (دامت برکاتہ) کی کتاب ’علوم القرآن‘ سے)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            حدیث مبارکہ</td>
+                        <td>اصطلاحاتِ حدیث<br>
+                            زاد الطالبین سے انتخاب<br>
+                            ریاض الصالحین سے انتخاب<br>
+                            مشکاۃ المصابیح سے انتخاب<br>
+                            حیح البخاری سے انتخاب<br>
+                            جامع الترمذی سے انتخاب<br>
+                            مکمل شمائل الترمذی<br>
+                            سنن ابی داؤد سے انتخاب<br>
+                            حیح المسلم سے انتخاب<br></td>
+                    </tr>
+                    <tr>
+                        <td>سیرت نبوی ﷺ</td>
+                        <td>مکمل مکی اور مدنی دور</td>
+                    </tr>
+                    <tr>
+                        <td>سنتیں اور مسنون دعائیں + الاسماء الحسنٰی</td>
+                        <td>منتخب روز مرہ کی سنتیں، روز مرہ کی مسنون دعاؤں کی تشریح اور حفط، اور اللہ ﷻ کے ننانوے ناموں
+                            کی مختصر تشریح اور حفظ
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            عقیدہ</td>
+                        <td>مکمل العقیدة الطحاویة تشریح کے ساتھ
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>عربی</td>
+                        <td>قرآنی عربی (زیادہ تر علم الصرف پر مشتمل)
+                            <br>
+                            علم النحو<br>
+                            قرآنی صرف (قرآنی آیات کی صرفی تحقیق)<br>
+                            اجراء (اعراب اور ترکیب کی مشق)<br>
+                            عبارت پڑھنے کی مشق<br>
+                            بلاغہ<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            فقہی مسائل
+                            <br><br>
+                            طہارت (پاکی)، صلاۃ (نماز)، صوم (روزہ)، زکاۃ، حج، بیوع (تجارتی لین دین)، نکاح، طلاق کے تفصیلی
+                            مسائل
+                        </td>
+                        <td><u>تسہیل بہشتی زیور</u><br>
+                            صدیقہ انسٹیٹیوٹ پی ڈی ایف
+
+                            <br>
+                            مختصر القدوری
+
+                            <br>
+                            الھدایہ<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>اصول الفقہ
+                        </td>
+                        <td>مبادی الأصول
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>دور حاصر کے متنازع مسائل اورتحریکوں کا رد
+                        </td>
+                        <td>سیکولرازم
+
+                            <br>
+                            الحاد<br>
+                            فیمنزم<br>
+                            ہم جنس پرستی
+
+                            <br>
+                            فرقہ واریت
+
+                            <br>
+                            اسلاموفوبیا
+
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>روحانیت
+                        </td>
+                        <td>الرسالة القشیرية
+
+                            <br>
+                            ؒمکتوبات امام ربانی شیخ احمد سرھندی
+
+                            <br>
+                            شریعت اور طریقت، حضرت مولانا اشرف علی تھانویؒ
+
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>تربیتی سیشن
+                        <td>ہفتہ وار تربیتی سیشن جن میں قرآن و سنت کی تعلیمات پر عمل کرنے کے متعلق نصیحتیں اور ایک با
+                            مقصد زندگی گزارنے کے بارے میں مفید ہدایات شیئر کی جائیں گی۔
+
+                        </td>
+                    </tr>
+                </table>
+            </mat-expansion-panel>
+            <br>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title><b>طالبات سے بنیادی توقعات:
+                        </b></mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul>
+                    <li>ہفتہ وار کلاسوں کے لیے تیرہ گھنٹے وقف کرنا
+
+                    </li>
+                    <li>ہفتے کے اختتام پر ہوم ورک، جن کے لیے دو سے تین گھنٹے درکار
+
+                    </li>
+                    <li>سمسٹر کے دوران ٹیسٹ
+
+                    </li>
+                    <li>ہر سمسٹر کے اختتام پر امتحانات
+
+                    </li>
+                </ul>
+            </mat-expansion-panel>
+            <br><br><br>
+
+        </mat-accordion>
+        <br><br>
+    </div>
+</div>
+
+<div *ngIf="subMenu == 'essential_islamic_education' && language == 'EN'">
     <div class="background_container_courses">
         <div class="container">
             <h1 class="menu-headers">
@@ -375,10 +710,153 @@
                 </table>
             </mat-expansion-panel>
         </mat-accordion>
+        <br><br>
     </div>
 </div>
 
-<div *ngIf="subMenu == 'quranic_arabic_course'">
+<div *ngIf="subMenu == 'essential_islamic_education' && language == 'UR'">
+    <div class="background_container_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                بنیادی اسلامی تعلیم کورس
+
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-4">
+
+        </div>
+        <div fxFlex="40%" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 16}">
+            یہ ایک پر سہولت کورس ہے ان خواتین کے لیے جو دیگر مصروفیات کی وجہ سے عالمہ کا تفصیلی کورس نہیں کر سکتیں لیکن
+            دین کی بنیادی تعلیم حاصل کرنے کی خواہش مند ہیں۔ اس میں ہر سمسٹر چند مضامین آفرکیے جاتے ہیں جن میں سے طالبات
+            اپنی مرضی سے جتنے چاہیں مضامین چن سکتی ہیں؛ تمام مضامین پڑھنے کی صورت میں ہفتے میں کل نو سے بارہ گھنٹے کی
+            کلاسیں لینی ہوں گی، جبکہ صرف ایک مضمون پڑھنے کی صورت میں ہفتے میں صرف ایک سے تین گھنٹے تک کی کلاسیں لینی ہوں
+            گی (کلاسوں کا دورانیہ مضامین پر منحصر ہے)۔کورس میں موجود تمام مضامین مکمل کرنے پر تکمیلی سرٹیفکیٹ دیا جاتا
+            ہے، چاہےاس میں کتنے ہی سال لگ جائیں۔ اگر کوئی طالبہ ہوم ورک کیے بغیر اور امتحانات دیے بغیر صرف کلاسوں کی
+            سماعت کرنا چاہتی ہیں تو یہ بھی ممکن ہے، لیکن اس صورت میں ان کو کوئی سرٹیفکیٹ نہیں دیا جائے گا۔
+            <br><br>
+        </div>
+    </div>
+    <div ngStyle.gt-sm="width:60%;margin-left:20%;margin-right:20%;padding-top:5%"
+        ngStyle.lt-sm="width:90%;margin-left:5%;margin-right:5%;padding-top:4%;">
+        <mat-accordion multi>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>کورس کا نصاب
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <table>
+                    <tr>
+                        <td>قرآن کریم
+                        </td>
+                        <td>تجوید
+
+                            <br>آخری دس سورتوں کا حفظ
+
+                            <br>قرآن کریم کے آخری جزء اور منتخب سورتوں کی تفسیر
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>حدیث مبارکہ
+                        </td>
+                        <td>کتاب ’’زاد الطالبین‘‘ سے منتخب احادیث
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>سیرت نبوی ﷺ
+                        </td>
+                        <td>مکمل مکی اور مدنی دور
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>سنتیں اور مسنون دعائیں اور اسماء الحُسنیٰ
+                        </td>
+                        <td>منتخب روز مرہ کی سنتیں، روز مرہ کی مسنون دعاؤں کی تشریح اور حفظ، اللہ تعالیٰ کے ننانوے ناموں
+                            کی مختصر تشریح اور حفظ
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>عقیدہ
+
+                        </td>
+                        <td>کے پی ڈی ایفس
+
+                            <br>
+                            صحیح اسلامی عقائد اور عقیدے میں بگاڑ پیدا کرنے والے اعتقادات اور امور
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>فقہی مسائل
+                            <br>
+                            طہارت (پاکی)، صلاۃ (نماز)، صوم (روزہ)، زکاۃ، اور حج کے اہم مسائل
+
+
+                        </td>
+                        <td><u>تسہیل بہشتی زیور
+
+                            </u><br>صدیقہ انسٹیٹیوٹ کے پی ڈی ایف
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>دور حاصر کے متنازع مسائل اورتحریکوں کا رد
+
+                        </td>
+                        <td>سیکولرزم
+
+                            <br>
+                            الحاد<br>
+                            فیمنزم<br>
+                            ہم جنس پرستی
+
+                            <br>
+                            فرقہ واریت
+
+                            <br>
+                            اسلاموفوبیا<br>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>اروحانیت</td>
+                        <td>الرسالة القشیرية
+
+                            <br>ؒمکتوبات امام ربانی شیخ احمد سرھندی
+
+                            <br>شریعت اور طریقت، حضرت مولانا اشرف علی تھانویؒ
+
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>تربیتی سیشن
+                        </td>
+                        <td>ہفتہ وار تربیتی سیشن جن میں قرآن و سنت کی تعلیمات پر عمل کرنے کے متعلق نصیحتیں اور ایک با
+                            مقصد زندگی گزارنے کے بارے میں مفید ہدایات شیئرکی جائیں گی
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>
+
+
+
+<div *ngIf="subMenu == 'quranic_arabic_course' && language == 'EN'">
     <div class="background_container_courses">
         <div class="container">
             <h1 class="menu-headers">
@@ -442,7 +920,71 @@
     </div>
 </div>
 
-<div *ngIf="subMenu == 'short_courses'">
+<div *ngIf="subMenu == 'quranic_arabic_course' && language == 'UR'">
+    <div class="background_container_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                QUR'ANIC<br>ARABIC COURSE
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-4">
+
+        </div>
+        <div fxFlex="40%" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 16}">
+            This course is conducted using our own publication “Lessons in Qur’anic Arabic” which is the fruit of years
+            of teaching experience and attempts to present complex concepts in the simplest way to complete beginners.
+            The objective of this course is to teach students those rules that are essential for translating the Qur’an,
+            with reference to Qur'anic verses. It is not an exhaustive text of Arabic grammar and those who wish to
+            delve deeper into the subject will have to study other texts; it also does not enable students to converse
+            in Arabic.
+            <br><br>
+        </div>
+    </div>
+    <div ngStyle.gt-sm="width:60%;margin-left:20%;margin-right:20%;padding-top:5%"
+        ngStyle.lt-sm="width:90%;margin-left:5%;margin-right:5%;padding-top:4%;">
+        <mat-accordion multi>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Course Details</mat-panel-title>
+                </mat-expansion-panel-header>
+                <table>
+                    <tr>
+                        <td>Duration of Course</td>
+                        <td>3 semesters spanning one and a half years, starting in July/August every year</td>
+                    </tr>
+                    <tr>
+                        <td>Schedule</td>
+                        <td>Classes will be held Monday to Thursday, for one hour per day. Students will also have
+                            access to the tarbiyah sessions and other short courses</td>
+                    </tr>
+                    <tr>
+                        <td>Assignments</td>
+                        <td>Assignments will be given every weekend and discussed in class every Monday</td>
+                    </tr>
+                    <tr>
+                        <td>Exams</td>
+                        <td>Exams will be held at the end of every semester </td>
+                    </tr>
+                </table>
+            </mat-expansion-panel>
+            <br>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Basic Expectations From Students</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul>
+                    <li>4 hours of class time per week</li>
+                    <li>Assignments on weekends requiring 1 to 2 hours</li>
+                </ul>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>
+
+<div *ngIf="subMenu == 'short_courses' && language == 'EN'">
     <div class="background_container_short_courses">
         <div class="container">
             <h1 class="menu-headers">
@@ -491,8 +1033,56 @@
     </div>
 </div>
 
+<div *ngIf="subMenu == 'short_courses' && language == 'UR'">
+    <div class="background_container_short_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                SHORT COURSES,<br>WORKSHOPS AND LECTURES
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-5">
 
-<div *ngIf="subMenu == 'postgraduate_center'">
+        </div>
+        <div fxFlex="40%" fxLayout="column" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;"
+            fxFlex.lt-sm="100%" [ngStyle.gt-sm]="{'font-size.px': 16}">
+            To promote knowledge of the deen and to inspire women to take their religious responsibilities seriously and
+            advance spiritually, every semester we offer short courses, workshops, and lectures both for lay persons and
+            for madrasah students and graduates. These are conducted mostly by our own teachers and sometimes by guest
+            speakers who are experts in an area. Short courses are typically conducted in English and Urdu, but will
+            also be offered in other languages such as Bahasa Melayu going forward insha'Allah. Courses that have
+            recently been offered include:
+            <br>
+            <ul>
+                <li>Complete Tafsir of the Blessed Qur’an</li>
+                <li>Biography of the Prophet ﷺ</li>
+                <li>Ghusl & Kafn Workshop</li>
+                <li>Fiqh of Menstruation, Post-Natal Bleeding, and Vaginal Discharge</li>
+                <li>Shafi'i Fiqh Series Part 1: Fiqh of Purification (Taharah)</li>
+                <li>Preparing for Ramadan</li>
+            </ul>
+            To register for a short course, workshop, or lecture, please message the number given on the relevant
+            poster, or contact the Short Courses Coordinator.
+            <br><br>
+        </div>
+    </div>
+    <div class="carousel" ngStyle.lt-sm="width:100%">
+        <p-carousel padding=0 [value]="short_images" [numVisible]="1" [numScroll]="1" [circular]="true"
+            [responsiveOptions]="responsiveOptions" [autoplayInterval]="3000">
+            <ng-template let-product pTemplate="item">
+                <div class="surface-border border-round m-2 text-center py-5 px-3">
+                    <div class="mb-8">
+                        <img src="{{product}}" [alt]="product" class="w-6 shadow-2"
+                            style="max-height: 70%; max-width: 100%;" />
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+</div>
+
+<div *ngIf="subMenu == 'postgraduate_center' && language == 'EN'">
     <div class="background_container_post_courses">
         <div class="container">
             <h1 class="menu-headers">
@@ -506,7 +1096,12 @@
         </div>
         <div fxFlex="40%" fxLayout="column" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;"
             fxFlex.lt-sm="100%" [ngStyle.gt-sm]="{'font-size.px': 16}">
-            Siddeeqa Institute regularly offers year-long, semester-long and shorter courses for graduates of its own 'alima program, and similar programs at other institutes, to provide opportunities for continued learning and enrichment. Some of these courses may also be open to current students of 'alima courses elsewhere, who have completed at least two or three years of study in their respective programs (criteria varies according to the course). We also offer teacher training for 'alimas. Some courses that have been offered in the past include:
+            Siddeeqa Institute regularly offers year-long, semester-long and shorter courses for graduates of its own
+            'alima program, and similar programs at other institutes, to provide opportunities for continued learning
+            and enrichment. Some of these courses may also be open to current students of 'alima courses elsewhere, who
+            have completed at least two or three years of study in their respective programs (criteria varies according
+            to the course). We also offer teacher training for 'alimas. Some courses that have been offered in the past
+            include:
             <br>
             <ul>
                 <li>Tafsir of Surah al-Baqarah from Tafsir al-Jalalayn</li>
@@ -514,7 +1109,8 @@
                 <li>Ulum al-Qur'an (Sciences of the Qur'an)</li>
                 <li>Training for Teachers of Tafsir</li>
             </ul>
-            To register for a short course, workshop, or lecture, please message the number given on the relevant poster, or contact the Short Courses Coordinator.
+            To register for a short course, workshop, or lecture, please message the number given on the relevant
+            poster, or contact the Short Courses Coordinator.
             <br><br>
         </div>
     </div>
@@ -533,7 +1129,54 @@
     </div>
 </div>
 
-<div *ngIf="subMenu == 'our_teachers'">
+<div *ngIf="subMenu == 'postgraduate_center' && language == 'UR'">
+    <div class="background_container_post_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                POSTGRADUATE<br>CENTER
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-6">
+
+        </div>
+        <div fxFlex="40%" fxLayout="column" fxLayoutAlign="center center" style="text-align: justify;padding: 2%;"
+            fxFlex.lt-sm="100%" [ngStyle.gt-sm]="{'font-size.px': 16}">
+            Siddeeqa Institute regularly offers year-long, semester-long and shorter courses for graduates of its own
+            'alima program, and similar programs at other institutes, to provide opportunities for continued learning
+            and enrichment. Some of these courses may also be open to current students of 'alima courses elsewhere, who
+            have completed at least two or three years of study in their respective programs (criteria varies according
+            to the course). We also offer teacher training for 'alimas. Some courses that have been offered in the past
+            include:
+            <br>
+            <ul>
+                <li>Tafsir of Surah al-Baqarah from Tafsir al-Jalalayn</li>
+                <li>Shama’il (Attributes) of the Prophet ﷺ from Al-Shama'il al-Muhammadiyyah</li>
+                <li>Ulum al-Qur'an (Sciences of the Qur'an)</li>
+                <li>Training for Teachers of Tafsir</li>
+            </ul>
+            To register for a short course, workshop, or lecture, please message the number given on the relevant
+            poster, or contact the Short Courses Coordinator.
+            <br><br>
+        </div>
+    </div>
+    <div class="carousel" ngStyle.lt-sm="width:100%">
+        <p-carousel padding=0 [value]="post_images" [numVisible]="1" [numScroll]="1" [circular]="true"
+            [responsiveOptions]="responsiveOptions" [autoplayInterval]="3000">
+            <ng-template let-product pTemplate="item">
+                <div class="surface-border border-round m-2 text-center py-5 px-3">
+                    <div class="mb-8">
+                        <img src="{{product}}" [alt]="product" class="w-6 shadow-2"
+                            style="max-height: 70%; max-width: 100%;" />
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+</div>
+
+<div *ngIf="subMenu == 'our_teachers' && language == 'EN'">
     <div class="background_container_courses">
         <div class="container">
             <h1 class="menu-headers">
@@ -805,7 +1448,283 @@
     </div>
 </div>
 
-<div *ngIf="subMenu == 'resources_for_students'">
+<div *ngIf="subMenu == 'our_teachers' && language == 'UR'">
+    <div class="background_container_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                OUR TEACHERS<br>[ENGLISH COURSES]
+            </h1>
+        </div>
+    </div>
+    <div class="container-background">
+        <br>
+        <br>
+
+        <!-- Need to add flex layout for 2 Items and check if its working correctly as expected -- row -->
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile1.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Summayah
+                        Siddique</b></h3>
+                <p fxFlex="none">Ustadha Sumayyah Siddique was born and raised in Manchester, UK. She studied at Jami’ah
+                    Al- Kauthar, a 6-year dar al-ulum for girls situated in Lancaster, UK. She has been teaching for the
+                    last two decades since graduating in 2002, including 18 years of experience teaching tajweed. She
+                    founded a local women’s institute in her hometown and has taught primarily the higher books of
+                    hadith since 2005 in various madrasah settings. At Jami’ah al-Kauthar, along with teaching she also
+                    manages pastoral care. She has also taught maktab classes, and in an Islamic high school. At
+                    Siddeeqa Institute she teaches hadith to our final year (daurat al-hadith) students, and has also
+                    taught tajweed.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile2.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Zainab
+                        Patel</b></h3>
+                <p fxFlex="none">Ustadha Zainab Patel was born and raised in London, UK and studied the traditional
+                    Dars-e-Nizami curriculum at Jami’ah al-Rawdah in London, UK. Thereafter, she studied Ifta at
+                    Whitethread Institute, UK. She has taught fiqh alongside other subjects in madrasahs in London and
+                    online for the last 7 years, and is currently also serving as Head Teacher at Jami'ah al-Rawdah. At
+                    Siddeeqa Institute she teaches Hanafi fiqh, and hadith to our senior students, including daurat
+                    al-hadith batch.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile3.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Asiya Waza</b>
+                </h3>
+                <p fxFlex="none">Ustadha Asiya Waza was born and raised in London, UK. She pursued her 'alimiyyah
+                    studies at Jami’ah al-Rawdah in London, UK, alongside her university studies in biomaterials. Since
+                    completing her 'alima studies she has taught a variety of age groups ranging from children to adults
+                    in both 'alimiyyah and general Islamic knowledge programs. Currently, she is studying in the Ifta
+                    Specialization Program at Whitethread Institute, and teaching maktab in the evenings. At Siddeeqa
+                    Institute, she has taught Usul al-Fiqh and Hadith Terminology.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile4.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Saira
+                        AbuBakr</b></h3>
+                <p fxFlex="none">Ustadha Saira Abu Bakr (Ummal Fadl) studied the Sacred Sciences, including her fard ayn
+                    knowledge, primarily under Shaykh Salik bin Sidina (West Africa) since 2002. Some of the aqeedah
+                    texts she has studied include, `Aqeedah Tahāwiyyah, Jawharah and Ummal Barahin (Sanusiyah). In
+                    Maliki Fiqh she has studied Akhdari, Ibn `Ashir, Risalah, 'Izziyah and the majority of Mukhtasar
+                    Khalil. She has also been taught texts on the Shama'il of the Prophet Muhammad ﷺ , Seerah, Hadith
+                    Terminology, Purification of the Heart, Rights of Parents, in Arabic and English at Zaytuna
+                    Institute, Hayward, California since 1997. In 2003 she traveled to Cairo, Egypt to study Arabic. In
+                    2008 she completed the Seminary Program in Hayward, California under Imam Zaid Shakir۔ In 2010 she
+                    returned from Syria where she had spent two years furthering her studies in `Aqeedah, Fiqh, Arabic
+                    and Tajweed and where she attended classes taught by Shaykh Samer Nass, Ustadha Shaista Maqbool and
+                    others. She currently continues to teach fard ayn knowledge to children and adults in private and
+                    public settings, online and in-person. Ustadha Saira AbuBakr has received a B.S. in Biology
+                    (California State University at Stanislaus) and an M.S. in Genetic Counseling (Sarah Lawrence
+                    College, New York).</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile5.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Kulsoom
+                        Shayaan Essa</b></h3>
+                <p fxFlex="none">Ustadha Kulsoom Esa grew up in the USA and then moved to Pakistan with her family so
+                    she could formally acquire knowledge of the deen. She completed the 'alima course with an emphasis
+                    on the Arabic language, and has been teaching with Siddeeqa Institute since its inception. She
+                    specializes in Arabic grammar and also teaches Hanafi fiqh; she also teaches different subjects at
+                    al-Balagh Academy, UK</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile6.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Mahjabeen
+                        Umar</b></h3>
+                <p fxFlex="none">Ustadha Mahjabeen Umar graduated with a degree in Computer Science, and worked as a
+                    Graphic Designer and Web Interface Developer at a US-based software startup for two years before
+                    moving on to freelance website development and graphic design projects. She has served as
+                    Professional Feature Writer for “Expert Parenting and Pregnancy”, a print magazine for mothers. She
+                    runs a small business devoted to bringing colorful and engaging tarbiyah products for Muslim
+                    children. Ustadha Mahjabeen completed the 'alima course at Siddeeqa Institute and pursued a
+                    takhassus (specialization) in tafsir from al-Balagh Academy, UK. At Siddeeqa Institute, Ustadha
+                    Mahjabeen has been teaching tafsir, hadith and seerah, and also works with our Women's Wellness
+                    Center.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile7.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Nassuha
+                        Ebrahim</b></h3>
+                <p fxFlex="none">Ustadha Nassuha Ebrahim completed her 'alima studies at Siddeeqa Institute and was
+                    among the top students in her batch. Thereafter, she completed the Sibawayh Intensive Arabic
+                    Program, the Advanced Islamic Jurisprudence Program, and the Detailed Fiqh of Menstruation Course
+                    from Whitethread Institute, UK. At Siddeeqa Institute she teaches Hanafi fiqh; she also teaches
+                    numerous subjects at al-Balagh Academy, UK.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile8.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Naslee
+                        Fathima</b></h3>
+                <p fxFlex="none">Ustadha Naslee Fathima did her Bachelor's in Physics and Master’s in Computer
+                    Application. She then switched fields and received training in Cognitive Behavioral Therapy, Neuro
+                    Linguistic Programming, Solution Focused Brief Therapy and began working as a life coach,
+                    particularly with teens and parents. Ustadha Naslee is a graduate of Siddeeqa Institute’s 'alima
+                    program. She teaches Shafi’i fiqh and also works with our Women’s Wellness Center.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile1.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Ilhaam
+                        Sadeck</b></h3>
+                <p fxFlex="none">Ustadha Ilhaam Sadeck completed her hifz at Jami'at ul Qurra in Schaapkraal, South
+                    Africa. Thereafter she completed the four-year higher diploma ('alima) course at Dar-un-Na'im,
+                    Wynberg. She started teaching in 2018 and have since taught students both in madrasah and privately.
+                    Alongside she has continued to advance her own learning in fiqh and hadith as per the curriculum and
+                    teaching methodology of Dar al-Mustafa in Tarim. At Siddeeqa Institute she has taught tajweed,
+                    tafsir and Shafi'i fiqh.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile10.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Khadijah
+                        Ali</b></h3>
+                <p fxFlex="none">Ustadha Khadijah Ali did her 'alima course from Nur ul Ilm Institute, UAE. She has been
+                    teaching Qur'an and Tajweed for many years including at Siddeeqa Institute, where she also teaches
+                    Arabic grammar. She has served as a writer and then a board member for The Truth Magazine, published
+                    under the supervision of Mufti Taqi Usmani (db). </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile11.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Dr. Tawhida
+                        Fazili</b></h3>
+                <p fxFlex="none">Ustadha Tawhida Fazili has two post-graduate degrees, one in maternal and child-care,
+                    and the other in microbiology, and has worked as a researcher and professor in the field of
+                    microbiology. She has done the ‘alima course from Siddeeqa Institute and has worked with children,
+                    teenagers, and women from all walks of life, mainly university students and working professionals,
+                    teaching them the deen, counselling them, and inspiring them to follow the shari'ah and sunnah. She
+                    has also worked as Head of Student Welfare in an Islamic school, where she was responsible for
+                    formulating and implementing tarbiyah plans for students, faculty, administrative staff, and
+                    parents, and advising the academic department on inculcating Islamic values into their curriculum
+                    and teaching methodology. At Siddeeqa Institute she has taught the subject of Sunnahs & Masnun Du’as
+                    to new students, and also works with our Women's Wellness Center.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card"
+            style="padding-left: 2%;padding-top: 2%;padding-right: 2%;" fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign.gt-sm="end start" fxLayoutAlign.lt-sm="center center" style="padding: 2%;">
+                <img src="../../../assets/Images/tile12.webp" fxFlex="100%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" style="text-align:justify;" ngStyle.gt-sm="padding: 2%;">
+                <h3 fxFlex="none" class="color-group" ngStyle.lt-sm="text-align:center"><b><i>Ustadha</i> Zainab bint
+                        Amran</b></h3>
+                <p fxFlex="none">Ustadha Zainab bint Amran completed her hifz at the age of 14 and later was granted
+                    'ijazah to teach the rewayah of hafs from two turuq: via Al-Shatibiyyah and via Tayyibah An-Nashr.
+                    She studied the matan of Hirz al-Amani wa Wajh al-Tahani by al-Shatibi and received ijazah in the
+                    seven qira'aat. She then studied the matan of al-Durratul Mudiyah and received ijazah in the
+                    remaining three qira'aat to complete the al-'Asharah Al-Sughra. Ustadha began her 'alima studies
+                    informally with a teacher, and studied Arabic, fiqh, tafsir and hadith, including memorization of
+                    the 40 hadith of Imam Nawawi (rah). She then joined Siddeeqa Institute and completed her 'alima
+                    studies here. She is trained as a pre-school nurse from the UK and has worked with young children in
+                    nursery and maktab settings, and has also trained maktab teachers. At Siddeeqa Institute she teaches
+                    Shafi'i fiqh and is also involved with our hifz program.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+</div>
+
+<div *ngIf="subMenu == 'resources_for_students' && language == 'EN'">
+    <p> Resources for Students</p>
+</div>
+
+<div *ngIf="subMenu == 'resources_for_students' && language == 'UR'">
     <p> Resources for Students</p>
 </div>
 
@@ -813,7 +1732,61 @@
     <p> Resources for Teachers</p>
 </div>
 
-<div *ngIf="subMenu == 'fiqh_resources'">
+<div *ngIf="subMenu == 'fiqh_resources' && language == 'EN'">
+    <div>
+        <div class="background_container_courses">
+            <div class="container">
+                <h1 class="menu-headers">
+                    FIQH<br>RESOURCES
+                </h1>
+            </div>
+        </div>
+        <div class="container-background">
+            <br>
+            <br>
+
+            <!-- Need to add flex layout for 2 Items and check if its working correctly as expected -- row -->
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/tile1.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto"
+                        alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Tarawih FAQs</h3>
+                    <h5 fxFlex="none" class="color-group-brown">Basic Rulings Concerning Tarawih Prayer</h5>
+                    <button mat-raised-button color="primary" (click)="openPdf('Tarawih')"
+                        style="width: max-content;color:white">View PDF</button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/tile2.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto"
+                        alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Zakat FAQs</h3>
+                    <h5 fxFlex="none" class="color-group-brown">Basic Rulings Concerning Zakat</h5>
+                    <button mat-raised-button color="primary" (click)="openPdf('Zakat')"
+                        style="width: max-content; color:white">View PDF</button>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+    </div>
+</div>
+
+<div *ngIf="subMenu == 'fiqh_resources' && language == 'UR'">
     <div>
         <div class="background_container_courses">
             <div class="container">
