@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class WellnessCenterComponent {
   @Input() subMenu: string = 'siddeeqa_institute';
-  @Input() language: string = '';
+  @Input() language: string = 'EN';
 
 
 }

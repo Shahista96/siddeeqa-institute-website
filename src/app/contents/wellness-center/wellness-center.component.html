@@ -1,5 +1,5 @@
 <!-- Siddeeqa Institute -->
-<div *ngIf="subMenu == 'about_center'">
+<div *ngIf="subMenu == 'about_center' && language == 'EN'">
     <div class="background_container_wellness default-background-theme">
         <div class="container">
             <h1 class="menu-headers">
@@ -76,20 +76,12 @@
                 </table>
             </mat-expansion-panel>
             <br>
-            <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                    <mat-panel-title>Basic Expectations From Students</mat-panel-title>
-                </mat-expansion-panel-header>
-                <ul>
-                    <li>4 hours of class time per week</li>
-                    <li>Assignments on weekends requiring 1 to 2 hours</li>
-                </ul>
-            </mat-expansion-panel>
+            <br>
         </mat-accordion>
     </div>
 </div>
 
-<div *ngIf="subMenu == 'support_groups'">
+<div *ngIf="subMenu == 'support_groups' && language == 'EN'">
     <div class="background_container_wellness_support default-background-theme">
         <div class="container">
             <h1 class="menu-headers">
@@ -149,7 +141,7 @@
     </div>
 </div>
 
-<div *ngIf="subMenu == 'revert_support_services'">
+<div *ngIf="subMenu == 'revert_support_services' && language == 'EN'">
     <div class="background_container_wellness_revert default-background-theme">
         <div class="container">
             <h1 class="menu-headers">
@@ -177,7 +169,7 @@
     </div>
 </div>
 
-<div *ngIf="subMenu == 'workshops_and_services'">
+<div *ngIf="subMenu == 'workshops_and_services' && language == 'EN'">
     <div class="background_container_wellness_workshop default-background-theme">
         <div class="container">
             <h1 class="menu-headers">
@@ -201,7 +193,7 @@
     </div>
 </div>
 
-<div *ngIf="subMenu == 'resources_for_woman'">
+<div *ngIf="subMenu == 'resources_for_woman' && language == 'EN'">
     <div>
         <div class="background_container_wellness_resources">
             <div class="container">
@@ -226,8 +218,9 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Heal.Thrive.Nurture Part 1</h3>
                     <h5 fxFlex="none" class="color-group-brown">The Need for Self-Awareness and Self-Care</h5>
-                    <button mat-raised-button color="primary"
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/part1.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/part1.pdf" target="_blank">View
+                            PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -244,8 +237,9 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Heal.Thrive.Nurture Part 2</h3>
                     <h5 fxFlex="none" class="color-group-brown">Healing Our Bodies</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/part2.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/part2.pdf" target="_blank">View
+                            PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -262,8 +256,9 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Heal.Thrive.Nurture Part 3</h3>
                     <h5 fxFlex="none" class="color-group-brown">Healing Our Bodies (Continued)</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/part3.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/part3.pdf" target="_blank">View
+                            PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -276,7 +271,7 @@
     </div>
 </div>
 
-<div *ngIf="subMenu == 'resources_for_muslim_mothers'">
+<div *ngIf="subMenu == 'resources_for_muslim_mothers' && language == 'EN'">
     <div>
         <div class="background_container_wellness_resources_parents">
             <div class="container">
@@ -301,8 +296,9 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Part 1</h3>
                     <h5 fxFlex="none" class="color-group-brown">What is Tarbiyah?</h5>
-                    <button mat-raised-button color="primary"
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_1.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_1.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -319,8 +315,9 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Part 2</h3>
                     <h5 fxFlex="none" class="color-group-brown">Why is Tarbiyah Important?</h5>
-                    <button mat-raised-button color="primary"
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_2.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_2.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -337,8 +334,9 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Part 3</h3>
                     <h5 fxFlex="none" class="color-group-brown">Why is Tarbiyah Important (Continued)?</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_3.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_3.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -355,8 +353,9 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Part 4</h3>
                     <h5 fxFlex="none" class="color-group-brown">Love as the Basis for Tarbiyah</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white">View PDF</button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                        href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_4.pdf"
+                        target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -373,8 +372,9 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Part 5</h3>
                     <h5 fxFlex="none" class="color-group-brown">Love as the Basis for Tarbiyah (Continued)</h5>
-                    <button mat-raised-button color="primary"
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_5.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_5.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -391,8 +391,9 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Part 6</h3>
                     <h5 fxFlex="none" class="color-group-brown">The Power of Hugs</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_6.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_6.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -409,8 +410,9 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Part 7</h3>
                     <h5 fxFlex="none" class="color-group-brown">Love for Allah as the Basis for Tarbiyah</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_7.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_7.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -430,8 +432,9 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Solutions # 1</h3>
                     <h5 fxFlex="none" class="color-group-brown">How to Deal with Tantrums</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_solution_1.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_solution_1.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -448,8 +451,9 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Solutions # 1</h3>
                     <h5 fxFlex="none" class="color-group-brown">How to Make a Child Apologize</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_solution_2.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_solution_2.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -466,8 +470,9 @@
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Special # 1</h3>
                     <h5 fxFlex="none" class="color-group-brown">Academic Pressure</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_solution_3.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_solution_3.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -480,15 +485,16 @@
                 ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
                 fxLayout.lt-sm="column">
                 <div fxFlex="20%" fxLayoutAlign="center center">
-                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_ramadan.webp" fxFlex="100%"
-                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_ramadan.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
                 </div>
                 <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Ramadan Edition</h3>
                     <h5 fxFlex="none" class="color-group-brown">Ramadan Advice for Mothers of Young Children</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_ramadan.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_ramadan.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -498,15 +504,16 @@
                 ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
                 fxLayout.lt-sm="column">
                 <div fxFlex="20%" fxLayoutAlign="center center">
-                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_ramadan_1.webp" fxFlex="100%"
-                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_ramadan_1.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
                 </div>
                 <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Ramadan Activity # 1</h3>
                     <h5 fxFlex="none" class="color-group-brown">Ramadan Kindness Packs</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_ramadan_1.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_ramadan_1.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -516,15 +523,16 @@
                 ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
                 fxLayout.lt-sm="column">
                 <div fxFlex="20%" fxLayoutAlign="center center">
-                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_ramadan_2.webp" fxFlex="100%"
-                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_ramadan_2.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
                 </div>
                 <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Ramadan Activity # 2</h3>
                     <h5 fxFlex="none" class="color-group-brown">Iman Tree Craft Activity</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_ramadan_2.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_ramadan_2.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -537,15 +545,16 @@
                 ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
                 fxLayout.lt-sm="column">
                 <div fxFlex="20%" fxLayoutAlign="center center">
-                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_dua_1.webp" fxFlex="100%"
-                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_dua_1.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
                 </div>
                 <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series Part 1</h3>
                     <h5 fxFlex="none" class="color-group-brown">Why do we ask Allah for Everything?</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_dua_1.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_dua_1.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -555,51 +564,54 @@
                 ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
                 fxLayout.lt-sm="column">
                 <div fxFlex="20%" fxLayoutAlign="center center">
-                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_dua_2.webp" fxFlex="100%"
-                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_dua_2.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
                 </div>
                 <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series Part 2</h3>
                     <h5 fxFlex="none" class="color-group-brown">How do we Ask Allah?</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_dua_2.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_dua_2.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
             <br>
             <br>
             <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
-            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
-            fxLayout.lt-sm="column">
-            <div fxFlex="20%" fxLayoutAlign="center center">
-                <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_dua_3.webp" fxFlex="100%"
-                    fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
-            </div>
-            <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
-                ngStyle.lt-sm="text-align:center">
-                <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series Part 3</h3>
-                <h5 fxFlex="none" class="color-group-brown">Etiquettes of Du'a</h5>
-                <button mat-raised-button color="primary" 
-                    style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_dua_3.pdf" target="_blank">View PDF</a></button>
-                <br>
-            </div>
-        </div>
-        <br>
-        <br>
-        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
                 ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
                 fxLayout.lt-sm="column">
                 <div fxFlex="20%" fxLayoutAlign="center center">
-                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_dua_4.webp" fxFlex="100%"
-                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_dua_3.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series Part 3</h3>
+                    <h5 fxFlex="none" class="color-group-brown">Etiquettes of Du'a</h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_dua_3.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_dua_4.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
                 </div>
                 <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series Part 4</h3>
                     <h5 fxFlex="none" class="color-group-brown">Giving Importance to Du'a</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_dua_4.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_dua_4.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -609,15 +621,16 @@
                 ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
                 fxLayout.lt-sm="column">
                 <div fxFlex="20%" fxLayoutAlign="center center">
-                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_dua_5.webp" fxFlex="100%"
-                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_dua_5.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
                 </div>
                 <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series Part 5</h3>
                     <h5 fxFlex="none" class="color-group-brown">Benefits of Du'a</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_dua_5.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_dua_5.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -627,15 +640,16 @@
                 ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
                 fxLayout.lt-sm="column">
                 <div fxFlex="20%" fxLayoutAlign="center center">
-                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_dua_6.webp" fxFlex="100%"
-                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_dua_6.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
                 </div>
                 <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series Part 6</h3>
                     <h5 fxFlex="none" class="color-group-brown">Du'a Before Eating</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_dua_6.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_dua_6.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
@@ -645,15 +659,764 @@
                 ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
                 fxLayout.lt-sm="column">
                 <div fxFlex="20%" fxLayoutAlign="center center">
-                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_dua_7.webp" fxFlex="100%"
-                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_dua_7.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
                 </div>
                 <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
                     ngStyle.lt-sm="text-align:center">
                     <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series Part 7</h3>
                     <h5 fxFlex="none" class="color-group-brown">Du'a After Eating</h5>
-                    <button mat-raised-button color="primary" 
-                        style="width: max-content;color:white"><a href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_dua_7.pdf" target="_blank">View PDF</a></button>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/nurturing_believers_dua_7.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- Urdu Section -->
+
+<div *ngIf="subMenu == 'about_center' && language == 'UR'">
+    <div class="background_container_wellness default-background-theme">
+        <div class="container">
+            <h1 class="menu-headers">
+                ویمنز ویلنس سینٹر
+                <br>(خواتین کی مجموعی صحت کا مرکز)
+
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-1 default-background-theme">
+
+        </div>
+        <div fxFlex="40%" fxLayoutAlign="center center" style="text-align: justify;padding: 3%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 16}">
+            صدیقہ انسٹیٹیوٹ نے خواتین کی مجموعی صحت کے فروغ کے لیے ایک مستقل مرکز قائم کیا ہے۔ ہمارا ایمان ہے کہ ہمارے
+            وجود کا سب سے اہم پہلو ہماری روحانیت ہے، لیکن روحانی صحت اور ترقی اس دور میں انسان کی کلی صحت و سلامتی کے
+            بغیر ممکن نہیں۔ اور ہماری تخلیق کے مقصد کو پورا کرنے اور اپنے خالق کے ساتھ اپنے تعلق کو مضبوط کرنے کے لیے
+            کلی شفا یابی اور ہر لحاظ سے پھلنے پھولنے کی ضرورت ہے۔
+
+
+            <br><br>
+        </div>
+    </div>
+    <div ngStyle.gt-sm="width:60%;margin-left:20%;margin-right:20%;padding-top:5%"
+        ngStyle.lt-sm="width:90%;margin-left:5%;margin-right:5%;padding-top:4%;">
+        <mat-accordion multi>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>:مجموعی صحت میں شامل ہے
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <table>
+                    <tr>
+                        <td>جسمانی صحت
+                        </td>
+                        <td>مناسب غذا، معتدل مقدار میں باقائدہ ورزش، بیماریوں کی بروقت شناخت، جسمانی نقصان سے تحفظ، حسب
+                            ضرورت نیند، وزن میں اعتدال ؛ حیض، منع حمل، حمل، بچے کی پیدائش اور بعد از پیدائش کی دیکھ بھال
+                            وغیرہ۔
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>نفسیاتی صحت
+                        </td>
+                        <td>خود آگاہی، مثبت خود خیالی، مثبت سوچ، وقت کا نظم و نسق، منصوبہ بندی، پیداواری صلاحیت، ذہنی
+                            امراض کی شناخت ، قوت ارادی وغیرہ۔
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>جذباتی صحت
+                        </td>
+                        <td>جذبات کی درست شناخت اور ان کا مناسب اظہار، خود اعتمادی ، رجائیت پسندی، مشکلات کا مقابلہ کرنے
+                            کی صلاحیت ، وغیرہ۔
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>فکری صحت
+                        </td>
+                        <td>معلومات کے اووَرلوڈکے اس دور میں سوچ سمجھ کر رائے کی تشکیل، قابل اعتماد اور غیر معتبر ذرائع
+                            کے درمیان فرق کرنا،تجزیاتی سوچ، تخلیقی صلاحیتیں وغیرہ۔
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>سماجی صحت
+                        </td>
+                        <td>مثبت تعلقات استوار کرنا، منفی رشتوں کی شناخت اور ان کے نقصان سے خود کو محفوظ رکھنا ،بات چیت
+                            اور اظہار رائے کا طریقہ، کمیونٹی کی تعمیر، سماجی سرگرمی، تنازعات کا حل، وغیرہ۔
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ماحولیاتی صحت
+                        </td>
+                        <td>قدرت کے ساتھ ہم آہنگی میں رہنا، ماحول کو پہنچنے والے نقصا ات کو کم سے کم کرنا، ماحولیاتی
+                            آفات کے اثرات سے خود کو بچانا وغیرہ۔
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>مالی صحت
+                        </td>
+                        <td>کریر کونسلنگ، گھر سے کام کرنا، اپنے بزنس کو شریعت کے اصولوں کے مطابق بنانا، مالی منصوبہ
+                            بندی، پیسے کی بچت، چھوٹے پیمانے پر سرمایہ کاری، وغیرہ
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>روحانی صحت
+                        </td>
+                        <td>ایک اعلیٰ مقصد کی تلاش، خالق کے ساتھ اپنے تعلق کو مضبوط اور گہرا کرنا، اس کی منشاء کے بارے
+                            میں سیکھنا اور اس کی مرضی کے مطابق عمل کرنا، فکر آخرت، عبادت میں توجہ وغیرہ۔
+
+                        </td>
+                    </tr>
+                </table>
+            </mat-expansion-panel>
+            <br><br>
+        </mat-accordion>
+    </div>
+</div>
+
+<div *ngIf="subMenu == 'support_groups' && language == 'UR'">
+    <div class="background_container_wellness_support default-background-theme">
+        <div class="container">
+            <h1 class="menu-headers">
+                سپورٹ گروپس
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-2 default-background-theme">
+
+        </div>
+        <div fxFlex="40%" style="text-align: justify;padding: 3%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 16}" fxLayout="column">
+            سپورٹ گروپس ایسی خواتین کو ایک پلیٹ فارم پر اکٹھا کرتے ہیں جو زندگی کے کسی موڑ پر ایک جیسے مسائل کا سامنا کر
+            رہی ہوں۔ ایک تربیت یافتہ سہولت کار کی قیادت میں ان گروپس میں خواتین ایک دوسرے کے ساتھ اپنے تجربات کو منظم
+            طریقے سے شیئر کرتی ہیں، اور ایسا کرنے سے ان سب کو فائدہ ہوتا ہے۔ بعض مسائل جن کے گرد سپورٹ گروپ قائم کیے جا
+            سکتے ہیں درج ذیل ہیں
+            <br><br>
+            قبولیتِ اسلام •
+            <br>
+            غیر مسلم ملک میں اقلیت ہونا •
+            <br>
+            مخلوط تعلیمی اداروں کے مسائل •
+            <br>
+            کام کی جگہ کے مسائل •
+            <br>
+            شادی شدہ زندگی میں درپیش مسائل •
+            <br>اولاد کی تربیت •
+            <br>کسی پیارے کی وفات • <br>
+            <br>
+            کیونکہ ایک سپورٹ گروپ میں ایک وقت میں پندرہ سے زیادہ خواتین شامل نہیں کی جا سکتیں، توان خواتین کو شمولیت کا
+            موقع دیا جائے گا جن کو اس کی سب سے زیادہ ضرورت ہوگی، اور ان میں بھی ترجیح صدیقہ انسٹیٹیوٹ کی طالبات کو دی
+            جائے گی۔
+            <br><br>
+            سپورٹ گروپس کے بارے میں مطلع رہنے اور ان میں شامل ہونے کے لیے ویمنز ویلنس سنٹر کی کورڈنیٹر سے رابطہ کریں۔
+            <br><br>
+            اعلان دستبرداری: ہمارے سپورٹ گروپ جان لیوا مسائل جیسے کہ نشہ، خودکشی کی طرف رجحان، اور ذہنی امراض سے ڈیل
+            نہیں کریں گے۔ اور نہ ہی وہ ادویات اور باقائدہ علاج کا متبادل ہوں گے۔
+
+
+            <br><br>
+        </div>
+    </div>
+    <div ngStyle.gt-sm="width:60%;margin-left:20%;margin-right:20%;padding-top:5%"
+        ngStyle.lt-sm="width:90%;margin-left:5%;margin-right:5%;padding-top:4%;">
+        <mat-accordion multi>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>سپورٹ گروپس کے مقاصد اور فوائد میں شامل ہیں:
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <table>
+                    <tr>
+                        <td>پہلا، اپنے خدشات کے بارے میں بات کرنا اور اس سے منسلک خیالات اور احساسات کو آواز دینا تاکہ
+                            مسئلہ کو زیادہ واضح طور پر سمجھا جا سکے اور زیادہ سے زیادہ خود آگاہی حاصل کی جا سکے۔
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>دوسرا، یہ احساس حاصل ہونا کہ ہم اکیلے نہیں ہیں اور بہتری کے متعلق پر امید ہونا ۔
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>تیسرا، ایک دوسرے اور گروپ کے سہولت کار سے مسائل کے حل اور اپنی نفسیاتی اور جذباتی حالت کو
+                            سنبھالنے کے طریقے سیکھنا اور ایک دوسرے سے تقویت حاصل کرنا ۔
+                        </td>
+                    </tr>
+                </table>
+            </mat-expansion-panel>
+            <br>
+
+        </mat-accordion>
+    </div>
+</div>
+
+<div *ngIf="subMenu == 'revert_support_services' && language == 'UR'">
+    <div class="background_container_wellness_revert default-background-theme">
+        <div class="container">
+            <h1 class="menu-headers">
+                ویمنز ویلنس سینٹر ورکشاپس اور لیکچرز
+
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-3 default-background-theme">
+
+        </div>
+        <div fxFlex="40%" style="text-align: justify;padding: 3%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 16}" fxLayout="column">
+            صدیقہ انسٹیٹیوٹ ویمنز ویلنس سینٹر کی طرف سے پورا سال خواتین کی مجموعی صحت کے مختلف پہلوؤں کے متعلق ورکشاپس
+            اور لیکچرز پیش کیے جائیں گے۔ یہ سیشن کروانے والی خواتین اپنی اپنی فیلڈ میں ماہر ہوں گی۔
+            <br><br>
+
+            کسی بھی ورکشاپ یا لیکچر کا پوسٹر شائع ہونے کے بعد ویمنز ویلنس سینٹر کی کورڈنیٹر سے رابطہ کر کے یا پوسٹر پر
+            دیے نمبر پر واٹس ایپ کر کے پروگرام میں شامل ہوا جا سکتا ہے۔
+
+            <br>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="subMenu == 'workshops_and_services' && language == 'UR'">
+    <div class="background_container_wellness_workshop default-background-theme">
+        <div class="container">
+            <h1 class="menu-headers">
+                نو مسلم خواتین کے لیے خدمات
+            </h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-4 default-background-theme">
+
+        </div>
+        <div fxFlex="40%" style="text-align: justify;padding: 3%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 16}" fxLayout="column">
+            صدیقہ انسٹیٹیوٹ کی جانب سے نو مسلم بہنوں کے لیے درج ذیل خدمات پیش کی جاتی ہیں:
+
+            <br><br>
+            قرآن مجید کی تلاوت سیکھنے کے لیے اجتماعی اور انفرادی کلاسیں
+
+            <br>
+            دین کے متعلق بنیادی علم پر مبنی شارٹ کورسز اور انفرادی کوچنگ
+
+            <br>
+            فقہی مسائل پوچھنے کے لیے نو مسلم بہنوں کے لیے مخصوص واٹس ایپ گروپ جس میں وہ بلا جھجھک اپنے سوال پوچھ سکتی
+            ہیں
+
+            <br>
+
+            نو مسلم بہنوں کے لیے خصوصی سپورٹ گروپس
+
+            <br><br>
+
+            درج بالا خدمات سے فائدہ اٹھانے کے لیے کانوَرٹ سپورٹ سروسز کورڈنیٹر سے رابطہ کریں۔
+
+            <br>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<div *ngIf="subMenu == 'resources_for_woman' && language == 'UR'">
+    <div>
+        <div class="background_container_wellness_resources">
+            <div class="container">
+                <h1 class="menu-headers">
+                    خواتین کے لیے مواد
+                </h1>
+            </div>
+        </div>
+        <div class="bg-simple">
+            <br>
+            <br>
+
+            <!-- Need to add flex layout for 2 Items and check if its working correctly as expected -- row -->
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/tile_part1.webp" fxFlex="80%"
+                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Heal.Thrive.Nurture (Urdu) Part 1</h3>
+                    <h5 fxFlex="none" class="color-group-brown">خود آگاہی اور خود کی دیکھ بھال کی ضرورت
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/HTN_UR_Part1.pdf" target="_blank">View
+                            PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/tile_part2.webp" fxFlex="100%"
+                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Heal.Thrive.Nurture (Urdu) Part 2</h3>
+                    <h5 fxFlex="none" class="color-group-brown">جسمانی صحت کی بحالی
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/HTN_UR_Part2.pdf" target="_blank">View
+                            PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/tile_part3.webp" fxFlex="80%"
+                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Heal.Thrive.Nurture (Urdu) Part 3</h3>
+                    <h5 fxFlex="none" class="color-group-brown">جسمانی صحت کی بحالی (جاری)
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/HTN_UR_Part3.pdf" target="_blank">View
+                            PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+        </div>
+
+    </div>
+</div>
+
+<div *ngIf="subMenu == 'resources_for_muslim_mothers' && language == 'UR'">
+    <div>
+        <div class="background_container_wellness_resources_parents">
+            <div class="container">
+                <h1 class="menu-headers">
+                    URDU RESOURCES<br>FOR PARENTS
+                </h1>
+            </div>
+        </div>
+        <div class="bg-simple">
+            <br>
+            <br>
+
+            <!-- Need to add flex layout for 2 Items and check if its working correctly as expected -- row -->
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_UR_1.webp" fxFlex="100%"
+                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers (Urdu) Part 1</h3>
+                    <h5 fxFlex="none" class="color-group-brown">تربیت کسے کہتے ہیں؟
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_UR_1.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_UR_2.webp" fxFlex="100%"
+                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers (Urdu) Part 2</h3>
+                    <h5 fxFlex="none" class="color-group-brown">تربیت کی اہمیت
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_UR_2.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_UR_3.webp" fxFlex="100%"
+                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers (Urdu) Part 3</h3>
+                    <h5 fxFlex="none" class="color-group-brown">تربیت کی اہمیت (جاری)
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_UR_3.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_UR_4.webp" fxFlex="100%"
+                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers (Urdu) Part 4</h3>
+                    <h5 fxFlex="none" class="color-group-brown">تربیت کی بنیاد محبت پر
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                        href="../../../assets/PDFs/womens_wellness_center/NB_UR_4.pdf"
+                        target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_UR_5.webp" fxFlex="100%"
+                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers (Urdu) Part 5</h3>
+                    <h5 fxFlex="none" class="color-group-brown">تربیت کی بنیاد محبت پر (جاری)
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_UR_5.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_UR_6.webp" fxFlex="100%"
+                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers (Urdu) Part 6</h3>
+                    <h5 fxFlex="none" class="color-group-brown">اظہارِ محبت کی طاقت
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_UR_6.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_UR_7.webp" fxFlex="100%"
+                        fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers (Urdu) Part 7</h3>
+                    <h5 fxFlex="none" class="color-group-brown">تربیت کی بنیاد اللہ کی محبت پر
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_UR_7.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- Nurturing belivers solutions  -->
+
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_solution_1.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers (Urdu) Solutions # 1</h3>
+                    <h5 fxFlex="none" class="color-group-brown">بچہ ضد کرے تو کیا کریں
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NBS_UR_1.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/nurturing_believers_solution_2.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers (Urdu) Solutions # 2</h3>
+                    <h5 fxFlex="none" class="color-group-brown">بچے سے معافی کیسے منگوائیں
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NBS_UR_2.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NBS_UR.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers Special (Urdu)</h3>
+                    <h5 fxFlex="none" class="color-group-brown">امتحانوں کا پریشر
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NBSpecial_UR.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- Ramadan Series  -->
+
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_Ramdan_Edition_UR.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers Ramadan Edition (Urdu)</h3>
+                    <h5 fxFlex="none" class="color-group-brown">چھوٹے بچوں کی مائوں کے لیے نصیحت
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_Ramdan_UR.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_Ramdan_Activity_UR.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers Ramadan Activity (Urdu)</h3>
+                    <h5 fxFlex="none" class="color-group-brown">رمضان ایکٹوٹی
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_Ramdan_Act_UR.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- Dua Series  -->
+
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_Dua_UR_1.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series (Urdu) Part 1</h3>
+                    <h5 fxFlex="none" class="color-group-brown">اللہ سے کیوں مانگتے ہیں؟
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_Dua_UR_1.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_Dua_UR_2.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series (Urdu) Part 2</h3>
+                    <h5 fxFlex="none" class="color-group-brown">اللہ سے کیسے مانگتے ہیں؟
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_Dua_UR_2.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_Dua_UR_3.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series (Urdu) Part 3</h3>
+                    <h5 fxFlex="none" class="color-group-brown">دعا کے آداب
+
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_Dua_UR_3.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_Dua_UR_4.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series (Urdu) Part 4</h3>
+                    <h5 fxFlex="none" class="color-group-brown">دعا کو اہمیت دینا
+
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_Dua_UR_4.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_Dua_UR_5.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series (Urdu) Part 5</h3>
+                    <h5 fxFlex="none" class="color-group-brown">دعا کے فائدے
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_Dua_UR_5.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_Dua_UR_6.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series (Urdu) Part 6</h3>
+                    <h5 fxFlex="none" class="color-group-brown">کھانے سے پہلے کی دعا
+
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_Dua_UR_6.pdf"
+                            target="_blank">View PDF</a></button>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+                ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+                fxLayout.lt-sm="column">
+                <div fxFlex="20%" fxLayoutAlign="center center">
+                    <img src="../../../assets/Images/womens_wellness_center/NB_Dua_UR_7.webp"
+                        fxFlex="100%" fxFlex.lt-sm="30%" height="auto" alt="Caligraphy" />
+                </div>
+                <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                    ngStyle.lt-sm="text-align:center">
+                    <h3 fxFlex="none" class="color-group">Nurturing Believers Du'a Series (Urdu) Part 7</h3>
+                    <h5 fxFlex="none" class="color-group-brown">کھانے کے بعد کی دعا
+                    </h5>
+                    <button mat-raised-button color="primary" style="width: max-content;color:white"><a
+                            href="../../../assets/PDFs/womens_wellness_center/NB_Dua_UR_7.pdf"
+                            target="_blank">View PDF</a></button>
                     <br>
                 </div>
             </div>
