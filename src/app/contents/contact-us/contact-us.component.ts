@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./contact-us.component.scss']
 })
 export class ContactUsComponent {
-  @Input() language: string = '';
+  @Input() language: string = 'EN';
 
 }

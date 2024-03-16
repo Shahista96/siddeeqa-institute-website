@@ -1,4 +1,4 @@
-<div>
+<div *ngIf="language == 'EN'">
     <div class="background_container_courses">
         <div class="container">
             <h1 class="menu-headers">
@@ -20,9 +20,17 @@
     <div class="container-background">
         <br>
         <br>
-
-        <!-- Need to add flex layout for 2 Items and check if its working correctly as expected -- row -->
-        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
             ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
             fxLayout.lt-sm="column">
             <div fxFlex="20%" fxLayoutAlign="center center">
@@ -82,7 +90,111 @@
                 <h5 fxFlex="none" class="color-group-brown"><b>Admin Contact :</b> [ Add Admin Number Here]</h5>
                 <br>
             </div>
+        </div> -->
+        <br>
+        <br>
+    </div>
+
+</div>
+
+<div *ngIf="language == 'UR'">
+    <div class="background_container_courses">
+        <div class="container">
+            <h1 class="menu-headers">
+                رابطہ کریں
+            </h1>
         </div>
+    </div>
+    <div fxLayout="row">
+        <div fxFlex="60%" fxHide.lt-sm fxLayoutAlign="end start" class="container-3">
+
+        </div>
+        <div fxFlex="40%" fxLayout="column" fxLayoutAlign="start start" style="text-align: left;padding: 2%;" fxFlex.lt-sm="100%"
+            [ngStyle.gt-sm]="{'font-size.px': 24}">
+
+            :ای میل کے ذریعے اس ایڈرس پر رابطہ کریں  <br><a href="mailto:info@siddeeqainstitute.org">info&#64;siddeeqainstitute.org</a>
+            <br>
+        </div>
+    </div>
+    <div class="container-background">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+            fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign="center center">
+                <img src="../../../assets/Images/tile1.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                ngStyle.lt-sm="text-align:center">
+                <h3 fxFlex="none" class="color-group">Traditional Islamic Education (‘Alima) Program</h3>
+                <h5 fxFlex="none" class="color-group-brown"><b>Admin Contact :</b> [ Add Admin Number Here]</h5>
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+            fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign="center center">
+                <img src="../../../assets/Images/tile2.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                ngStyle.lt-sm="text-align:center">
+                <h3 fxFlex="none" class="color-group">Flexible Essential Islamic Education Program</h3>
+                <h5 fxFlex="none" class="color-group-brown"><b>Admin Contact :</b> [ Add Admin Number Here]</h5>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+            fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign="center center">
+                <img src="../../../assets/Images/tile3.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                ngStyle.lt-sm="text-align:center">
+                <h3 fxFlex="none" class="color-group">Qur’anic Arabic Course</h3>
+                <h5 fxFlex="none" class="color-group-brown"><b>Admin Contact :</b> [ Add Admin Number Here]</h5>
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div fxLayout="row" ngStyle.gt-sm="margin-right:15%;margin-left:15%"
+            ngStyle.lt-sm="margin-right:5%;margin-left:5%" class="container-card" style="padding: 2%;"
+            fxLayout.lt-sm="column">
+            <div fxFlex="20%" fxLayoutAlign="center center">
+                <img src="../../../assets/Images/tile4.webp" fxFlex="80%" fxFlex.lt-sm="30%" height="auto"
+                    alt="Caligraphy" />
+            </div>
+            <div fxFlex="80%" fxLayout="column" ngStyle.gt-sm="text-align:left; padding: 2%;"
+                ngStyle.lt-sm="text-align:center">
+                <h3 fxFlex="none" class="color-group">Short Courses, Workshops and Lectures</h3>
+                <h5 fxFlex="none" class="color-group-brown"><b>Admin Contact :</b> [ Add Admin Number Here]</h5>
+                <br>
+            </div>
+        </div> -->
         <br>
         <br>
     </div>
