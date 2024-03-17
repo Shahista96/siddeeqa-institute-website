@@ -149,7 +149,7 @@
                 <button mat-menu-item (click)="menuChanged('wellness_center','resources_for_muslim_mothers')">مسلمان
                     خواتین کے لئے تربیتِ اولاد سے متعلقہ نصائح</button>
             </mat-menu>
-            <button fxHide.lt-sm mat-button [matMenuTriggerFor]="faqs">مومی سوالات</button>
+            <button fxHide.lt-sm mat-button [matMenuTriggerFor]="faqs">عمومی سوالات</button>
             <mat-menu fxHide.lt-sm #faqs="matMenu">
                 <button mat-menu-item (click)="menuChanged('faqs','siddeeqa_institute')">صدیقہ انسٹیٹیوٹ کے
                     متعلق</button>
@@ -171,7 +171,7 @@
                 <button mat-button (click)="menuChanged('exemplars','')">مثالی شخصیات</button><br>
                 <button mat-button [matMenuTriggerFor]="madrasah">مدرسہ</button><br>
                 <button mat-button [matMenuTriggerFor]="womensWellnessCenter">ویمنز ویلنس سینٹر</button><br>
-                <button mat-button [matMenuTriggerFor]="faqs">مومی سوالات</button><br>
+                <button mat-button [matMenuTriggerFor]="faqs">عمومی سوالات</button><br>
                 <button mat-button (click)="menuChanged('contact_us','')">رابطہ کریں</button><br>
             </mat-nav-list>
         </mat-sidenav>
