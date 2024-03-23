@@ -11,6 +11,7 @@
             <mat-menu fxHide.lt-sm #lang="matMenu">
                 <button mat-menu-item (click)="menuChanged('language','')">{{otherLanguage}}</button>
             </mat-menu>
+            <button mat-button fxHide.lt-sm (click)="menuChanged('login','')">Login</button>
             <button mat-button fxHide.lt-sm (click)="menuChanged('home','')">Home</button>
             <button mat-button fxHide.lt-sm (click)="menuChanged('exemplars','')">Our Exemplars</button>
             <button mat-button fxHide.lt-sm [matMenuTriggerFor]="madrasah">Madrasah</button>
@@ -64,6 +65,8 @@
         <mat-sidenav #sidenav fxHide.gt-sm>
             <mat-nav-list>
                 <button mat-button [matMenuTriggerFor]="lang">{{this.selectedLanguage}}</button><br>
+                <button mat-button (click)="menuChanged('login','')">Login</button><br>
+
                 <button mat-button (click)="menuChanged('home','')">Home</button><br>
                 <button mat-button (click)="menuChanged('exemplars','')">Our Exemplars</button><br>
                 <button mat-button [matMenuTriggerFor]="madrasah">Madrasah</button><br>
@@ -75,6 +78,8 @@
 
         <mat-sidenav-content style="height: 87vh">
             <app-home *ngIf="selectedContent == 'home'" [language]="selectedLanguage"></app-home>
+            <app-login *ngIf="selectedContent == 'login'"></app-login>
+
             <app-exemplars *ngIf="selectedContent == 'exemplars'" [language]="selectedLanguage"></app-exemplars>
             <app-madrasah *ngIf="selectedContent == 'madrasah'" [subMenu]="subMenu"
                 [language]="selectedLanguage"></app-madrasah>

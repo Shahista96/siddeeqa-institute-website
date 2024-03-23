@@ -24,6 +24,7 @@ import { ContactUsComponent } from './contents/contact-us/contact-us.component';
 import { CarouselModule } from 'primeng/carousel';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from "@angular/material/expansion";
+import { LoginComponent } from './contents/login/login.component';
 
 
 
@@ -37,7 +38,8 @@ import { MatExpansionModule } from "@angular/material/expansion";
     ExemplarsComponent,
     MadrasahComponent,
     WellnessCenterComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
