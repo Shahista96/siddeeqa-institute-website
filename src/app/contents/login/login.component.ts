@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  helloMessage:string = "";
+  emailId!:string;
+  password!:string;
+
+  onLoginBtnClick(){
+    
+  
+  }
+
+  onRegisterBtnClick(){
+   
+  }
+
 }

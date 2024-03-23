@@ -25,6 +25,7 @@ import { CarouselModule } from 'primeng/carousel';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from "@angular/material/expansion";
 import { LoginComponent } from './contents/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -55,7 +56,8 @@ MatSidenavModule,
 MatListModule,
 CarouselModule,
 MatCardModule,
-MatExpansionModule
+MatExpansionModule,
+FormsModule
 
   ],
   providers: [],
