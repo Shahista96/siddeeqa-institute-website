@@ -58,6 +58,7 @@
                 <button mat-menu-item (click)="menuChanged('faqs','miscellaneous')">Miscellaneous</button>
             </mat-menu>
             <button fxHide.lt-sm mat-button (click)="menuChanged('contact_us','')">Contact Us</button>
+            <button mat-button fxHide.lt-sm (click)="menuChanged('donate','')">Donate</button>
         </mat-toolbar-row>
     </mat-toolbar>
 
@@ -73,6 +74,8 @@
                 <button mat-button [matMenuTriggerFor]="womensWellnessCenter">Women’s Wellness Center</button><br>
                 <button mat-button [matMenuTriggerFor]="faqs">FAQs</button><br>
                 <button mat-button (click)="menuChanged('contact_us','')">Contact Us</button><br>
+                <button mat-button (click)="menuChanged('donate','')">Donate</button><br>
+
             </mat-nav-list>
         </mat-sidenav>
 
@@ -87,6 +90,8 @@
                 [language]="selectedLanguage"></app-wellness-center>
             <app-faqs *ngIf="selectedContent == 'faqs'" [subMenu]="subMenu" [language]="selectedLanguage"></app-faqs>
             <app-contact-us *ngIf="selectedContent == 'contact_us'" [language]="selectedLanguage"></app-contact-us>
+            <app-donate *ngIf="selectedContent == 'donate'"></app-donate>
+        
         </mat-sidenav-content>
     </mat-sidenav-container>
 
@@ -190,6 +195,7 @@
                 [language]="selectedLanguage"></app-wellness-center>
             <app-faqs *ngIf="selectedContent == 'faqs'" [subMenu]="subMenu" [language]="selectedLanguage"></app-faqs>
             <app-contact-us *ngIf="selectedContent == 'contact_us'" [language]="selectedLanguage"></app-contact-us>
+            <app-donate *ngIf="selectedContent == 'donate'"></app-donate>
         </mat-sidenav-content>
     </mat-sidenav-container>
 

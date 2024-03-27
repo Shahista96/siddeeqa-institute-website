@@ -26,6 +26,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from "@angular/material/expansion";
 import { LoginComponent } from './contents/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { DonateComponent } from './contents/donate/donate.component';
 
 
 
@@ -40,7 +41,8 @@ import { FormsModule } from '@angular/forms';
     MadrasahComponent,
     WellnessCenterComponent,
     ContactUsComponent,
-    LoginComponent
+    LoginComponent,
+    DonateComponent
   ],
   imports: [
     BrowserModule,
