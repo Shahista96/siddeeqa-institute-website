@@ -36,3 +36,17 @@
   align-items: center; 
   text-align: center;
 }
+
+
+mat-nav-list > button {
+  box-sizing: border-box;
+  padding: 0px 10px;
+  margin:0px;
+  text-align: start;
+  align-items: start;
+}
+
+mat-menu {
+  padding: 0px 0px;
+  margin: 0px 0px;
+}

@@ -4,7 +4,7 @@
             <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
                 <mat-icon>menu</mat-icon>
             </button>
-            <img src="../../assets/Logos/siddeeqa logo.png" alt="Siddeeqa Institute" height="50" weight="50"
+            <img src="../../assets/Logos/siddeeqa logo.png" alt="Siddeeqa Institute" height="75px" width="auto" margin="0px" padding="0px"
                 (click)="menuChanged('home','')" />
             <span class="spacer" fxHide.lt-sm></span>
             <button mat-button fxHide.lt-sm [matMenuTriggerFor]="lang"><b>{{selectedLanguage}}</b></button>
@@ -63,7 +63,7 @@
     <mat-sidenav-container>
         <mat-sidenav #sidenav fxHide.gt-sm>
             <mat-nav-list>
-                <button mat-button [matMenuTriggerFor]="lang">{{this.selectedLanguage}}</button><br>
+                <button mat-button [matMenuTriggerFor]="lang">{{this.selectedLanguage}}</button> <br>
                 <button mat-button (click)="menuChanged('home','')">Home</button><br>
                 <button mat-button (click)="menuChanged('exemplars','')">Our Exemplars</button><br>
                 <button mat-button [matMenuTriggerFor]="madrasah">Madrasah</button><br>
